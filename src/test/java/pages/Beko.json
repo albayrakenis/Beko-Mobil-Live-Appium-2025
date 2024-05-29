@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Beko",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+        {
+          "elementName": "uyelik button",
+          "elementType": "xpath",
+          "elementValue": "//a[.='\u00DCyelik']"
+        }
+
+
+
+
+
+
+
+
+
+
+      ]
+
+    }
+  ]
+}
