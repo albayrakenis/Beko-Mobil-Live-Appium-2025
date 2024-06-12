@@ -9,6 +9,8 @@ import io.cucumber.java.en.When;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import utilities.ConfigurationReader;
+import utilities.Driver;
 
 import java.io.IOException;
 
@@ -28,6 +30,7 @@ public class MyStepdefs {
 
     @When("I go to url:{string}")
     public void navigateURL(String url) {
+      //  Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         commonLib.ıGoToUrl(url);
     }
 

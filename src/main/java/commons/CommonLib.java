@@ -1,9 +1,12 @@
 package commons;
 
+import com.github.dockerjava.api.model.Driver;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
+import org.codehaus.plexus.component.annotations.Configuration;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,6 +19,9 @@ import java.util.Random;
 
 public class CommonLib {
 
+//    public CommonLib(){
+//    PageFactory.initElements(Driver);
+//    }
     public WebDriver myDriver;
     public WebDriverWait webDriverWait;
     private Parser parser = new Parser();
@@ -86,6 +92,8 @@ public class CommonLib {
 
     public void ıGoToUrl(String url) {
         try {
+
+
             myDriver.navigate().to(url);
             sleep(2);
             allureReport(StepResultType.PASS, "Url opened successfully", true);

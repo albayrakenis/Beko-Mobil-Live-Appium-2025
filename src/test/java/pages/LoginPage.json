@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "LoginPage",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+        {
+          "elementName": "username",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='j_username']"
+        },
+        {
+          "elementName": "password",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='j_password']"
+        },
+        {
+          "elementName": "giris yap",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='g-recaptcha-btn-login']"
+        },
+        {
+          "elementName": "login hata mesaji",
+          "elementType": "cssSelector",
+          "elementValue": "#login-failed-div > p"
+        }
+      ]
+
+    }
+  ]
+}

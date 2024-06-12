@@ -22,7 +22,7 @@
         </classes>
     </test> <!-- Test -->
 
-    <test name="Beko" enabled="true">
+    <test name="user" enabled="true">
         <!--parameter name="browserName" value="chrome"/>-->
         <parameter name="browserName" value="chrome"/>
         <classes>

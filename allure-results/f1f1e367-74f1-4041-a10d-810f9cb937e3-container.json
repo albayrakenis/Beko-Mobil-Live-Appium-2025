@@ -1,0 +1,1 @@
+{"uuid":"f1f1e367-74f1-4041-a10d-810f9cb937e3","name":"Scenario Outline: Success Login Test","children":["99966df5-b51c-44f5-a026-41b2a6da43b5"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1718226236088,"stop":1718226236111}],"afters":[],"start":1718226236084,"stop":1718226257731}
