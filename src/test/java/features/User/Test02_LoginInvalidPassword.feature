@@ -1,7 +1,7 @@
-Feature: Users Suits Wrong password
+Feature: Users Suits
 
   @user
-  Scenario Outline: Wrong password
+  Scenario Outline: Invalid password
     When I see "HomePage" page
     Then I go to url:"https://akamai-s1-astra-stage.beko.com.tr/"
     Then I wait "uyelik button" element

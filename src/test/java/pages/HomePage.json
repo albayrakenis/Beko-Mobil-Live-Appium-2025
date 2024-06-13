@@ -12,6 +12,21 @@
           "elementName": "uyelik button",
           "elementType": "cssSelector",
           "elementValue": "[data-selector='user-name']"
+        },
+        {
+          "elementName": "sepet icon",
+          "elementType": "cssSelector",
+          "elementValue": ".icon-bag"
+        },
+        {
+          "elementName": "sepeti bosalt",
+          "elementType": "cssSelector",
+          "elementValue": ".js-remove-cart-entries"
+        },
+        {
+          "elementName": "anasayfa text",
+          "elementType": "xpath",
+          "elementValue": "//span[contains(.,'Ana Sayfa')]"
         }
 
 
