@@ -1,0 +1,73 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "AdresPage",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Adres Bilgileri Text",
+          "elementType": "cssSelector",
+          "elementValue": "#modal-add-new-address .modal-title"
+        },
+        {
+          "elementName": "Bireysel",
+          "elementType": "cssSelector",
+          "elementValue": "[for='sw_adr_1']"
+        },
+
+        {
+          "elementName": "Kurumsal",
+          "elementType": "cssSelector",
+          "elementValue": "[for='sw_adr_2']"
+        },
+        {
+          "elementName": "Ad Soyad",
+          "elementType": "cssSelector",
+          "elementValue": "#fullName"
+        },
+        {
+          "elementName": "Telefon",
+          "elementType": "cssSelector",
+          "elementValue": "#phone"
+        },
+        {
+          "elementName": "il",
+          "elementType": "cssSelector",
+          "elementValue": "#cityCode"
+        },
+        {
+          "elementName": "ilce",
+          "elementType": "cssSelector",
+          "elementValue": "#townCode"
+        },
+
+        {
+          "elementName": "Mahalle",
+          "elementType": "cssSelector",
+          "elementValue": "#neighborhood"
+        },
+        {
+          "elementName": "Adres Detaylari",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='input textarea']/textarea[1]"
+        },
+        {
+          "elementName": "Adres Adi",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='addressName']"
+        },
+        {
+          "elementName": "Adres Kaydet",
+          "elementType": "cssSelector",
+          "elementValue": "#save-address-btn"
+        }
+
+
+      ]
+    }
+  ]
+}

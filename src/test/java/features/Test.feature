@@ -91,7 +91,7 @@ Feature: Product Store Feature
     Then I wait until element to be clickable and click to "place order button" element
     Then I see "OrderModalPage" page
     Then I wait "htc one m9 order modal price;name input;name label;city input;city label;credit card input;credit card label;month input;month label;year input;year label;order modal close button;order modal purchase button" elements
-   # Then I send key to "Guray Turan" element text:"name input"
+   # Then I send key to "Enis Albayrak" element text:"name input"
     Then I send key to "Enis " element text:"name" with jsexecutor
     Then I send key to "Turkey" element text:"country" with jsexecutor
     Then I send key to "Balikesir" element text:"city" with jsexecutor
@@ -103,3 +103,4 @@ Feature: Product Store Feature
     Then I wait until element to be clickable and click to "ok button" element
     Then  I see "HomePage" page
     Then I wait "categories tab;monitors tab;phones tab;laptops tab" elements
+

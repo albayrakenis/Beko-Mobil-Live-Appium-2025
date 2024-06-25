@@ -27,6 +27,11 @@
           "elementName": "anasayfa text",
           "elementType": "xpath",
           "elementValue": "//span[contains(.,'Ana Sayfa')]"
+        },
+        {
+          "elementName": "hesabim button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-selector='user-name']"
         }
 
 

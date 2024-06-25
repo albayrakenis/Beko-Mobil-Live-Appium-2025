@@ -4,7 +4,7 @@ Feature: Users Suits
   @user
   Scenario Outline: Success Login Test
     When I see "HomePage" page
-    Then I go to url:"https://akamai-s1-astra-stage.beko.com.tr/"
+    Then I go to url:"<url>"
     Then I wait "uyelik button" element
     Then I sleep for 5 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
@@ -18,6 +18,6 @@ Feature: Users Suits
     Then I sleep for 5 seconds
 
     Examples:
-      | username             | password    |
-      | bekos1test@gmail.com | Albayrak.41 |
+      | username             | password    |url|
+      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/  |
 

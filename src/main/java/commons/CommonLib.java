@@ -281,16 +281,17 @@ public class CommonLib {
 
     public void ıDeleteItemsOnCart() throws IOException, ParseException {
         seePage("HomePage");
-        clickElementWaitUntilClickable("navbar cart button");
+        clickElementWaitUntilClickable("sepet icon");
+        clickElementWaitUntilClickable("sepeti bosalt");
 
-        List<WebElement> elementList=myDriver.findElements(By.xpath("//*[@id=\"tbodyid\"]//a[text()=\"Delete\"]"));
+//        List<WebElement> elementList=myDriver.findElements(By.xpath("//*[@id=\"tbodyid\"]//a[text()=\"Delete\"]"));
+//
+//        for (WebElement elem:elementList) {
+//            clickElementWaitUntilClickable(By.xpath("//*[@id=\"tbodyid\"]//a[text()=\"Delete\"]"));
+//        }
 
-        for (WebElement elem:elementList) {
-            clickElementWaitUntilClickable(By.xpath("//*[@id=\"tbodyid\"]//a[text()=\"Delete\"]"));
-        }
-
-        clickElementWaitUntilClickable("navbar home button");
-        waitElement("categories tab");
+        clickElementWaitUntilClickable("anasayfa text");
+       // waitElement("categories tab");
 
     }
 

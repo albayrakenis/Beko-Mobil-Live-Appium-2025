@@ -1,0 +1,72 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "HesabimPage",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "urunlerim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/urunlerim ']"
+        },
+        {
+          "elementName": "siparislerim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/siparislerim ']"
+        },
+
+        {
+          "elementName": "bildirimlerim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/bildirimlerim ']"
+        },
+        {
+          "elementName": "taleplerim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/taleplerim ']"
+        },
+        {
+          "elementName": "favorilerim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/favorilerim ']"
+        },
+        {
+          "elementName": "stok habercim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/stok-habercim ']"
+        },
+        {
+          "elementName": "kuponlarim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/kuponlarim ']"
+        },
+        {
+          "elementName": "hediye ceklerim",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hesabim/hediye-ceklerim ']"
+        },
+        {
+          "elementName": "bilgilerim",
+          "elementType": "xpath",
+          "elementValue": "//a[9]"
+        },
+        {
+          "elementName": "cikis yap",
+          "elementType": "xpath",
+          "elementValue": "//a[10]"
+        },
+        {
+          "elementName": "yeni adres ekle button",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-new-address"
+        }
+
+
+      ]
+    }
+  ]
+}
