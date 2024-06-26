@@ -1,17 +1,20 @@
 package stepdef;
 
 
+import com.github.dockerjava.api.model.Driver;
 import commons.*;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import utilities.ConfigurationReader;
-import utilities.Driver;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class MyStepdefs {
@@ -136,5 +139,41 @@ public class MyStepdefs {
     @Given("I create a username that is start with {string} and end with number {int} between {int} then save username to globalvariables as a {string} and then sign up")
     public void ıCreateAUsernameThatIsAndEndwithNumberBetweenThenSaveUsernameToGlobalvariablesAsAAndThenSignUp(String startWith, int arg1, int arg2, String username) throws InterruptedException {
         commonLib.ıCreateAUsernameThatIsAndEndwithNumberBetweenThenSaveUsernameToGlobalvariablesAsAAndThenSignUp(startWith,arg1,arg2,username);
+    }
+
+    @Given("I create a adress that is start {string} and end with number {int} between {int}")
+    public void ıCreateAAdressThatIsStartAndEndWithNumberBetween(String startWith, int arg1, int arg2) throws InterruptedException {
+        commonLib.ıCreateAAdressThatIsStartAndEndWithNumberBetween(startWith,arg1,arg2);
+    }
+
+
+    @Then("I choose city {string} from list")
+    public void ıChooseCityFromList(String City) {
+        commonLib.ıChooseCityFromList(City);
+    }
+
+    @Then("I choose town {string} from list")
+    public void ıChooseTownFromList(String Town) {
+         commonLib.ıChooseTownFromList(Town);
+    }
+
+    @Then("I choose neighborhood {string} from list")
+    public void ıChooseNeighborhoodFromList(String Neighborhood) {
+        commonLib.ıChooseNeighborhoodFromList(Neighborhood);
+    }
+
+    @Then("I choose taxCity {string} from list")
+    public void ıChooseTaxCityFromList(String TaxCity) {
+        commonLib.ıChooseTaxCityFromList(TaxCity);
+    }
+
+    @Then("I clear {string} textbox")
+    public void ıClearTextbox(String arg0) {
+        commonLib.ıClearTextbox(arg0);
+    }
+
+    @Then("I send key to {string} element random name")
+    public void ıSendKeyToElementRandomName(String arg0) {
+
     }
 }

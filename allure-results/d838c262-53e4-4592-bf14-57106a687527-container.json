@@ -1,1 +1,0 @@
-{"uuid":"d838c262-53e4-4592-bf14-57106a687527","name":"Scenario Outline: Add Adress","children":["b58d5624-c42f-46ca-b7b2-ad34ce4f9bad"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1719297580546,"stop":1719297580586}],"afters":[],"start":1719297580540,"stop":1719297619865}

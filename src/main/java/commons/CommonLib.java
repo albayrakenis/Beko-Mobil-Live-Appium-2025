@@ -1,20 +1,21 @@
 package commons;
 
-import com.github.dockerjava.api.model.Driver;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
-import org.codehaus.plexus.component.annotations.Configuration;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.PageFactory;
+import com.github.javafaker.Faker;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 import java.util.Random;
 
 public class CommonLib {
@@ -343,6 +344,60 @@ public class CommonLib {
             clickElementWaitUntilClickable("signup modal close button");
         }
     }
+
+
+    public void ıCreateAAdressThatIsStartAndEndWithNumberBetween(String startWith, int arg1, int arg2) throws InterruptedException {
+
+        Random rnd = new Random();
+        boolean flag=false;
+        String tempUsername="";
+        waitElement("Adres Adi");
+
+            tempUsername = startWith + " " + (arg1 + rnd.nextInt(arg2));
+            sendKeys("Adres Adi",tempUsername);
+
+    }
+
+    public void ıChooseCityFromList(String City){
+
+        Select select = new Select( myDriver.findElement(By.id("cityCode")));
+        select.selectByVisibleText(City);
+
+    }
+
+    public void ıChooseTownFromList(String Town) {
+        Select select = new Select( myDriver.findElement(By.id("townCode")));
+        select.selectByVisibleText(Town);
+    }
+
+    public void ıChooseNeighborhoodFromList(String Neighborhood) {
+        Select select = new Select( myDriver.findElement(By.id("neighborhood")));
+        select.selectByVisibleText(Neighborhood);
+    }
+
+    public void ıChooseTaxCityFromList(String TaxCity) {
+        Select select = new Select( myDriver.findElement(By.id("taxOffice")));
+        select.selectByVisibleText(TaxCity);
+    }
+
+    public void ıClearTextbox(String arg0) {
+        WebElement myelem = myDriver.findElement(getElementLocator(arg0));
+        try {
+            myelem.clear();
+            allureReport(StepResultType.PASS,arg0 + "text is cleared", true);
+
+        }catch (Exception e){
+            allureReport(StepResultType.FAIL,arg0 + "text is not cleared", true);
+        }
+    }
+
+    public void ıSendKeyToElementRandomName(String arg0) {
+        Faker faker = new Faker();
+
+    }
+
+
+
 
     public void allureReport(StepResultType result, String message, boolean ssFlag) {
         try {

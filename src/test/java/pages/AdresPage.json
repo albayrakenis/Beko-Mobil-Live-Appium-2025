@@ -64,6 +64,21 @@
           "elementName": "Adres Kaydet",
           "elementType": "cssSelector",
           "elementValue": "#save-address-btn"
+        },
+        {
+          "elementName": "Firma Adi",
+          "elementType": "cssSelector",
+          "elementValue": "#company"
+        },
+        {
+          "elementName": "Vergi Numarasi",
+          "elementType": "cssSelector",
+          "elementValue": "#taxNumber"
+        },
+        {
+          "elementName": "Vergi Dairesi",
+          "elementType": "cssSelector",
+          "elementValue": "#taxOffice"
         }
 
 

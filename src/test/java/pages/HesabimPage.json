@@ -63,9 +63,58 @@
           "elementName": "yeni adres ekle button",
           "elementType": "cssSelector",
           "elementValue": ".btn-new-address"
+        },
+
+
+
+
+        {
+          "elementName": "uyelik bilgileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-level='1']"
+        },
+        {
+          "elementName": "Adiniz",
+          "elementType": "cssSelector",
+          "elementValue": "#name"
+        },
+
+        {
+          "elementName": "Soyadiniz",
+          "elementType": "cssSelector",
+          "elementValue": "#surname"
+        },
+        {
+          "elementName": "Cinsiyet",
+          "elementType": "cssSelector",
+          "elementValue": "[for='gender']"
+        },
+        {
+          "elementName": "Dogum Tarihi",
+          "elementType": "cssSelector",
+          "elementValue": "#birthDate"
+        },
+
+        {
+          "elementName": "TC no",
+          "elementType": "cssSelector",
+          "elementValue": "#tckn"
+        },{
+          "elementName": "Telefon Numarasi",
+          "elementType": "cssSelector",
+          "elementValue": "#phoneNumber"
+        },
+        {
+          "elementName": "Email",
+          "elementType": "cssSelector",
+          "elementValue": "#email"
+        },
+
+        {
+          "elementName": "Kaydet Button",
+          "elementType": "cssSelector",
+          "elementValue": "#g-recaptcha-btn-profile"
         }
-
-
       ]
     }
   ]
