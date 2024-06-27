@@ -55,7 +55,7 @@ Feature: Product Store Feature
     Then I wait until element to be clickable and click to "order modal purchase button" element
     Then I wait "success icon;thanks for purchase text;ok button" elements
     Then I wait until element to be clickable and click to "ok button" element
-    Then  I see "HomePage" page
+    Then I see "HomePage" page
     Then I wait "categories tab;monitors tab;phones tab;laptops tab" elements
 
 

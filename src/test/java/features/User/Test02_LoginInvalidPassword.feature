@@ -1,7 +1,7 @@
-Feature: Users Suits
+Feature: Kullanici islemleri
 
   @user @smoke
-  Scenario Outline: Invalid password
+  Scenario Outline: Test02- Yanlis Sifre ile Giris Denemesi
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element

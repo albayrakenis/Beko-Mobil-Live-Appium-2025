@@ -1,1 +1,0 @@
-{"uuid":"ce3f9e00-b9a9-44a3-91a4-a74a3e393174","name":"Scenario Outline: Invalid password","children":["c2f4822f-d51f-4185-bd1e-396e7d604daf"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1719415312097,"stop":1719415312104}],"afters":[],"start":1719415312097,"stop":1719415334265}

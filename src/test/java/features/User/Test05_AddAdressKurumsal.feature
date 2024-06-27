@@ -1,7 +1,8 @@
-Feature: Users Suits
+Feature: Kullanici islemleri
+
 
   @userAdres2 @smoke
-  Scenario Outline: Add Adress
+  Scenario Outline:Test05- Kurumsal Adres Ekleme
 
     When I see "HomePage" page
     Then I go to url:"<url>"
@@ -20,7 +21,8 @@ Feature: Users Suits
     Then I sleep for 10 seconds
     When I see "HesabimPage" page
     Then I wait "urunlerim;siparislerim;bildirimlerim;taleplerim;favorilerim;stok habercim;kuponlarim;hediye ceklerim;bilgilerim;cikis yap" elements
-    Then I scroll down until find "yeni adres ekle button" element
+#    Then I scroll down until find "yeni adres ekle button" element
+    Then I scroll down until find "kisiler bilgiler onay" element
     Then I wait until element to be clickable and click to "yeni adres ekle button" element
     When I see "AdresPage" page
     Then I check "Adres Bilgileri Text" element text is equal "Adres Bilgileri"

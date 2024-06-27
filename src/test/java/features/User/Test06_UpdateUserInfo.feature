@@ -1,7 +1,8 @@
-Feature: Users Suits
+Feature: Kullanici islemleri
+
 
   @userAdres25 @smoke
-  Scenario Outline: Add Adress
+  Scenario Outline: Test06- Ad Soyad Güncelleme
 
     When I see "HomePage" page
     Then I go to url:"<url>"

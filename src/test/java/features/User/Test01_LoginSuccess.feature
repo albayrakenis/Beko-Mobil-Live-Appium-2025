@@ -1,8 +1,8 @@
 
-Feature: Users Suits
+Feature: Kullanici islemleri
 
   @user @smoke
-  Scenario Outline: Success Login Test
+  Scenario Outline: Test01- Basarili Giris
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
