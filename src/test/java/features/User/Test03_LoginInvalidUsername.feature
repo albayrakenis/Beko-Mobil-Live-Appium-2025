@@ -1,6 +1,6 @@
 Feature: Users Suits
 
-  @user
+  @user @smoke
   Scenario Outline: Invalid password
     When I see "HomePage" page
     Then I go to url:"https://akamai-s1-astra-stage.beko.com.tr/"

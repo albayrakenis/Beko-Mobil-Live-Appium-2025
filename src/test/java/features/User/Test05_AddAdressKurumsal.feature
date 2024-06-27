@@ -1,6 +1,6 @@
 Feature: Users Suits
 
-  @userAdres2
+  @userAdres2 @smoke
   Scenario Outline: Add Adress
 
     When I see "HomePage" page
@@ -14,10 +14,10 @@ Feature: Users Suits
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 5 seconds
+    Then I sleep for 10 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
-    Then I sleep for 1 seconds
+    Then I sleep for 10 seconds
     When I see "HesabimPage" page
     Then I wait "urunlerim;siparislerim;bildirimlerim;taleplerim;favorilerim;stok habercim;kuponlarim;hediye ceklerim;bilgilerim;cikis yap" elements
     Then I scroll down until find "yeni adres ekle button" element

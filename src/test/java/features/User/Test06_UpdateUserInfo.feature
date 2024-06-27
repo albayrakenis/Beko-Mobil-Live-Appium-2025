@@ -1,6 +1,6 @@
 Feature: Users Suits
 
-  @userAdres25
+  @userAdres25 @smoke
   Scenario Outline: Add Adress
 
     When I see "HomePage" page
@@ -14,17 +14,17 @@ Feature: Users Suits
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 5 seconds
+    Then I sleep for 10 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
-    Then I sleep for 1 seconds
+    Then I sleep for 10 seconds
     When I see "HesabimPage" page
-#    Then I wait "uyelik bilgileri;Adiniz;Soyadiniz;Cinsiyet;Dogum Tarihi;TC no;Telefon Numarasi;Email" elements
+    Then I wait "uyelik bilgileri;Adiniz;Soyadiniz;Cinsiyet;Dogum Tarihi;TC no;Telefon Numarasi;Email" elements
     Then I clear "Adiniz" textbox
-    Then I sleep for 2 seconds
-    Then I send key to "Adiniz" element random name
-    Then I sleep for 3 seconds
-    Then I scroll down until find "Kaydet Button" element
+    Then I send key to "Adiniz" element random "name"
+    And I clear "Soyadiniz" textbox
+    Then I send key to "Soyadiniz" element random "surname"
+    Then I scroll down until find "kisiler bilgiler onay" element
     Then I wait until element to be clickable and click to "Kaydet Button" element
     Then I sleep for 3 seconds
 

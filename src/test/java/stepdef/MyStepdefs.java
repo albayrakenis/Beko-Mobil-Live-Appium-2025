@@ -83,7 +83,7 @@ public class MyStepdefs {
 
     @Then("I check {string} element text is equal {string}")
     public void ıCheckElementTextIsLike(String element, String text) {
-       // commonLib.saveElementToGlobalVariables("username","gry");
+       // commonLib.saveElementToGlobalVariables("username",text);
         while (text.contains("$")) {
 
             text = text.replace(text.substring(text.indexOf('$'), text.indexOf("}") + 1), commonLib.getElementFromGlobalVariables(text.substring(text.indexOf('$')+2, text.indexOf("}"))));
@@ -172,8 +172,14 @@ public class MyStepdefs {
         commonLib.ıClearTextbox(arg0);
     }
 
-    @Then("I send key to {string} element random name")
-    public void ıSendKeyToElementRandomName(String arg0) {
 
+    @Then("I send key to {string} element random {string}")
+    public void ıSendKeyToElementRandom(String locater, String keys) {
+        commonLib.ıSendKeyToElementRandom(locater,keys);
+    }
+
+    @Then("I scroll and click to {string} element with Javascript")
+    public void ıScrollAndClickToElementWithJavascript(String element) {
+        commonLib.ıScrollAndClickToElementWithJavascript(element);
     }
 }

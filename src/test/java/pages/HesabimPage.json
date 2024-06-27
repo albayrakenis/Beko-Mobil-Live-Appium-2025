@@ -112,8 +112,14 @@
 
         {
           "elementName": "Kaydet Button",
-          "elementType": "cssSelector",
-          "elementValue": "#g-recaptcha-btn-profile"
+          "elementType": "xpath",
+          "elementValue": "//button[@title='Kaydet']"
+        },
+
+        {
+          "elementName": "kisiler bilgiler onay",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='personalDataLawApply']"
         }
       ]
     }

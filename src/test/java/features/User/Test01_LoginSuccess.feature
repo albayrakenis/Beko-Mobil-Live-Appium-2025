@@ -1,7 +1,7 @@
 
 Feature: Users Suits
 
-  @user
+  @user @smoke
   Scenario Outline: Success Login Test
     When I see "HomePage" page
     Then I go to url:"<url>"

@@ -1,6 +1,6 @@
 Feature: Users Suits
 
-  @userAdres
+  @userAdres @smoke
   Scenario Outline: Add Adress
 
     When I see "HomePage" page
@@ -15,7 +15,7 @@ Feature: Users Suits
     Then I send key to "password" element text:"<password>"
 #    Then I scroll down until find "giris yap" element
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 5 seconds
+    Then I sleep for 10 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
     Then I sleep for 2 seconds

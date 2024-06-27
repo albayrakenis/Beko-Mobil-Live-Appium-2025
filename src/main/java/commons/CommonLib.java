@@ -1,18 +1,16 @@
 package commons;
 
+import com.github.dockerjava.api.model.Driver;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -125,9 +123,10 @@ public class CommonLib {
         allureReport(StepResultType.PASS, "Sleep", false);
     }
 
-    public void clickElementWaitUntilClickable(String element) {
+    public void clickElementWaitUntilClickable(String element)  {
         WebElement webElement = null;
         String style = "";
+
         try {
             webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));
             style = webElement.getAttribute("style");
@@ -393,7 +392,76 @@ public class CommonLib {
 
     public void ıSendKeyToElementRandomName(String arg0) {
         Faker faker = new Faker();
+        String name="";
 
+        name=faker.name().firstName();
+    }
+
+    public String ıSendKeyToElementRandom(String locater, String keys) {
+        Faker faker = new Faker();
+        allureReport(StepResultType.PASS, "Send to keys", false);
+
+
+        if (keys != null) {
+            switch (keys) {
+                case "name":
+                    keys = faker.name().firstName();
+                    sendKeys(locater,keys);
+                    System.out.println(keys);
+                    break;
+                case "surname":
+                    keys = faker.name().lastName();
+                    sendKeys(locater,keys);
+                    System.out.println(keys);
+                    break;
+                case "fullname":
+                    keys = faker.name().fullName();
+                    sendKeys(locater,keys);
+                    System.out.println(keys);
+                    break;
+                case "adress":
+                    keys = faker.address().fullAddress();
+                    sendKeys(locater,keys);
+                    System.out.println(keys);
+                    break;
+                case "adress name":
+                    keys = faker.address().country()+" "+ faker.address().cityName()+faker.number();
+                    sendKeys(locater,keys);
+                    System.out.println(keys);
+                    break;
+                case "phone number":
+                    int nums =75;
+                    keys = nums+ String.valueOf(faker.number().numberBetween(1000000,99999999));
+                    sendKeys(locater,keys);
+                    System.out.println(keys);
+                    break;
+
+            }
+
+            locater=myDriver.findElement(getElementLocator(locater)).getAttribute("value");
+            Assert.assertEquals(locater,keys);
+            System.out.println(locater);
+            allureReport(StepResultType.PASS, "Degistirilen bilgi güncellendi", false);
+        }
+        return keys;
+
+
+
+    }
+
+    public void ıScrollAndClickToElementWithJavascript(String element) {
+        try {
+            //Locating element by link text and store in variable "Element"
+            WebElement webElement = myDriver.findElement(getElementLocator(element));
+            JavascriptExecutor js = (JavascriptExecutor) myDriver;
+            // Scrolling down the page till the element is found
+            js.executeScript("arguments[0].scrollIntoView();", webElement);
+            waitElement(element);
+            js.executeScript("arguments[0].click();", element);
+            allureReport(StepResultType.PASS, "'"+element + "' Element is found and click", true);
+        }catch (Exception e){
+            allureReport(StepResultType.FAIL,element + "element is not clicable", true);
+        }
     }
 
 
