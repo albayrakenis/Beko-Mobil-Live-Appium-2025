@@ -1,22 +1,20 @@
 package commons;
 
-import com.github.dockerjava.api.model.Driver;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 public class CommonLib {
 
@@ -69,7 +67,7 @@ public class CommonLib {
                     break;
             }
         }
-        return returnLocator;
+        return (By) returnLocator;
     }
 
     public Element getElementFromJson(String elemName) {
@@ -122,19 +120,16 @@ public class CommonLib {
 
 
 
-
-
-
-
     public void sleep(int sec) throws InterruptedException {
         Thread.sleep(1000 * sec);
         allureReport(StepResultType.PASS, "Sleep", false);
     }
 
     public void clickElementWaitUntilClickable(String element)  {
+
+
         WebElement webElement = null;
         String style = "";
-        myDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         try {
             webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));;
             style = webElement.getAttribute("style");
@@ -144,7 +139,20 @@ public class CommonLib {
             allureReport(StepResultType.FAIL, "Could not click to element.", true);
         }
         setDefaultStyle(style, webElement);
+
         webElement.click();
+
+    }
+
+    public void clickElementWaitUntilClickable2(String element)  {
+
+        webDriverWait.until(new ExpectedCondition<Boolean>() {
+            @Override
+            public Boolean apply(WebDriver webDriver) {
+                return ((JavascriptExecutor)myDriver).executeScript("return document.readyState").equals("complete");
+            }
+        });
+
 
     }
 
@@ -474,20 +482,38 @@ public class CommonLib {
         }
     }
 
-    public void waitFluentWait(String element){
 
-        WebElement webElement = null;
-        FluentWait<WebDriver> wait = new FluentWait<>(myDriver)
-                .withTimeout(Duration.ofSeconds(10)) // Maksimum bekleme süresi
-                .pollingEvery(Duration.ofMillis(500)) // Her 500 milisaniyede bir kontrol et
-                .ignoring(NoSuchElementException.class); // Belirtilen hata türünü görmezden gel
 
-        myDriver.findElement(getElementLocator(element));
-       wait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));
+
+    public void ıDeleteSavedAdress() throws IOException, ParseException, InterruptedException {
+        seePage("HesabimPage");
+
+
+        List<WebElement> elementList=myDriver.findElements(By.xpath("//a[@data-bdy='msg-opened']"));
+
+        if(elementList.size()>3) {
+            int son = elementList.size() - 3;
+            for (int i = 0; i < son; i++) {
+                clickElementWaitUntilClickable(By.xpath("//div[@class='usr-addresses']/div[1]//a[contains(.,'Sil')]"));
+                clickElementWaitUntilClickable(By.xpath("//button[@class='btn btn-outline-dark js-popup-trigger-func']"));
+                sleep(3);
+            }
+        }else {
+            System.out.println("yeteri kadar adres yok");
+        }
+
+
 
     }
 
+    public void ıScrollUntilFindElementWithAction(String element)  {
 
+        WebElement webElement = myDriver.findElement(getElementLocator(element));
+        Actions actions = new Actions(myDriver);
+        actions.scrollToElement(webElement).perform();
+
+
+    }
 
 
     public void allureReport(StepResultType result, String message, boolean ssFlag) {
