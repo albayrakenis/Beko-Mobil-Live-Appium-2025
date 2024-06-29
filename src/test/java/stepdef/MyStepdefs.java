@@ -4,6 +4,7 @@ package stepdef;
 import com.github.dockerjava.api.model.Driver;
 import commons.*;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -181,5 +182,10 @@ public class MyStepdefs {
     @Then("I scroll and click to {string} element with Javascript")
     public void ıScrollAndClickToElementWithJavascript(String element) {
         commonLib.ıScrollAndClickToElementWithJavascript(element);
+    }
+
+    @And("I wait Fluent waits {string}")
+    public void ıWaitFluentWaits(String element) {
+        commonLib.waitFluentWait(element);
     }
 }

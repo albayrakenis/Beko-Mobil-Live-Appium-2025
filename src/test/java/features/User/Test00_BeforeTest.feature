@@ -1,7 +1,7 @@
 
 Feature: Kullanici islemleri
 
-  @user @smoke
+  @user @smoke @deneme12
   Scenario Outline: Test00- Onceki Adresleri Silme
     When I see "HomePage" page
     Then I go to url:"<url>"
@@ -14,7 +14,7 @@ Feature: Kullanici islemleri
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 5 seconds
+    Then I sleep for 7 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
     Then I sleep for 2 seconds

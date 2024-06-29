@@ -7,6 +7,7 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -15,6 +16,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class CommonLib {
 
@@ -118,6 +120,12 @@ public class CommonLib {
         }
     }
 
+
+
+
+
+
+
     public void sleep(int sec) throws InterruptedException {
         Thread.sleep(1000 * sec);
         allureReport(StepResultType.PASS, "Sleep", false);
@@ -126,9 +134,9 @@ public class CommonLib {
     public void clickElementWaitUntilClickable(String element)  {
         WebElement webElement = null;
         String style = "";
-
+        myDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         try {
-            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));
+            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));;
             style = webElement.getAttribute("style");
             highLighElement(webElement);
             allureReport(StepResultType.PASS, "Clicked to element.", true);
@@ -139,6 +147,7 @@ public class CommonLib {
         webElement.click();
 
     }
+
 
     public void clickElementWaitUntilClickable(By element) {
         WebElement webElement = null;
@@ -204,6 +213,7 @@ public class CommonLib {
         WebElement webElement = null;
         String style = "";
         try {
+            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));
             webElement =  myDriver.findElement(getElementLocator(element));
             style = webElement.getAttribute("style");
             highLighElement(webElement);
@@ -462,6 +472,19 @@ public class CommonLib {
         }catch (Exception e){
             allureReport(StepResultType.FAIL,element + "element is not clicable", true);
         }
+    }
+
+    public void waitFluentWait(String element){
+
+        WebElement webElement = null;
+        FluentWait<WebDriver> wait = new FluentWait<>(myDriver)
+                .withTimeout(Duration.ofSeconds(10)) // Maksimum bekleme süresi
+                .pollingEvery(Duration.ofMillis(500)) // Her 500 milisaniyede bir kontrol et
+                .ignoring(NoSuchElementException.class); // Belirtilen hata türünü görmezden gel
+
+        myDriver.findElement(getElementLocator(element));
+       wait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));
+
     }
 
 
