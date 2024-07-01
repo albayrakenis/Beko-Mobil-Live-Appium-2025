@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "PLP",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+        {
+          "elementName": "incele button",
+          "elementType": "xpath",
+          "elementValue": "//a[contains(.,'\u0130ncele')]"
+        },
+        {
+          "elementName": "product footer",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='prd-footer']"
+        }
+      ]
+
+    }
+  ]
+}

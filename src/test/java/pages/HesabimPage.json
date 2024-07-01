@@ -120,6 +120,12 @@
           "elementName": "kisiler bilgiler onay",
           "elementType": "xpath",
           "elementValue": "//input[@id='personalDataLawApply']"
+        },
+
+        {
+          "elementName": "Adreslerim text",
+          "elementType": "cssSelector",
+          "elementValue": ".inf-group-title[aria-level='2']"
         }
       ]
     }

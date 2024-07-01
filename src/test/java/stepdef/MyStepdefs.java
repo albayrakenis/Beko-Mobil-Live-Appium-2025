@@ -1,7 +1,6 @@
 package stepdef;
 
 
-import com.github.dockerjava.api.model.Driver;
 import commons.*;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -9,13 +8,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import utilities.ConfigurationReader;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class MyStepdefs {
@@ -184,8 +179,35 @@ public class MyStepdefs {
         commonLib.ıScrollAndClickToElementWithJavascript(element);
     }
 
-    @And("I wait Fluent waits {string}")
-    public void ıWaitFluentWaits(String element) {
-        commonLib.waitFluentWait(element);
+
+    @And("I delete saved adress")
+    public void ıDeleteSavedAdress() throws IOException, ParseException, InterruptedException {
+        commonLib.ıDeleteSavedAdress();
+    }
+
+
+    @And("I scroll until find {string} element with action")
+    public void ıScrollUntilFindElementWithAction(String element)  {
+        commonLib.ıScrollUntilFindElementWithAction(element);
+    }
+
+    @And("I wait load the page")
+    public void ıWaitLoadThePage() {
+        commonLib.clickElementWaitUntilClickable2("enis");
+    }
+
+    @And("I accept on bilgilendirme and satis sozlesmesi")
+    public void ıAcceptOnBilgilendirmeAndSatisSozlesmesi() throws IOException, ParseException {
+        commonLib.ıAcceptOnBilgilendirmeAndSatisSozlesmesi();
+    }
+
+    @Then("I choose city {string} from list for click and collect")
+    public void ıChooseCityFromListForClickAndCollect(String City) {
+        commonLib.ıChooseCityFromListForClickAndCollect(City);
+    }
+
+    @Then("I choose town {string} from list for click and collect")
+    public void ıChooseTownFromListForClickAndCollect(String town) {
+        commonLib.ıChooseTownFromListForClickAndCollect(town);
     }
 }

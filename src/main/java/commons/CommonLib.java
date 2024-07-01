@@ -155,6 +155,17 @@ public class CommonLib {
 
 
     }
+    public void ıAcceptOnBilgilendirmeAndSatisSozlesmesi() throws IOException, ParseException {
+
+        System.out.println("ön bilgilendirme ve satış sözleşmesi");
+        seePage("CartPage");
+
+        WebElement onBilgilendirme  = myDriver.findElement(By.id("chk_cart_sum_confirm_1"));
+        onBilgilendirme.click();
+
+        WebElement satisSozlemesi = myDriver.findElement(By.id("chk_cart_sum_confirm_2"));
+        satisSozlemesi.click();
+    }
 
 
     public void clickElementWaitUntilClickable(By element) {
@@ -377,6 +388,7 @@ public class CommonLib {
 
     public void ıChooseCityFromList(String City){
 
+//        Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #cityCode")));
         Select select = new Select( myDriver.findElement(By.id("cityCode")));
         select.selectByVisibleText(City);
 
@@ -395,6 +407,20 @@ public class CommonLib {
     public void ıChooseTaxCityFromList(String TaxCity) {
         Select select = new Select( myDriver.findElement(By.id("taxOffice")));
         select.selectByVisibleText(TaxCity);
+    }
+
+    public void ıChooseCityFromListForClickAndCollect(String City) {
+        Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #cityCode")));
+
+        select.selectByVisibleText(City);
+
+    }
+
+    public void ıChooseTownFromListForClickAndCollect(String town) {
+        Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #townCode")));
+
+        select.selectByVisibleText(town);
+
     }
 
     public void ıClearTextbox(String arg0) {

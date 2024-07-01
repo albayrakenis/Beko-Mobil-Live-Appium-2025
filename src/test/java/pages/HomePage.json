@@ -32,6 +32,21 @@
           "elementName": "hesabim button",
           "elementType": "cssSelector",
           "elementValue": "[data-selector='user-name']"
+        },
+        {
+          "elementName": "search box",
+          "elementType": "cssSelector",
+          "elementValue": ".js-ov-trg[href='#'] > .f-input"
+        },
+        {
+          "elementName": "search box text",
+          "elementType": "cssSelector",
+          "elementValue": "#searchText"
+        },
+        {
+          "elementName": "search icon",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Arama']"
         }
 
 
