@@ -113,22 +113,25 @@
           "elementValue": "(//button[@title='Se\u00E7'])[1]"
         },
         {
-          "elementName": "",
+          "elementName": "Fatura Adresi",
           "elementType": "cssSelector",
-          "elementValue": "[href='#nav-delivery2']"
+          "elementValue": "#clickAndCollectBillingAddress"
+        },
+        {
+          "elementName": "Fatura Adresi Secme",
+          "elementType": "cssSelector",
+          "elementValue": "[for='adr_sel_0'] > b"
+        },
+        {
+          "elementName": "farkli kredi kart",
+          "elementType": "cssSelector",
+          "elementValue": "[for='pcs_sel_0']"
         },
         {
           "elementName": "",
           "elementType": "cssSelector",
-          "elementValue": "#pay-payment-credit button"
-        },
-        {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": "[href='#nav-delivery2']"
+          "elementValue": ""
         }
-
-
       ]
 
     }

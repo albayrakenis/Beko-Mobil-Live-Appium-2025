@@ -10,8 +10,8 @@
 
         {
           "elementName": "uyelik button",
-          "elementType": "cssSelector",
-          "elementValue": "[data-selector='user-name']"
+          "elementType": "xpath",
+          "elementValue": "//a[.='\u00DCyelik']"
         },
         {
           "elementName": "sepet icon",
@@ -47,6 +47,101 @@
           "elementName": "search icon",
           "elementType": "cssSelector",
           "elementValue": "[aria-label='Arama']"
+        },
+        {
+          "elementName": "urunler button",
+          "elementType": "xpath",
+          "elementValue": "//span[.='\u00DCr\u00FCnler']"
+        },
+        {
+          "elementName": "Beyaz esya",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/beyaz-esya'] > span"
+        },
+        {
+          "elementName": "Ankastre",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre']"
+        },
+        {
+          "elementName": "Televizyon",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Televizyon']"
+        },
+        {
+          "elementName": "Elektronik",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/elektronik'] > span"
+        },
+        {
+          "elementName": "isitma sogutma",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/isitma-sogutma'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/kucuk-ev-aletleri'] > span"
+        },
+        {
+          "elementName": "Hijyen Aksesuar",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/hijyen-aksesuar'] > span"
+        },
+        {
+          "elementName": "Su aritma",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Su Ar\u0131tma'] > span"
+        },
+        {
+          "elementName": "Markalar",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/markalar'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
         }
 
 

@@ -19,7 +19,7 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "hesabim button" element
     Then I sleep for 2 seconds
     When I see "HesabimPage" page
-    And I delete saved adress
+    And  I delete saved adress
 
 
     Examples:

@@ -392,27 +392,34 @@ public class CommonLib {
         Select select = new Select( myDriver.findElement(By.id("cityCode")));
         select.selectByVisibleText(City);
 
+        allureReport(StepResultType.PASS, "'"+City + "' Element is found", true);
+
     }
 
     public void ıChooseTownFromList(String Town) {
         Select select = new Select( myDriver.findElement(By.id("townCode")));
         select.selectByVisibleText(Town);
+        allureReport(StepResultType.PASS, "'"+Town + "' Element is found", true);
     }
 
     public void ıChooseNeighborhoodFromList(String Neighborhood) {
         Select select = new Select( myDriver.findElement(By.id("neighborhood")));
         select.selectByVisibleText(Neighborhood);
+
+        allureReport(StepResultType.PASS, "'"+Neighborhood + "' Element is found", true);
     }
 
     public void ıChooseTaxCityFromList(String TaxCity) {
         Select select = new Select( myDriver.findElement(By.id("taxOffice")));
         select.selectByVisibleText(TaxCity);
+        allureReport(StepResultType.PASS, "'"+TaxCity + "' Element is found", true);
     }
 
     public void ıChooseCityFromListForClickAndCollect(String City) {
         Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #cityCode")));
 
         select.selectByVisibleText(City);
+        allureReport(StepResultType.PASS, "'"+City + "' Element is found", true);
 
     }
 
@@ -420,6 +427,30 @@ public class CommonLib {
         Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #townCode")));
 
         select.selectByVisibleText(town);
+        allureReport(StepResultType.PASS, "'"+town + "' Element is found", true);
+
+    }
+
+    public void ıWaitUntilElementToBeClickableAndClickToElementIfElementExist(String element, int timeout) {
+        System.out.println("1");
+
+        try {
+
+//            if (checkVisibilityOfElement(element)){
+//                clickElement(element);
+//            }else {
+//                System.out.println("element tıklanabilir değil");
+//            }
+            WebDriverWait wait = new WebDriverWait(myDriver,Duration.ofSeconds(timeout));
+
+            String element2 = String.valueOf(wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element))));
+//            myDriver.findElement(getElementLocator(element)).click();
+            clickElement(element2);
+            System.out.println("element tıklanmadı");
+        }catch (Exception e){
+            allureReport(StepResultType.INFO,element +"" +element,Boolean.FALSE);
+            System.out.println("2");
+        }
 
     }
 
@@ -534,10 +565,15 @@ public class CommonLib {
 
     public void ıScrollUntilFindElementWithAction(String element)  {
 
-        WebElement webElement = myDriver.findElement(getElementLocator(element));
-        Actions actions = new Actions(myDriver);
-        actions.scrollToElement(webElement).perform();
+        try {
+            WebElement webElement = myDriver.findElement(getElementLocator(element));
+            Actions actions = new Actions(myDriver);
+            actions.scrollToElement(webElement).perform();
+            Allure.addAttachment("ScreenShot: Elemente scroll edildi" ,new ByteArrayInputStream(((TakesScreenshot) myDriver).getScreenshotAs(OutputType.BYTES)));
+        }catch (Exception e){
 
+            System.out.println("element bulunamadı");
+        }
 
     }
 

@@ -210,4 +210,9 @@ public class MyStepdefs {
     public void ıChooseTownFromListForClickAndCollect(String town) {
         commonLib.ıChooseTownFromListForClickAndCollect(town);
     }
+
+    @Then("I wait until element to be clickable and click to {string} element if element exist:{int}")
+    public void ıWaitUntilElementToBeClickableAndClickToElementIfElementExist(String element, int timeout) {
+        commonLib.ıWaitUntilElementToBeClickableAndClickToElementIfElementExist(element,timeout);
+    }
 }
