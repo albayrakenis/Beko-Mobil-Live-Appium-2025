@@ -1,11 +1,12 @@
 Feature: Kullanici islemleri
 
-  @user @smoke
+  @user @smoke @yanlissifre
   Scenario Outline: Test02- Yanlis Sifre ile Giris Denemesi
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
     Then I sleep for 5 seconds
+    And I wait until element to be clickable and click to "Cerezleri kabul et" element if element exist:15
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -18,7 +19,8 @@ Feature: Kullanici islemleri
     Then I sleep for 5 seconds
 
     Examples:
-      | username             | passwordWrong | url                                                                                      |
-      | bekos1test@gmail.com | Albayra41     | https://akamai-s1-astra-stage.beko.com.tr/                                               |
+      | username             | passwordWrong | url                                        |
+      | bekos1test@gmail.com | Albayra41     | https://akamai-s1-astra-stage.beko.com.tr/ |
+#      | bekos1test@gmail.com | Albayra41     | https://www.beko.com.tr/                   |
 #      | bekos1test@gmail.com | Albayrak.41   | https://akamai-s1-astra-stage.arcelik.com.tr/                                            |
 #      | bekos1test@gmail.com | Albayrak.41   | https://grundigtr-astra.c1m0wu3z2z-arcelikas1-s1-public.model-t.cc.commerce.ondemand.com/ |

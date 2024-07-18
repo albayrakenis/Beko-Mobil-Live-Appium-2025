@@ -1,0 +1,98 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Televizyon",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+
+        {
+          "elementName": "Televizyon Text",
+          "elementType": "cssSelector",
+          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+        },
+        {
+          "elementName": "4K Oled",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/4k-oled-tv'] > span"
+        },
+        {
+          "elementName": "Android TV",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/android-tv'] > span"
+        },
+        {
+          "elementName": "4K UHD",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/4k-uhd-tv'] > span"
+        },
+        {
+          "elementName": "Buyuk Ekran",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/buyuk-ekran-tv'] > span"
+        },
+        {
+          "elementName": "Smart TV",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/smart-tv'] > span"
+        },
+        {
+          "elementName": "Full HD",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/full-hd-tv'] > span"
+        },
+        {
+          "elementName": "LED LCD",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/led-lcd-tv'] > span"
+        },
+        {
+          "elementName": "Ekran Boyutuna Gore TVler",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/ekran-boyutuna-gore-tvler'] > span"
+        },
+        {
+          "elementName": "Televizyon Aksesuarlari",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/televizyon-aksesuarlari'] > span"
+        },
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

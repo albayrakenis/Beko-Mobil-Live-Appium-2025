@@ -1,0 +1,87 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "IsitmaSogutma",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "Elektrikli Isitici",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/elektrikli-isitici'] > span"
+        },
+        {
+          "elementName": "Isitma Sogutma Text",
+          "elementType": "cssSelector",
+          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+        },
+        {
+          "elementName": "Hava Sogutucu",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/hava-sogutucu'] > span"
+        },
+        {
+          "elementName": "Ic Hava Kalitesi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/ic-hava-kalitesi'] > span"
+        },
+        {
+          "elementName": "Klima",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/klima'] > span"
+        },
+        {
+          "elementName": "Kombi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/kombi'] > span"
+        },
+        {
+          "elementName": "Termosifon",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/termosifon'] > span"
+        },
+        {
+          "elementName": "Vantilator",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/vantilator'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

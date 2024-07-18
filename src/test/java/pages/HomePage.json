@@ -79,7 +79,7 @@
           "elementValue": ".menu-category [href='/isitma-sogutma'] > span"
         },
         {
-          "elementName": "",
+          "elementName": "KEA",
           "elementType": "cssSelector",
           "elementValue": ".menu-category [href='/kucuk-ev-aletleri'] > span"
         },
@@ -99,29 +99,29 @@
           "elementValue": "[href='/markalar'] > span"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Cerezleri kabul et",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='onetrust-accept-btn-handler']"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Tarifler text",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='recipes cont-sect']/div[@class='cont-sect-title']"
         },
         {
-          "elementName": "",
+          "elementName": "Devamini gor text",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".link-inline"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Tum tarifler button",
+          "elementType": "xpath",
+          "elementValue": "//a[contains(.,'T\u00Fcm Tarifler')]"
         },
         {
-          "elementName": "",
+          "elementName": "anasayfa ornek tarif",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".bnr-title[aria-level='3']"
         },
         {
           "elementName": "",

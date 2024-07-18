@@ -1,0 +1,85 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Ankastre",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Ankastre Text",
+          "elementType": "xpath",
+          "elementValue": "//h1[.='Ankastre']"
+        },
+        {
+          "elementName": "Ankastre Bulasik Makineleri",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/ankastre-bulasik-makineleri'] > span"
+        },
+        {
+          "elementName": "Ankastre Davlumbaz",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/ankastre-davlumbazlar'] > span"
+        },{
+          "elementName": "Ankastre Firin",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/ankastre-firin'] > span"
+        },
+        {
+          "elementName": "Ankastre Kurutmali Camasir Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/ankastre-kurutmali-camasir-makinesi'] > span"
+        },
+        {
+          "elementName": "Ankastre Set",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/ankastre-set'] > span"
+        },{
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

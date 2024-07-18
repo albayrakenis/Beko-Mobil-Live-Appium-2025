@@ -432,21 +432,17 @@ public class CommonLib {
     }
 
     public void ıWaitUntilElementToBeClickableAndClickToElementIfElementExist(String element, int timeout) {
-        System.out.println("1");
 
         try {
 
-//            if (checkVisibilityOfElement(element)){
-//                clickElement(element);
-//            }else {
-//                System.out.println("element tıklanabilir değil");
-//            }
+
             WebDriverWait wait = new WebDriverWait(myDriver,Duration.ofSeconds(timeout));
 
-            String element2 = String.valueOf(wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element))));
-//            myDriver.findElement(getElementLocator(element)).click();
-            clickElement(element2);
-            System.out.println("element tıklanmadı");
+//            String element2 = String.valueOf(wait.until(ExpectedConditions.visibilityOfElementLocated(getElementLocator(element))));
+            myDriver.findElement(getElementLocator(element)).click();
+//            clickElement(element2);
+            System.out.println("element bulundu");
+            allureReport(StepResultType.PASS, "Clicked to element.", true);
         }catch (Exception e){
             allureReport(StepResultType.INFO,element +"" +element,Boolean.FALSE);
             System.out.println("2");

@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kredi
-  Scenario Outline: Test003- Online Alisveris Kredisi ile Satın Alma
+  @user2 @smoke @kredi @order
+  Scenario Outline: Test03- Online Alisveris Kredisi ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
@@ -48,7 +48,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Krediye Basvur" element
     And I sleep for 8 seconds
     Then I wait until element to be clickable and click to "Onay" element
-    And I sleep for 8 seconds
+    And I sleep for 15 seconds
 
 #    Then I wait "Iban Kopyala;Havale Bilgileri" elements
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"

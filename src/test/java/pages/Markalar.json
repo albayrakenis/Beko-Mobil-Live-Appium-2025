@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Markalar",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+        {
+          "elementName": "Markalar Text",
+          "elementType": "cssSelector",
+          "elementValue": ".section-title"
+        },
+        {
+          "elementName": "Apple",
+          "elementType": "cssSelector",
+          "elementValue": ".brand-list [href='/apple']"
+        },
+        {
+          "elementName": "Celly",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/celly']"
+        },
+        {
+          "elementName": "Grundig",
+          "elementType": "cssSelector",
+          "elementValue": ".brand-list [href='/grundig']"
+        },
+        {
+          "elementName": "Huawei",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/huawei']"
+        },
+        {
+          "elementName": "Hypergear",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hypergear']"
+        },
+        {
+          "elementName": "Lenovo",
+          "elementType": "cssSelector",
+          "elementValue": ".brand-list [href='/lenovo']"
+        },
+        {
+          "elementName": "Philips",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/philips']"
+        },
+        {
+          "elementName": "Samsung",
+          "elementType": "cssSelector",
+          "elementValue": ".brand-list [href='/samsung']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

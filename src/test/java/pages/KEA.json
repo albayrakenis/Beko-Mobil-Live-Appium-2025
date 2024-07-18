@@ -1,0 +1,72 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "KEA",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "KEA Text",
+          "elementType": "cssSelector",
+          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+        },
+        {
+          "elementName": "Icecek Hazirlama",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/icecek-hazirlama'] > span"
+        },
+        {
+          "elementName": "Karistirici Dograyici",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/karistirici-dograyici'] > span"
+        },
+        {
+          "elementName": "Pisirici",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/pisirici'] > span"
+        },
+        {
+          "elementName": "Supurge",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/supurge'] > span"
+        }{
+          "elementName": "Kahve Makinesi Aksesuarlari",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/turk-kahve-makinesi-aksesuarlari-'] > span"
+        },
+
+        {
+          "elementName": "Yogurt Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/yogurt-makinesi'] > span"
+        },
+        {
+          "elementName": "Utu",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/utu'] > span"
+        },
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

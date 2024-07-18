@@ -1,0 +1,48 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Hijyen",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Hijyen Text",
+          "elementType": "cssSelector",
+          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+        },
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "Aksesuarlar",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/aksesuarlar'] > span"
+        },
+        {
+          "elementName": "Aktif Hijyen",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/aktif-hijyen'] > span"
+        }
+,
+        {
+          "elementName": "Temizlik ve Bakim Urunleri",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/temizlik-ve-bakim-urunleri'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

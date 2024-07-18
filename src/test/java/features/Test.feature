@@ -66,7 +66,7 @@ Feature: Product Store Feature
     Then I wait until element to be clickable and click to "navbar log in button" element
     Then I see "LoginModalPage" page
     Then I wait "login modal title;username label;password label;close icon;close button;login button" elements
-    Then I send key to "username input" element text:"gry"
+    Then I send key to "username input" element text:"ens"
     Then I send key to "password input" element text:"123"
     Then I wait until element to be clickable and click to "login button" element
     Then I sleep for 5 seconds

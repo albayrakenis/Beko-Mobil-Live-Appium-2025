@@ -1,0 +1,46 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Aritma",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "Su Aritma 1",
+          "elementType": "cssSelector",
+          "elementValue": ".prd-bg-1 .t"
+        },
+        {
+          "elementName": "Su Aritma 2",
+          "elementType": "cssSelector",
+          "elementValue": ".prd-bg-2 .t"
+        },
+        {
+          "elementName": "Su Aritma 3",
+          "elementType": "cssSelector",
+          "elementValue": ".prd-bg-3 .t"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

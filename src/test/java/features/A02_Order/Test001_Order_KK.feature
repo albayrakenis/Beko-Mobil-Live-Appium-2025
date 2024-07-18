@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @deneme123
-  Scenario Outline: Test00- Kredi Karti ile Satın Alma
+  @user2 @smoke @kkOrder @order
+  Scenario Outline: Test01- Kredi Karti ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
@@ -31,11 +31,10 @@ Feature: Satin Alma Islemleri
     And I scroll until find "Sepeti Onayla Button" element with action
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
     Then I sleep for 7 seconds
-
     And I accept on bilgilendirme and satis sozlesmesi
-
     And I scroll until find "Kredi/Banka Kartı" element with action
     Then I wait until element to be clickable and click to "Kredi/Banka Kartı" element
+    Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
     Then I send key to "Kart Numarasi Box" element text:"4446763125813623"
     And I scroll until find "CVV Box" element with action
@@ -48,11 +47,6 @@ Feature: Satin Alma Islemleri
 
     Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
-
-
-
-
-
 
 
 

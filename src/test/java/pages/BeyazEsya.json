@@ -1,0 +1,107 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "BeyazEsya",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Bulasik Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/bulasik-makinesi'] > span"
+        },
+        {
+          "elementName": "Buzdolabi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/buzdolabi'] > span"
+        },
+        {
+          "elementName": "Derin Dondurucu",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/derin-dondurucu'] > span"
+        },
+        {
+          "elementName": "Firin",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/firin'] > span"
+        },
+        {
+          "elementName": "Kurutma Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/kurutma-makinesi'] > span"
+        },
+        {
+          "elementName": "Kurutmali Camasir Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/kurutmali-camasir-makinesi'] > span"
+        },
+        {
+          "elementName": "Su Sebili",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/su-sebili'] > span"
+        },
+        {
+          "elementName": "Beyaz Esya Text",
+          "elementType": "cssSelector",
+          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+        },
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "Camasir Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": ".plp-sub-categories [href='/camasir-makinesi'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

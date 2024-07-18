@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @eft
-  Scenario Outline: Test00- EFT ile Satın Alma
+  @user2 @smoke @eft @order
+  Scenario Outline: Test02- EFT ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element

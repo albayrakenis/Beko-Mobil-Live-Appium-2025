@@ -1,0 +1,193 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Tarifler",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Tarif sayisi text",
+          "elementType": "cssSelector",
+          "elementValue": "//div[@class='result-qty']"
+        },
+        {
+          "elementName": "Filtrele button",
+          "elementType": "xpath",
+          "elementValue": "//span[contains(.,'Filtrele')]"
+        },
+        {
+          "elementName": "Tarif 1",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(1) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 2",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(2) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 3",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(3) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 4",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(4) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 5",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(5) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 6",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(6) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 7",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(7) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 8",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(8) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 9",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(9) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 10",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(10) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 11",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(11) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 12",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(1) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 13",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(13) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 14",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(14) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 15",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(15) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 16",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(16) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 17",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(17) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 18",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(18) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 19",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(19) .bnr-title"
+        },
+        {
+          "elementName": "Tarif 20",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(20) .bnr-title"
+        },,
+        {
+          "elementName": "Tarif 21",
+          "elementType": "cssSelector",
+          "elementValue": ".recipe-list > div:nth-of-type(21) .bnr-title"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }{
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+      ]
+    }
+  ]
+}

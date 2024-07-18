@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @collect
-  Scenario Outline: Test004- Click and Collect ile Satın Alma
+  @user2 @smoke @collect @order
+  Scenario Outline: Test04- Click and Collect ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
@@ -53,7 +53,6 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Kredi/Banka Kartı" element
     And I scroll until find "Farkli kredi karti ile ode" element with action
 #    Then I wait until element to be clickable and click to "farkli kredi kart" element
-    Then I wait until element to be clickable and click to "Magaza Ara" element if element exist:10
     Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
     Then I send key to "Kart Numarasi Box" element text:"4446763125813623"
