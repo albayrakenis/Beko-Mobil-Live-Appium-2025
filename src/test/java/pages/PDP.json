@@ -16,6 +16,92 @@
           "elementName": "Sepete Git Button",
           "elementType": "xpath",
           "elementValue": "//a[contains(.,'Sepete Git')]"
+        },
+        {
+          "elementName": "Filtrele Button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-text='Filtrele']"
+        },
+        {
+          "elementName": "Stok Durumu",
+          "elementType": "cssSelector",
+          "elementValue": "[data-code='inStock']"
+        },
+        {
+          "elementName": "Var Button",
+          "elementType": "cssSelector",
+          "elementValue": "[for='fg_ValuesStatus_inStock_1']"
+        },
+        {
+          "elementName": "Uygula Button",
+          "elementType": "cssSelector",
+          "elementValue": ".js-facetRefinementsApplyBtn"
+        },
+        {
+          "elementName": "Pdp ilk urun",
+          "elementType": "xpath",
+          "elementValue": "//article[1]//a[contains(.,'\u0130ncele')]"
+        },
+        {
+          "elementName": "Urun sepete eklendi text",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='ntf-msg wty-success-msg']"
+        },
+        {
+          "elementName": "Ek Garanti Button",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-warranty > span"
+        },
+
+        {
+          "elementName": "4 yıllık ek garanti pdp",
+          "elementType": "cssSelector",
+          "elementValue": "#wty_popup li:nth-of-type(1) .wty-text"
+        },
+        {
+          "elementName": "2 yıllık ek garanti pdp",
+          "elementType": "cssSelector",
+          "elementValue": "#wty_popup li:nth-of-type(2) .wty-text"
+        },
+        {
+          "elementName": "ek garanti popup kapatma button",
+          "elementType": "cssSelector",
+          "elementValue": "#wty_popup .icon"
+        },
+        {
+          "elementName": "4 yillik ek garanti popup",
+          "elementType": "cssSelector",
+          "elementValue": ".wty-options > div:nth-of-type(1) > .wty-text"
+        },
+        {
+          "elementName": "2 yillik ek garanti popup",
+          "elementType": "cssSelector",
+          "elementValue": ".wty-options > div:nth-of-type(2) > .wty-text"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
         }
       ]
 

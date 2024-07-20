@@ -25,8 +25,12 @@ Feature: Ana sayfa kontrolleri
     And I wait until element to be clickable and click to "Tarif 21" element
     And I scroll until find "Filtrele button" element with action
     And I wait until element to be clickable and click to "Filtrele button" element
-    And I sleep for 10 seconds
-
+    And I sleep for 2 seconds
+    Then I wait "Saglikli Icecekler;Kahvalti;Ogle Yemegi;Saglikli Alistirmaliklar;Aksam Yemegi;Tatli" elements
+    Then I wait "Filtrele 2;Tarif Tipi;Uygula Button" elements
+    And I wait until element to be clickable and click to "Uygula Button" element
+    And I sleep for 7 seconds
+    Then I wait "Tarif sayisi text;Filtrele button" elements
 
 
     Examples:

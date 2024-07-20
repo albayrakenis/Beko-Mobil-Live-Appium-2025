@@ -10,7 +10,7 @@
 
         {
           "elementName": "Tarif sayisi text",
-          "elementType": "cssSelector",
+          "elementType": "xpath",
           "elementValue": "//div[@class='result-qty']"
         },
         {
@@ -124,48 +124,48 @@
           "elementValue": ".recipe-list > div:nth-of-type(21) .bnr-title"
         },
         {
-          "elementName": "",
+          "elementName": "Saglikli Icecekler",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[for='fg0_fo0']"
         }
         {
-          "elementName": "",
+          "elementName": "Kahvalti",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[for='fg0_fo1']"
         },
         {
-          "elementName": "",
+          "elementName": "Ogle Yemegi",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[for='fg0_fo2']"
         },
         {
-          "elementName": "",
+          "elementName": "Saglikli Alistirmaliklar",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[for='fg0_fo3']"
         },
         {
-          "elementName": "",
+          "elementName": "Aksam Yemegi",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[for='fg0_fo4']"
         }{
-          "elementName": "",
+          "elementName": "Tatli",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[for='fg0_fo5']"
         },
         {
-          "elementName": "",
+          "elementName": "Filtrele 2",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".js-ml-filter-content .modal-title"
         },
         {
-          "elementName": "",
+          "elementName": "Tarif Tipi",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".acc-item > [type='button']"
         },
         {
-          "elementName": "",
+          "elementName": "Uygula Button",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".btn-outline-primary"
         }
         {
           "elementName": "",

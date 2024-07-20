@@ -124,14 +124,14 @@
           "elementValue": ".bnr-title[aria-level='3']"
         },
         {
-          "elementName": "",
+          "elementName": "Camasir Makinesi Button",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[href='/camasir-makinesi'] > span"
         },
         {
-          "elementName": "",
+          "elementName": "Anasayfa robot supurge",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[aria-label='Robo-X 2.0 RS 8121 ürün detaylarını incele']"
         },
         {
           "elementName": "",

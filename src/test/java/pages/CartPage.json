@@ -18,6 +18,11 @@
           "elementValue": "//button[@id='pay-payment-card-button']"
         },
         {
+          "elementName": "Sepet Title",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='prg-title']"
+        },
+        {
           "elementName": "Kart Numarasi Box",
           "elementType": "cssSelector",
           "elementValue": ".js-card-installment-input"
@@ -126,6 +131,132 @@
           "elementName": "farkli kredi kart",
           "elementType": "cssSelector",
           "elementValue": "[for='pcs_sel_0']"
+        },
+        {
+          "elementName": "Sepeti Bosalt",
+          "elementType": "cssSelector",
+          "elementValue": ".js-remove-cart-entries"
+        },
+        {
+          "elementName": "Sepetinizde Henuz Urun Yok Text",
+          "elementType": "cssSelector",
+          "elementValue": ".cart-plh-top > b"
+        },
+        {
+          "elementName": "Sepete Eklenen Urun Text",
+          "elementType": "cssSelector",
+          "elementValue": ".cart-prd-title"
+        },
+        {
+          "elementName": "arti button",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-plus ']"
+        },
+        {
+          "elementName": "eksi button",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-minus']"
+        },
+        {
+          "elementName": "sepetteki urun sayisi text",
+          "elementType": "xpath",
+          "elementValue": "//input[@class='js-update-qty-box-input ']"
+        },
+        {
+          "elementName": "sepetteki urun sayisi text2",
+          "elementType": "cssSelector",
+          "elementValue": ".js-update-qty-box-input"
+        },
+
+        {
+          "elementName": "sepetteki urun sayisi text3",
+          "elementType": "xpath",
+          "elementValue": "//input[@class='js-update-qty-box-input ']"
+        },
+        {
+          "elementName": "sepet ek garanti button",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-extra-warranty"
+        },
+        {
+          "elementName": "sepet sayfasi 4 yillik ek garanti",
+          "elementType": "cssSelector",
+          "elementValue": ".mnp-menu li:nth-of-type(1) .wty-text"
+        },,
+        {
+          "elementName": "sepet sayfasi 2 yillik ek garanti",
+          "elementType": "cssSelector",
+          "elementValue": ".mnp-menu li:nth-of-type(2) .wty-text"
+        },
+        {
+          "elementName": "4 yillik ek garanti seç button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-code='GRT305']"
+        },
+        {
+          "elementName": "2 yillik ek garanti seç button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-code='GRT303']"
+        },
+        {
+          "elementName": "Sepete eklenmiş 4 yillik ek garanti text",
+          "elementType": "cssSelector",
+          "elementValue": ".cart-row > .cart-row-bottom span"
+        },
+        {
+          "elementName": "Sepete eklenmiş 2 yillik ek garanti text",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='cart-row-option selected']//span[1]"
+        },
+        {
+          "elementName": "4 yillik ek garanti sil button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-entry-product-code='GRT305']"
+        },
+        {
+          "elementName": "2 yillik ek garanti sil button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-entry-product-code='GRT303']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "Ek Garanti Sepet Button",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-extra-warranty"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
         },
         {
           "elementName": "",
