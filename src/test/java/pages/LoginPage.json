@@ -23,6 +23,11 @@
           "elementValue": "//button[@id='g-recaptcha-btn-login']"
         },
         {
+          "elementName": "giris yap favori",
+          "elementType": "cssSelector",
+          "elementValue": "#g-recaptcha-btn-login"
+        },
+        {
           "elementName": "login hata mesaji",
           "elementType": "cssSelector",
           "elementValue": "#login-failed-div > p"

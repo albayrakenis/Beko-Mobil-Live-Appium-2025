@@ -79,19 +79,19 @@
           "elementValue": ".wty-options > div:nth-of-type(2) > .wty-text"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "favorilere ekle button",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='pdp-user-buttons only-d-f']/button[@id='g-recaptcha-btn-favourite']"
         },
         {
-          "elementName": "",
+          "elementName": "Favorilere Eklendi Text",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "//div[@class='pdp-user-buttons only-d-f']//span[1]"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Hesabim button",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='hum']/a[.='Hesab\u0131m']"
         },
         {
           "elementName": "",

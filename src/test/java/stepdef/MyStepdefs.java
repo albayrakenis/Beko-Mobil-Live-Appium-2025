@@ -92,7 +92,7 @@ public class MyStepdefs {
             commonLib.allureReport(StepResultType.PASS, "texts are equal", true);
         }
         else{
-            commonLib.allureReport(StepResultType.PASS, "texts are not equal", true);
+            commonLib.allureReport(StepResultType.FAIL, "texts are not equal", true);
         }
     }
 

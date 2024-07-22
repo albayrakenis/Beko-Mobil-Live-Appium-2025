@@ -65,9 +65,6 @@
           "elementValue": ".btn-new-address"
         },
 
-
-
-
         {
           "elementName": "uyelik bilgileri",
           "elementType": "cssSelector",
@@ -126,6 +123,42 @@
           "elementName": "Adreslerim text",
           "elementType": "cssSelector",
           "elementValue": ".inf-group-title[aria-level='2']"
+        },
+
+        {
+          "elementName": "Favoriye eklenen buzdolabi",
+          "elementType": "cssSelector",
+          "elementValue": ".user-page-holder > .container-max-1200 > div:nth-of-type(1) .fav-name"
+        },
+
+        {
+          "elementName": "Sepeti bosalt button",
+          "elementType": "cssSelector",
+          "elementValue": ".remove-my-all-list"
+        },
+
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
         }
       ]
     }
