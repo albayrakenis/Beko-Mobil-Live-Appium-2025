@@ -126,7 +126,7 @@
         },
 
         {
-          "elementName": "Favoriye eklenen buzdolabi",
+          "elementName": "Favoriye eklenen urun",
           "elementType": "cssSelector",
           "elementValue": ".user-page-holder > .container-max-1200 > div:nth-of-type(1) .fav-name"
         },

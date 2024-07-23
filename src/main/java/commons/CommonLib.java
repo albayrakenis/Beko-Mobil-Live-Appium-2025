@@ -386,6 +386,18 @@ public class CommonLib {
 
     }
 
+    public void ıCreateAMailThatIsStartAndEndWith(String kullaniciAdi, String uzanti) {
+        Random rnd = new Random();
+        boolean flag=false;
+        String tempUsername="";
+        waitElement("Guest email");
+
+        tempUsername = kullaniciAdi+rnd.nextInt(10000)+uzanti;
+        sendKeys("Guest email",tempUsername);
+
+        allureReport(StepResultType.PASS, "'"+kullaniciAdi + "' oluşturuldu", true);
+    }
+
     public void ıChooseCityFromList(String City){
 
 //        Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #cityCode")));

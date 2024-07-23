@@ -31,6 +31,31 @@
           "elementName": "login hata mesaji",
           "elementType": "cssSelector",
           "elementValue": "#login-failed-div > p"
+        },
+        {
+          "elementName": "Uye olmadan devam et button",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn btn-light']"
+        },
+        {
+          "elementName": "Uye olmadan devam et button mail",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn btn-primary btn-guest']"
+        },
+        {
+          "elementName": "Guest email",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='guest_email']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
         }
       ]
 

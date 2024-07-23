@@ -219,9 +219,9 @@
           "elementValue": "[data-entry-product-code='GRT303']"
         },
         {
-          "elementName": "",
+          "elementName": "Teslimat adresi seçiniz",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "#formattedAddressShipping > .drp-content"
         },
         {
           "elementName": "Ek Garanti Sepet Button",
@@ -229,9 +229,9 @@
           "elementValue": ".btn-extra-warranty"
         },
         {
-          "elementName": "",
+          "elementName": "Yeni Adres Ekle Guest",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[aria-label='Yeni Adres Ekle']"
         },
         {
           "elementName": "",
