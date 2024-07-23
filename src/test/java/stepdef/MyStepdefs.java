@@ -215,4 +215,9 @@ public class MyStepdefs {
     public void ıWaitUntilElementToBeClickableAndClickToElementIfElementExist(String element, int timeout) {
         commonLib.ıWaitUntilElementToBeClickableAndClickToElementIfElementExist(element,timeout);
     }
+
+    @And("I create a mail that is start {string} and end with {string}")
+    public void ıCreateAMailThatIsStartAndEndWith(String kullaniciAdi, String uzanti) {
+        commonLib.ıCreateAMailThatIsStartAndEndWith(kullaniciAdi,uzanti);
+    }
 }
