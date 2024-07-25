@@ -234,9 +234,44 @@
           "elementValue": "[aria-label='Yeni Adres Ekle']"
         },
         {
-          "elementName": "",
+          "elementName": "Coklu kredi karti",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "#pay-payment-card-multi > .acc-item > button"
+        },
+        {
+          "elementName": "ckk ilk tutar",
+          "elementType": "cssSelector",
+          "elementValue": "[name='partialAmount']"
+        },
+        {
+          "elementName": "ckk ilk kredi karti",
+          "elementType": "cssSelector",
+          "elementValue": ".js-card-installment-input-partial"
+        },
+        {
+          "elementName": "ckk kart sahibi",
+          "elementType": "cssSelector",
+          "elementValue": "[value][name='cardOwner']"
+        },
+        {
+          "elementName": "ckk kart tarih",
+          "elementType": "cssSelector",
+          "elementValue": "#partialPaymentForm [name='expiry']"
+        },
+        {
+          "elementName": "ckk kart cvv",
+          "elementType": "cssSelector",
+          "elementValue": "#partialPaymentForm [name='cvv']"
+        },
+        {
+          "elementName": "ckk kart onayla",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-mcard-pay"
+        },
+        {
+          "elementName": "birinci kart id check",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='yes']"
         },
         {
           "elementName": "",

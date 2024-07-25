@@ -1,0 +1,87 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Footer",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Urunler footer",
+          "elementType": "cssSelector",
+          "elementValue": "[title='\u00DCr\u00FCnler'] > .title"
+        },
+        {
+          "elementName": "Kurumsal footer",
+          "elementType": "cssSelector",
+          "elementValue": ".ul-clear[title='Kurumsal'] > .title"
+        },
+        {
+          "elementName": "Destek footer",
+          "elementType": "cssSelector",
+          "elementValue": ".ul-clear[title='Destek'] > .title"
+        },
+        {
+          "elementName": "Hizmet footer",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Hizmet'] > .title"
+        },
+        {
+          "elementName": "Cagri merkezi footer",
+          "elementType": "cssSelector",
+          "elementValue": "[target='_blank'][href='tel:08502100888'] > .desc"
+        },
+        {
+          "elementName": "Teknik destek footer",
+          "elementType": "cssSelector",
+          "elementValue": ".customer-support li > .desc"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}
