@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Servis",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Beraber cozelim text",
+          "elementType": "xpath",
+          "elementValue": "//span[@class='hide-on-mobile ']/div[@class='landingPageTextTitle_Beko']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+{
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

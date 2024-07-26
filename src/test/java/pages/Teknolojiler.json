@@ -1,0 +1,107 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Teknolojiler",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Tüm teknolojiler",
+          "elementType": "cssSelector",
+          "elementValue": ".js-categories-sorting-not"
+        },
+        {
+          "elementName": "Akilli Telefon Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Akıllı Telefon Teknolojileri']"
+        },
+        {
+          "elementName": "Giyilebilir Teknolojiler",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Giyilebilir Teknoloji']"
+        },
+        {
+          "elementName": "Goruntu Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Görüntü Teknolojileri']"
+        },
+        {
+          "elementName": "Kisisel Bakim Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Kişisel Bakım Teknolojileri']"
+        },
+        {
+          "elementName": "Mutfak Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Mutfak Teknolojileri']"
+        },
+        {
+          "elementName": "Sogutma Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Soğutma Teknolojileri']"
+        },
+        {
+          "elementName": "Süpürge Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Süpürge Teknolojileri']"
+        },
+        {
+          "elementName": "Yikama Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Yıkama Teknolojileri']"
+        },
+        {
+          "elementName": "Odeme Sistemleri Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Ödeme Sistemleri Teknolojileri']"
+        },
+        {
+          "elementName": "Utu Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='Ütü Teknolojileri']"
+        },
+        {
+          "elementName": "Iklimlendirme Teknolojileri",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-label='İklimlendirme Teknolojileri']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

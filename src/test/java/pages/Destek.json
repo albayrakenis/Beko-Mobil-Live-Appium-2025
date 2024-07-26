@@ -1,0 +1,108 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Destek",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+
+        {
+          "elementName": "Beyaz esya",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/beyaz-esya'] > span"
+        },
+        {
+          "elementName": "Ankastre",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/ankastre'] > span"
+        },
+        {
+          "elementName": "Tv ve Unitesi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/tv-ve-tv-unitesi'] > span"
+        },
+        {
+          "elementName": "Elektronik",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/elektronik'] > span"
+        },
+        {
+          "elementName": "Isıtma Sogutma",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/isitma-sogutma'] > span"
+        },
+        {
+          "elementName": "Kucuk ev aletleri",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/kucuk-ev-aletleri'] > span"
+        }
+{
+          "elementName": "Online Alisveris",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/destek/online-alisveris'] > span"
+        },
+        {
+          "elementName": "Destek text",
+          "elementType": "xpath",
+          "elementValue": "//h1[@class='title']"
+        },
+        {
+          "elementName": "Destek box",
+          "elementType": "xpath",
+          "elementValue": "//input[@class='support_search']"
+        },
+        {
+          "elementName": "Destek kaydi ac",
+          "elementType": "xpath",
+          "elementValue": "//input[@class='support_search']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+{
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

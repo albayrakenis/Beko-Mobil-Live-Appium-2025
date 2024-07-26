@@ -1,0 +1,63 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Magazalar",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+       
+        {
+          "elementName": "Magazalar text",
+          "elementType": "xpath",
+          "elementValue": "//h1[@class='title']"
+        },
+        {
+          "elementName": "Bana en yakın magaza text",
+          "elementType": "xpath",
+          "elementValue": "//div[.='Bana En Yakın Mağaza']"
+        },
+        {
+          "elementName": "Teknik destek ve servis randevusu text",
+          "elementType": "cssSelector",
+          "elementValue": ".find-service > div:nth-of-type(2) > .t"
+        },
+        {
+          "elementName": "il",
+          "elementType": "cssSelector",
+          "elementValue": "[for='cityCode']"
+        },
+        {
+          "elementName": "ilce",
+          "elementType": "cssSelector",
+          "elementValue": "[for='townCode']"
+        },
+        {
+          "elementName": "mahalle",
+          "elementType": "cssSelector",
+          "elementValue": "[for='neighborhood']"
+        },
+        {
+          "elementName": "Magaza ara button",
+          "elementType": "xpath",
+          "elementValue": "//a[contains(.,'Mağaza Ara')]"
+        },
+        {
+          "elementName": "Tum adresler",
+          "elementType": "xpath",
+          "elementValue": "//a[@href='#nav-str1']"
+        },
+        {
+          "elementName": "Tum liste",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='srv-list']"
+        }
+
+
+
+      ]
+    }
+  ]
+}

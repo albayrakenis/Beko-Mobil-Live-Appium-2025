@@ -11,44 +11,44 @@
         {
           "elementName": "Bilgisayar",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/bilgisayar'] > span"
+          "elementValue": "[href='bilgisayar'] > span"
         },
         {
           "elementName": "Cep Telefonu",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/cep-telefonu'] > span"
+          "elementValue": "[href='cep-telefonu'] > span"
         },{
           "elementName": "Cep Telefonu Aksesuarlari",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/cep-telefonu-aksesuarlari'] > span"
+          "elementValue": "[href='cep-telefonu-aksesuarlari'] > span"
         },
         {
           "elementName": "Giyilebilir Teknoloji",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/giyilebilir-teknoloji'] > span"
+          "elementValue": "[href='giyilebilir-teknoloji'] > span"
         },
         {
           "elementName": "Hobi Oyunlari",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/hobi-oyun'] > span"
+          "elementValue": "[href='hobi-oyun'] > span"
         },
         {
           "elementName": "Ses ve Goruntu Sistemleri",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/ses-goruntu-sistemleri'] > span"
+          "elementValue": "[href='ses-goruntu-sistemleri'] > span"
         },{
           "elementName": "Spor ve Outdoor",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/spor-ve-outdoor'] > span"
+          "elementValue": "[href='spor-ve-outdoor'] > span"
         },
         {
           "elementName": "Telefon",
           "elementType": "cssSelector",
-          "elementValue": "[href='/telefon'] > span"
+          "elementValue": "[href='telefon'] > span"
         },{
           "elementName": "Odeme Sistemleri",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/odeme-sistemleri'] > span"
+          "elementValue": "[href='odeme-sistemleri'] > span"
         },
         {
           "elementName": "Elekronik Text",

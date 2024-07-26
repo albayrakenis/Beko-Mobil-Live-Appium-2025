@@ -13,23 +13,23 @@
           "elementValue": "//*[@id=\"signInModalLabel\" and text()=\"Sign up\"]"
         },
         {
-          "elementName": "signup modal username label",
+          "elementName": "",
           "elementType": "xpath",
           "elementValue": "//*[@id=\"signInModal\"]//label[text()=\"Username:\" and @for=\"sign-username\"]"
         },
         {
-          "elementName": "signup modal password label",
+          "elementName": "",
           "elementType": "xpath",
           "elementValue": "//*[@id=\"signInModal\"]//label[text()=\"Password:\" and @for=\"sign-password\"]"
         },
 
         {
-          "elementName": "signup modal close button",
+          "elementName": "",
           "elementType": "xpath",
           "elementValue": "//*[@id=\"signInModal\"]//button[@class=\"btn btn-secondary\" and text()=\"Close\"]"
         },
         {
-          "elementName": "signup modal signup button",
+          "elementName": "",
           "elementType": "xpath",
           "elementValue": "//*[@id=\"signInModal\"]//button[@class=\"btn btn-primary\" and text()=\"Sign up\"]"
         }
