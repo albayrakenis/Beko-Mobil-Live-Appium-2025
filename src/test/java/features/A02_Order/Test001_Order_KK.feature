@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kkOrder @order
+  @user2 @smoke @kkOrder @order @kredikarti
   Scenario Outline: Test01- Kredi Karti ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
@@ -13,7 +13,7 @@ Feature: Satin Alma Islemleri
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 7 seconds
+    Then I sleep for 10 seconds
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element

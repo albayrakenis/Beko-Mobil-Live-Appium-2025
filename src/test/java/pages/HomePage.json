@@ -134,6 +134,146 @@
           "elementValue": "[aria-label='Robo-X 2.0 RS 8121 ürün detaylarını incele']"
         },
         {
+          "elementName": "Banner next button",
+          "elementType": "cssSelector",
+          "elementValue": "#main-slider > .swiper-button-next"
+        },
+        {
+          "elementName": "Banner preview button",
+          "elementType": "cssSelector",
+          "elementValue": ".swiper-button-prev[tabindex='0']"
+        },
+        {
+          "elementName": "En Cok Satanlar",
+          "elementType": "cssSelector",
+          "elementValue": ".container-fluid div:nth-of-type(7) > .section-title"
+        },
+        {
+          "elementName": "populer urun 1",
+          "elementType": "xpath",
+          "elementValue": "(//div[@class='prd-detail']//a[@title='\u0130ncele'])[1]"
+        },
+        {
+          "elementName": "populer urun 2",
+          "elementType": "xpath",
+          "elementValue": "(//div[@class='prd-detail']//a[@title='\u0130ncele'])[2]"
+        },
+        {
+          "elementName": "populer urun 3",
+          "elementType": "xpath",
+          "elementValue": "(//div[@class='prd-detail']//a[@title='\u0130ncele'])[3]"
+        },
+        {
+          "elementName": "Beyaz esya slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='beyaz-esya'] > span"
+        },
+        {
+          "elementName": "Elektronik slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='elektronik'] > span"
+        },
+        {
+          "elementName": "Cep Telefonu slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='cep-telefonu'] > span"
+        },
+        {
+          "elementName": "Bilgisayar slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='bilgisayar'] > span"
+        },
+        {
+          "elementName": "Isıtma sogutma slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='isitma-sogutma'] > span"
+        },
+        {
+          "elementName": "Kucuk ev aletleri slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='kucuk-ev-aletleri'] > span"
+        },
+        {
+          "elementName": "Ankastre slider",
+          "elementType": "cssSelector",
+          "elementValue": "[href='ankastre'] > span"
+        },
+        {
+          "elementName": "Beraber secelim button",
+          "elementType": "cssSelector",
+          "elementValue": "[aria-level='1']"
+        },
+        {
+          "elementName": "Teknolojiler",
+          "elementType": "cssSelector",
+          "elementValue": "#nav-left-menu [href='/teknolojiler']"
+        },
+        {
+          "elementName": "Kampanyalar",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Kampanyalar']"
+        },
+        {
+          "elementName": "Kampanyalar text",
+          "elementType": "xpath",
+          "elementValue": "//h1[.='Kampanyalar']"
+        },
+        {
+          "elementName": "Size ozel text",
+          "elementType": "cssSelector",
+          "elementValue": ".nav-link"
+        },
+        {
+          "elementName": "Hediye Ceki",
+          "elementType": "cssSelector",
+          "elementValue": "#nav-left-menu [href='/online-hediye-ceki']"
+        },
+        {
+          "elementName": "Magazalar",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Mağazalar']"
+        },
+        {
+          "elementName": "Destek",
+          "elementType": "cssSelector",
+          "elementValue": "a:nth-of-type(2)"
+        },
+        {
+          "elementName": "Servis randevusu",
+          "elementType": "cssSelector",
+          "elementValue": "a:nth-of-type(3)"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
           "elementName": "",
           "elementType": "cssSelector",
           "elementValue": ""

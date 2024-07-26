@@ -5,7 +5,6 @@ Feature: Ana sayfa kontrolleri
 
     When I see "HomePage" page
     Then I go to url:"<url>"
-    And I sleep for 7 seconds
     And I scroll until find "Tum tarifler button" element with action
     And I sleep for 2 seconds
     Then I wait "Tum tarifler button;Tarifler text;Devamini gor text;anasayfa ornek tarif" elements
