@@ -10,14 +10,14 @@
 
 
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Online hediye ceki text",
+          "elementType": "xpath",
+          "elementValue": "//h1[contains(.,'Online Hediye Çeki')]"
         },
         {
-          "elementName": "",
+          "elementName": "Hediye ceki kendin belirle",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".prd-name > .t"
         },
         {
           "elementName": "",

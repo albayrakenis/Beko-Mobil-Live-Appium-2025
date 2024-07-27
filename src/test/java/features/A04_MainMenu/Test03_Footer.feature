@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @footer
+  @smoke @footer @main
   Scenario Outline: Test03- Footer
     When I see "HomePage" page
     Then I go to url:"<url>"

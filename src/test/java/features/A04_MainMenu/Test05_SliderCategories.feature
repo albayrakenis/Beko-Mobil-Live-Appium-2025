@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @slider
+  @smoke @slider @main
   Scenario Outline: Test05- Slider Kategoriler
     When I see "HomePage" page
     Then I go to url:"<url>"

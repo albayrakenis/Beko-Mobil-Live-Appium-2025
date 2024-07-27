@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @banner
+  @smoke @banner @main
   Scenario Outline: Test01- Headerda olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
     Then I go to url:"<url>"
