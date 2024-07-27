@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @destek
+  @smoke @destek @main
   Scenario Outline: Test08- Hediye Ceki
     When I see "HomePage" page
     Then I go to url:"<url>"

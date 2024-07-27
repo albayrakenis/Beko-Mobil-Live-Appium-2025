@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @servis
+  @smoke @servis @main
   Scenario Outline: Test11- Servis randevusu
     When I see "HomePage" page
     Then I go to url:"<url>"
