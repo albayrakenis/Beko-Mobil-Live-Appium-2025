@@ -1,11 +1,13 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kkOrder @order @kredikarti
+
+  
+  @user2 @smoke @kkOrder @order @kredikarti2
   Scenario Outline: Test01- Kredi Karti ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
-    Then I sleep for 3 seconds
+    Then I sleep for 22 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -13,7 +15,7 @@ Feature: Satin Alma Islemleri
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 10 seconds
+    Then I sleep for 15 seconds
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
