@@ -19,4 +19,5 @@ Feature: Ana sayfa kontrolleri
     Examples:
       | url                                        |
       | https://akamai-s1-astra-stage.beko.com.tr/ |
+#      | https://grundigtr-astra.c1m0wu3z2z-arcelikas1-s1-public.model-t.cc.commerce.ondemand.com/ |
 
