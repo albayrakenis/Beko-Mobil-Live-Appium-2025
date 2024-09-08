@@ -1,6 +1,6 @@
 Feature: Kullanici islemleri
 
-  @user @smoke
+  @user @smoke @yanlisSifre
   Scenario Outline:Test03- Yanlis Kullanici Adi ile Giriş Denemesi
     When I see "HomePage" page
     Then I go to url:"https://akamai-s1-astra-stage.beko.com.tr/"
@@ -20,3 +20,5 @@ Feature: Kullanici islemleri
     Examples:
       | usernameWrong        | password  |
       | bekos1test@gmail.com | Albayra41 |
+
+
