@@ -30,10 +30,9 @@ Feature: Satin Alma Islemleri
     When I see "CartPage" page
     And I scroll until find "Sepeti Bosalt" element with action
     Then I wait until element to be clickable and click to "Sepeti Bosalt" element
-
-
-
     Then I check "Sepetinizde Henuz Urun Yok Text" element text is equal "Sepetinizde henüz ürün yok."
+
+    And I wait until element to be clickable and click to "Sepete Git Button" element
 
 
 

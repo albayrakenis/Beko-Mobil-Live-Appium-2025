@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 
 @CucumberOptions(
-        tags = "@Static",
+        tags = "@yanlisSifre",
         plugin = {"pretty",
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json",
@@ -29,7 +29,7 @@ public class TestRunner extends BaseTest {
         testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return testNGCucumberRunner.provideScenarios();
     }
