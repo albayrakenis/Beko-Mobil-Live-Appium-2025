@@ -136,7 +136,7 @@
         {
           "elementName": "Anasayfa robot supurge",
           "elementType": "cssSelector",
-          "elementValue": "[aria-label='Robo-X 2.0 RS 8121 ürün detaylarını incele']"
+          "elementValue": "[aria-label='Robo-X 2.0 RS 8121 \u00FCr\u00FCn detaylar\u0131n\u0131 incele']"
         },
         {
           "elementName": "Banner next button",

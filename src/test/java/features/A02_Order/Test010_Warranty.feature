@@ -18,7 +18,7 @@ Feature: Satin Alma Islemleri
     When I see "PDP" page
     And I wait "Ek Garanti Button" element
     Then I wait until element to be clickable and click to "Ek Garanti Button" element
-    And I wait "2 yıllık ek garanti pdp;4 yıllık ek garanti pdp;ek garanti popup kapatma button" elements
+    And I wait "2 yillik ek garanti pdp;4 yillik ek garanti pdp;ek garanti popup kapatma button" elements
     Then I wait until element to be clickable and click to "ek garanti popup kapatma button" element
     Then I wait until element to be clickable and click to "Sepete At Button" element
     And I wait "4 yillik ek garanti popup;2 yillik ek garanti popup;Urun sepete eklendi text" elements
