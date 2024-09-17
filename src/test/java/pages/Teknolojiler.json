@@ -44,7 +44,7 @@
           "elementValue": "//a[@data-category='sogutmaTeknolojileri']"
         },
         {
-          "elementName": "Süpürge Teknolojileri",
+          "elementName": "Supurge Teknolojileri",
           "elementType": "xpath",
           "elementValue": "//a[@data-category='supurgeTeknolojileri']"
         },

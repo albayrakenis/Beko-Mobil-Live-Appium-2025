@@ -12,9 +12,8 @@ Feature: Ana menü kontrolleri
     When I see "Teknolojiler" page
     Then I sleep for 5 seconds
     And I wait "Tum teknolojiler;Akilli Telefon Teknolojileri;Giyilebilir Teknolojiler;Goruntu Teknolojileri" elements
-    And I wait "Kisisel Bakim Teknolojileri;Mutfak Teknolojileri;Sogutma Teknolojileri;Süpürge Teknolojileri" elements
+    And I wait "Kisisel Bakim Teknolojileri;Mutfak Teknolojileri;Sogutma Teknolojileri;Supurge Teknolojileri" elements
     And I wait "Yikama Teknolojileri;Odeme Sistemleri Teknolojileri" elements
-
     And I sleep for 2 seconds
 
 
