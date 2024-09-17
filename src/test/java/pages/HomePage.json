@@ -124,6 +124,11 @@
           "elementValue": ".bnr-title[aria-level='3']"
         },
         {
+          "elementName": "Buzdolabi Button",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Buzdolabı']"
+        },
+        {
           "elementName": "Camasir Makinesi Button",
           "elementType": "cssSelector",
           "elementValue": "[href='/camasir-makinesi'] > span"
@@ -186,7 +191,7 @@
         {
           "elementName": "Isıtma sogutma slider",
           "elementType": "cssSelector",
-          "elementValue": "[href='isitma-sogutma'] > span"
+          "elementValue": "[href='isitma-sogutma']"
         },
         {
           "elementName": "Kucuk ev aletleri slider",

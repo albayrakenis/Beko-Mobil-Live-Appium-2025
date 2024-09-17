@@ -32,7 +32,7 @@
         {
           "elementName": "Isıtma Sogutma",
           "elementType": "cssSelector",
-          "elementValue": "[href='/destek/isitma-sogutma'] > span"
+          "elementValue": "[href='/destek/isitma-sogutma']"
         },
         {
           "elementName": "Kucuk ev aletleri",

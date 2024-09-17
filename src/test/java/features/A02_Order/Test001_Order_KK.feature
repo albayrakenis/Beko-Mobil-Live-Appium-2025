@@ -35,6 +35,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 7 seconds
     And I accept on bilgilendirme and satis sozlesmesi
     And I scroll until find "Kredi/Banka Kartı" element with action
+    Then I sleep for 1 seconds
     Then I wait until element to be clickable and click to "Kredi/Banka Kartı" element
     Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
@@ -44,13 +45,9 @@ Feature: Satin Alma Islemleri
     Then I send key to "Kart Tarihi Box" element text:"1230"
     Then I send key to "CVV Box" element text:"000"
     When I see "CartPage" page
-
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
-
     Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
-
-
 
 
     Examples:

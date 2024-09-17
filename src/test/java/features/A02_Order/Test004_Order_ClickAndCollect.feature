@@ -49,6 +49,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 5 seconds
     And I accept on bilgilendirme and satis sozlesmesi
     When I see "CartPage" page
+    Then I sleep for 3 seconds
     And I scroll until find "Kredi/Banka Kartı" element with action
     Then I wait until element to be clickable and click to "Kredi/Banka Kartı" element
     And I scroll until find "Farkli kredi karti ile ode" element with action

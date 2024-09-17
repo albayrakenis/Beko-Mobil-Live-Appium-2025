@@ -11,8 +11,10 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "urunler button" element
     Then I sleep for 2 seconds
     When I see "HomePage" page
-    And I wait until element to be clickable and click to "Camasir Makinesi Button" element
+    And I wait until element to be clickable and click to "Buzdolabi Button" element
     When I see "PDP" page
+    Then I sleep for 5 seconds
+    And I scroll until find "Filtrele Button" element with action
     And I wait until element to be clickable and click to "Filtrele Button" element
     And I wait until element to be clickable and click to "Stok Durumu" element
     And I wait until element to be clickable and click to "Var Button" element
@@ -25,16 +27,18 @@ Feature: Satin Alma Islemleri
     When I see "CartPage" page
     And I wait "Sepet Title" element
     And I wait "sepetteki urun sayisi text" element
-    And I check "sepetteki urun sayisi text" element text is equal "1"
     And I wait "arti button" element
     And I wait until element to be clickable and click to "arti button" element
     And I wait "Sepete Eklenen Urun Text" element
     And I wait "Sepeti Bosalt" element
     Then I sleep for 4 seconds
     And I wait "sepetteki urun sayisi text2" element
-    And I check "sepetteki urun sayisi text2" element text is equal "2"
     Then I sleep for 3 seconds
-
+    And I wait until element to be clickable and click to "arti button" element
+    And I wait "sepetteki urun sayisi text3" element
+    And I wait "Sepete Eklenen Urun Text" element
+    And I wait "Sepeti Bosalt" element
+    Then I sleep for 4 seconds
 
 
 

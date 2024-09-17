@@ -10,8 +10,8 @@
 
         {
           "elementName": "Tüm teknolojiler",
-          "elementType": "cssSelector",
-          "elementValue": ".js-categories-sorting-not"
+          "elementType": "xpath",
+          "elementValue": "//a[contains(.,'Tüm Teknolojiler')]"
         },
         {
           "elementName": "Akilli Telefon Teknolojileri",

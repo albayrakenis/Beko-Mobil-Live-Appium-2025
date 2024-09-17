@@ -5,7 +5,7 @@ Feature: Ana menü kontrolleri
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
-    Then I sleep for 3 seconds
+    Then I sleep for 5 seconds
     When I see "HomePage" page
     And I wait "Magazalar" element
     And I wait until element to be clickable and click to "Magazalar" element

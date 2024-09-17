@@ -6,7 +6,7 @@ Feature: Satin Alma Islemleri
     Then I go to url:"<url>"
     And I sleep for 5 seconds
     Then I wait "uyelik button" element
-    Then I sleep for 3 seconds
+    Then I sleep for 8 seconds
     When I see "HomePage" page
     And I scroll until find "Anasayfa robot supurge" element with action
     And I wait until element to be clickable and click to "Anasayfa robot supurge" element

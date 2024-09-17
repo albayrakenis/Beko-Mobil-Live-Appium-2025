@@ -160,18 +160,18 @@
         {
           "elementName": "sepetteki urun sayisi text",
           "elementType": "xpath",
-          "elementValue": "//input[@class='js-update-qty-box-input ']"
+          "elementValue": "//input[@value='1']"
         },
         {
           "elementName": "sepetteki urun sayisi text2",
-          "elementType": "cssSelector",
-          "elementValue": ".js-update-qty-box-input"
+          "elementType": "xpath",
+          "elementValue": "//input[@value='2']"
         },
 
         {
           "elementName": "sepetteki urun sayisi text3",
           "elementType": "xpath",
-          "elementValue": "//input[@class='js-update-qty-box-input ']"
+          "elementValue": "//input[@value='3']"
         },
         {
           "elementName": "sepet ek garanti button",

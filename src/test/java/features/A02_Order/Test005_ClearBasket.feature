@@ -32,7 +32,6 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Sepeti Bosalt" element
     Then I check "Sepetinizde Henuz Urun Yok Text" element text is equal "Sepetinizde henüz ürün yok."
 
-    And I wait until element to be clickable and click to "Sepete Git Button" element
 
 
 

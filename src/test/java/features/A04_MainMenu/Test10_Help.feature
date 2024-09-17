@@ -1,7 +1,7 @@
 Feature: Ana menü kontrolleri
 
   @smoke @destek @main
-  Scenario Outline: Test08- Hediye Ceki
+  Scenario Outline: Test10- Destek
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
