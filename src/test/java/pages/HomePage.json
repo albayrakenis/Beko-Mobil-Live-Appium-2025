@@ -189,9 +189,9 @@
           "elementValue": "[href='bilgisayar'] > span"
         },
         {
-          "elementName": "Isıtma sogutma slider",
+          "elementName": "Isitma sogutma slider",
           "elementType": "cssSelector",
-          "elementValue": "[href='isitma-sogutma']"
+          "elementValue": "[href='isitma-sogutma'] > span"
         },
         {
           "elementName": "Kucuk ev aletleri slider",

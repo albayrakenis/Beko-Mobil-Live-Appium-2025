@@ -8,7 +8,8 @@ Feature: Ana menü kontrolleri
     Then I sleep for 3 seconds
     When I see "HomePage" page
     And I scroll until find "Beraber secelim button" element with action
-    And I wait "Beyaz esya slider;Elektronik slider;Ankastre slider;Kucuk ev aletleri slider;Isıtma sogutma slider;Cep Telefonu slider;Bilgisayar slider" elements
+    Then I sleep for 3 seconds
+    And I wait "Beyaz esya slider;Elektronik slider;Ankastre slider;Kucuk ev aletleri slider;Isitma sogutma slider;Cep Telefonu slider;Bilgisayar slider" elements
 
     And I sleep for 5 seconds
 
