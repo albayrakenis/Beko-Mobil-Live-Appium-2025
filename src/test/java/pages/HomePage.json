@@ -125,8 +125,8 @@
         },
         {
           "elementName": "Buzdolabi Button",
-          "elementType": "cssSelector",
-          "elementValue": "[title='Buzdolabı']"
+          "elementType": "xpath",
+          "elementValue": "//a[@href='/buzdolabi']"
         },
         {
           "elementName": "Camasir Makinesi Button",
@@ -241,7 +241,7 @@
         {
           "elementName": "Magazalar",
           "elementType": "cssSelector",
-          "elementValue": "[title='Mağazalar']"
+          "elementValue": "[title='Ma\u011Fazalar']"
         },
         {
           "elementName": "Destek",

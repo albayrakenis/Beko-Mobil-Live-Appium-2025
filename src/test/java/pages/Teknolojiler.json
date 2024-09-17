@@ -9,7 +9,7 @@
       "elements": [
 
         {
-          "elementName": "Tüm teknolojiler",
+          "elementName": "Tum teknolojiler",
           "elementType": "xpath",
           "elementValue": "//a[@data-filter='all']"
         },

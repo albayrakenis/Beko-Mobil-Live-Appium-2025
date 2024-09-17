@@ -28,7 +28,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Uye olmadan devam et button mail" element
     When I see "CartPage" page
     And I sleep for 6 seconds
-    Then I wait until element to be clickable and click to "Teslimat adresi seçiniz" element
+    Then I wait until element to be clickable and click to "Teslimat adresi seciniz" element
     And I scroll until find "Yeni Adres Ekle Guest" element with action
     Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "Yeni Adres Ekle Guest" element
@@ -46,8 +46,8 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Adres Kaydet" element
     And I sleep for 5 seconds
     And I accept on bilgilendirme and satis sozlesmesi
-    And I scroll until find "Kredi/Banka Kartı" element with action
-    Then I wait until element to be clickable and click to "Kredi/Banka Kartı" element
+    And I scroll until find "Kredi/Banka Karti" element with action
+    Then I wait until element to be clickable and click to "Kredi/Banka Karti" element
     Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
     Then I send key to "Kart Numarasi Box" element text:"4446763125813623"

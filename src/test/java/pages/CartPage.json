@@ -13,7 +13,7 @@
           "elementValue": "//a[contains(.,'Sepeti Onayla')]"
         },
         {
-          "elementName": "Kredi/Banka Kartı",
+          "elementName": "Kredi/Banka Karti",
           "elementType": "xpath",
           "elementValue": "//button[@id='pay-payment-card-button']"
         },
@@ -219,7 +219,7 @@
           "elementValue": "[data-entry-product-code='GRT303']"
         },
         {
-          "elementName": "Teslimat adresi seçiniz",
+          "elementName": "Teslimat adresi seciniz",
           "elementType": "cssSelector",
           "elementValue": "#formattedAddressShipping > .drp-content"
         },

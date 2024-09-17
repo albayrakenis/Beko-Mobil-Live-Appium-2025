@@ -34,9 +34,9 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
     Then I sleep for 7 seconds
     And I accept on bilgilendirme and satis sozlesmesi
-    And I scroll until find "Kredi/Banka Kartı" element with action
+    And I scroll until find "Kredi/Banka Karti" element with action
     Then I sleep for 1 seconds
-    Then I wait until element to be clickable and click to "Kredi/Banka Kartı" element
+    Then I wait until element to be clickable and click to "Kredi/Banka Karti" element
     Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
     Then I send key to "Kart Numarasi Box" element text:"5406675406675403"

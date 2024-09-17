@@ -43,7 +43,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Giris Yap" element
     Then I send key to "Akilli sms" element text:"34020"
     Then I wait until element to be clickable and click to "Giris Yap" element
-    And I sleep for 8 seconds
+    And I sleep for 15 seconds
     And I scroll until find "Krediye Basvur" element with action
     Then I wait until element to be clickable and click to "Krediye Basvur" element
     And I sleep for 8 seconds
