@@ -15,7 +15,7 @@
         },
         {
           "elementName": "Akilli Telefon Teknolojileri",
-          "elementType": "cssSelector",
+          "elementType": "xpath",
           "elementValue": "//a[@data-category='akilliTelefonTeknolojileri']"
         },
         {

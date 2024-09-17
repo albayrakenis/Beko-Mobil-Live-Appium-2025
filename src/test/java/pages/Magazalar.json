@@ -15,7 +15,7 @@
           "elementValue": "//h1[@class='title']"
         },
         {
-          "elementName": "Bana en yakın magaza text",
+          "elementName": "Bana en yakin magaza text",
           "elementType": "xpath",
           "elementValue": "//div[.='Bana En Yak\u0131n Ma\u011Faza']"
         },

@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @magazalar @main
+  @smoke @magazalar @main @son
   Scenario Outline: Test09- Magazalar
     When I see "HomePage" page
     Then I go to url:"<url>"
@@ -12,7 +12,7 @@ Feature: Ana menü kontrolleri
     And I sleep for 2 seconds
     When I see "Magazalar" page
     And I wait "Magazalar text" element
-    And I wait "Bana en yakın magaza text" element
+    And I wait "Bana en yakin magaza text" element
     And I wait "Teknik destek ve servis randevusu text" element
     And I check "Bana en yakın magaza text" element text is equal "Bana En Yakın Mağaza"
     And I check "Teknik destek ve servis randevusu text" element text is equal "Teknik Destek ve Servis Randevusu"

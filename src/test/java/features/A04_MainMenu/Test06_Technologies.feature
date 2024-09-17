@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @teknolojiler @main
+  @smoke @teknolojiler @main @son
   Scenario Outline: Test06- Teknolojiler
     When I see "HomePage" page
     Then I go to url:"<url>"
