@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
   @user2 @smoke @kkOrder @Favorites
-  Scenario Outline: Test012- Login favori ekleme
+  Scenario Outline: Test12- Login favori ekleme
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element

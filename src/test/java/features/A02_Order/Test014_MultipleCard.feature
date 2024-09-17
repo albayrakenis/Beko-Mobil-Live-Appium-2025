@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
   @smoke  @order @ckk
-  Scenario Outline: Test014- Coklu Kredi Karti ile Satın Alma
+  Scenario Outline: Test14- Coklu Kredi Karti ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element

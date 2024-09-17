@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
   @user2 @smoke @guestOrder @order
-  Scenario Outline: Test013- Guest, Kredi Karti ile Satın Alma
+  Scenario Outline: Test13- Guest, Kredi Karti ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
@@ -27,7 +27,7 @@ Feature: Satin Alma Islemleri
     And I create a mail that is start "kullaniciAdi" and end with "@gmail.com"
     Then I wait until element to be clickable and click to "Uye olmadan devam et button mail" element
     When I see "CartPage" page
-    And I sleep for 6 seconds
+    And I sleep for 15 seconds
     Then I wait until element to be clickable and click to "Teslimat adresi seciniz" element
     And I scroll until find "Yeni Adres Ekle Guest" element with action
     Then I sleep for 2 seconds

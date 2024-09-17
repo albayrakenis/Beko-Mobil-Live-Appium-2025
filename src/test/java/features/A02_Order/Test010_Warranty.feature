@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
   @user2 @smoke @kkOrder @warranty
-  Scenario Outline: Test010- Ek Garanti
+  Scenario Outline: Test10- Ek Garanti
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element

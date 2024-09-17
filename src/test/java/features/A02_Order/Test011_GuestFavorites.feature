@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
   @user2 @smoke @kkOrder @guestFavorites @Favorites
-  Scenario Outline: Test011- Guest favori ekleme
+  Scenario Outline: Test11- Guest favori ekleme
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element
