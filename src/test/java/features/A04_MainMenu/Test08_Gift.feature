@@ -9,7 +9,7 @@ Feature: Ana menü kontrolleri
     When I see "HomePage" page
     And I wait "Hediye Ceki" element
     And I wait until element to be clickable and click to "Hediye Ceki" element
-    And I sleep for 2 seconds
+    And I sleep for 3 seconds
     When I see "HediyeCeki" page
     And I wait "Online hediye ceki text" element
     And I check "Online hediye ceki text" element text is equal "Online Hediye Çeki"

@@ -9,9 +9,9 @@ Feature: Ana menü kontrolleri
     When I see "HomePage" page
     And I wait "Destek" element
     And I wait until element to be clickable and click to "Destek" element
-    And I sleep for 2 seconds
+    And I sleep for 3 seconds
     When I see "Destek" page
-    And I wait "Beyaz esya;Ankastre;Tv ve Unitesi;Elektronik;Isıtma Sogutma;Kucuk ev aletleri;Online Alisveris" elements
+    And I wait "Beyaz esya;Ankastre;Tv ve Unitesi;Elektronik;Isitma Sogutma;Kucuk ev aletleri;Online Alisveris" elements
     And I wait "Destek text" element
     And I wait "Destek box" element
     And I scroll until find "Destek kaydi ac" element with action

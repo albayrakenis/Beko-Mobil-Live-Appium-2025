@@ -30,9 +30,9 @@
           "elementValue": "[href='/destek/elektronik'] > span"
         },
         {
-          "elementName": "Isıtma Sogutma",
+          "elementName": "Isitma Sogutma",
           "elementType": "cssSelector",
-          "elementValue": "[href='/destek/isitma-sogutma']"
+          "elementValue": "[href='/destek/isitma-sogutma'] > span"
         },
         {
           "elementName": "Kucuk ev aletleri",

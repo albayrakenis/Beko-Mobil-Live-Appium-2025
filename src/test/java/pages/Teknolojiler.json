@@ -11,7 +11,7 @@
         {
           "elementName": "Tüm teknolojiler",
           "elementType": "xpath",
-          "elementValue": "//a[contains(.,'Tüm Teknolojiler')]"
+          "elementValue": "//a[@data-filter='all']"
         },
         {
           "elementName": "Akilli Telefon Teknolojileri",

@@ -11,8 +11,8 @@
 
         {
           "elementName": "Online hediye ceki text",
-          "elementType": "xpath",
-          "elementValue": "//h1[contains(.,'Online Hediye Çeki')]"
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
         },
         {
           "elementName": "Hediye ceki kendin belirle",
