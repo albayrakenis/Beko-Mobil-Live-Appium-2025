@@ -17,7 +17,7 @@
         {
           "elementName": "Bana en yakın magaza text",
           "elementType": "xpath",
-          "elementValue": "//div[.='Bana En Yakın Mağaza']"
+          "elementValue": "//div[.='Bana En Yak\u0131n Ma\u011Faza']"
         },
         {
           "elementName": "Teknik destek ve servis randevusu text",
@@ -42,7 +42,7 @@
         {
           "elementName": "Magaza ara button",
           "elementType": "xpath",
-          "elementValue": "//a[contains(.,'Mağaza Ara')]"
+          "elementValue": "//a[contains(.,'Ma\u011Faza Ara')]"
         },
         {
           "elementName": "Tum adresler",

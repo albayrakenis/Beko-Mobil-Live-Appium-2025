@@ -16,7 +16,7 @@
         {
           "elementName": "Akilli Telefon Teknolojileri",
           "elementType": "cssSelector",
-          "elementValue": "[aria-label='Akıllı Telefon Teknolojileri']"
+          "elementValue": "//a[@data-category='akilliTelefonTeknolojileri']"
         },
         {
           "elementName": "Giyilebilir Teknolojiler",
@@ -25,13 +25,13 @@
         },
         {
           "elementName": "Goruntu Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Görüntü Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='goruntuTeknolojileri']"
         },
         {
           "elementName": "Kisisel Bakim Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Kişisel Bakım Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='kisiselBakimTeknolojileri']"
         },
         {
           "elementName": "Mutfak Teknolojileri",
@@ -40,33 +40,33 @@
         },
         {
           "elementName": "Sogutma Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Soğutma Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='sogutmaTeknolojileri']"
         },
         {
           "elementName": "Süpürge Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Süpürge Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='supurgeTeknolojileri']"
         },
         {
           "elementName": "Yikama Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Yıkama Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='yikamaTeknolojileri']"
         },
         {
           "elementName": "Odeme Sistemleri Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Ödeme Sistemleri Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='odemeSistemleriTeknolojileri']"
         },
         {
           "elementName": "Utu Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='Ütü Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='utuTeknolojileri']"
         },
         {
           "elementName": "Iklimlendirme Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-label='İklimlendirme Teknolojileri']"
+          "elementType": "xpath",
+          "elementValue": "//a[@data-category='iklimlendirmeTeknolojileri']"
         },
         {
           "elementName": "",
