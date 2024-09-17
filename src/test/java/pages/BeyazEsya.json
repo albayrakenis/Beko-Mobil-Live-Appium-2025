@@ -11,37 +11,37 @@
         {
           "elementName": "Bulasik Makinesi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/bulasik-makinesi'] > span"
+          "elementValue": "[href='bulasik-makinesi']"
         },
         {
           "elementName": "Buzdolabi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/buzdolabi'] > span"
+          "elementValue": "[href='buzdolabi']"
         },
         {
           "elementName": "Derin Dondurucu",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/derin-dondurucu'] > span"
+          "elementValue": "[href='derin-dondurucu']"
         },
         {
           "elementName": "Firin",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/firin'] > span"
+          "elementValue": "[href='firin']"
         },
         {
           "elementName": "Kurutma Makinesi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/kurutma-makinesi'] > span"
+          "elementValue": "[href='kurutma-makinesi']"
         },
         {
           "elementName": "Kurutmali Camasir Makinesi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/kurutmali-camasir-makinesi'] > span"
+          "elementValue": "[href='kurutmali-camasir-makinesi']"
         },
         {
           "elementName": "Su Sebili",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/su-sebili'] > span"
+          "elementValue": "[href='su-sebili']"
         },
         {
           "elementName": "Beyaz Esya Text",
@@ -56,7 +56,7 @@
         {
           "elementName": "Camasir Makinesi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/camasir-makinesi'] > span"
+          "elementValue": "[href='camasir-makinesi']"
         },
         {
           "elementName": "",

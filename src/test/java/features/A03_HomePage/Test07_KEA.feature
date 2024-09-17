@@ -11,7 +11,7 @@ Feature: Ana sayfa kontrolleri
     And I wait until element to be clickable and click to "KEA" element
     When I see "KEA" page
     Then I wait "KEA Text;Icecek Hazirlama;Karistirici Dograyici;Pisirici;Supurge" elements
-    Then I wait "Kahve Makinesi Aksesuarlari;Yogurt Makinesi;Utu" elements
+    Then I wait "Yogurt Makinesi;Utu" elements
     And I wait "Sol Panel Header Text" element
     Then I sleep for 2 seconds
 

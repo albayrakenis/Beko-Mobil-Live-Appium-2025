@@ -21,18 +21,18 @@
         {
           "elementName": "Aksesuarlar",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/aksesuarlar'] > span"
+          "elementValue": "[href='aksesuarlar']"
         },
         {
           "elementName": "Aktif Hijyen",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/aktif-hijyen'] > span"
+          "elementValue": "[href='aktif-hijyen']"
         }
 ,
         {
           "elementName": "Temizlik ve Bakim Urunleri",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/temizlik-ve-bakim-urunleri'] > span"
+          "elementValue": "[href='temizlik-ve-bakim-urunleri']"
         },
         {
           "elementName": "",

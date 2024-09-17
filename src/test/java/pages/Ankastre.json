@@ -16,26 +16,26 @@
         {
           "elementName": "Ankastre Bulasik Makineleri",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/ankastre-bulasik-makineleri'] > span"
+          "elementValue": "[href='ankastre-bulasik-makineleri']"
         },
         {
           "elementName": "Ankastre Davlumbaz",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/ankastre-davlumbazlar'] > span"
+          "elementValue": "[href='ankastre-davlumbazlar']"
         },{
           "elementName": "Ankastre Firin",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/ankastre-firin'] > span"
+          "elementValue": "[href='ankastre-firin']"
         },
         {
           "elementName": "Ankastre Kurutmali Camasir Makinesi",
           "elementType": "cssSelector",
-          "elementValue": "[href='/ankastre-kurutmali-camasir-makinesi'] > span"
+          "elementValue": "[href='ankastre-kurutmali-camasir-makinesi']"
         },
         {
           "elementName": "Ankastre Set",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/ankastre-set'] > span"
+          "elementValue": "[href='ankastre-set']"
         },{
           "elementName": "Sol Panel Header Text",
           "elementType": "cssSelector",

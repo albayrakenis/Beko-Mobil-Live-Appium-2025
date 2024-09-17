@@ -16,7 +16,7 @@
         {
           "elementName": "Elektrikli Isitici",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/elektrikli-isitici'] > span"
+          "elementValue": "[href='elektrikli-isitici']"
         },
         {
           "elementName": "Isitma Sogutma Text",
@@ -26,32 +26,32 @@
         {
           "elementName": "Hava Sogutucu",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/hava-sogutucu'] > span"
+          "elementValue": "[href='hava-sogutucu']"
         },
         {
           "elementName": "Ic Hava Kalitesi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/ic-hava-kalitesi'] > span"
+          "elementValue": "[href='ic-hava-kalitesi']"
         },
         {
           "elementName": "Klima",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/klima'] > span"
+          "elementValue": "[href='klima']"
         },
         {
           "elementName": "Kombi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/kombi'] > span"
+          "elementValue": "[href='kombi']"
         },
         {
           "elementName": "Termosifon",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/termosifon'] > span"
+          "elementValue": "[href='termosifon']"
         },
         {
           "elementName": "Vantilator",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/vantilator'] > span"
+          "elementValue": "[href='vantilator']"
         },
         {
           "elementName": "",

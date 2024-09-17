@@ -1,7 +1,7 @@
 Feature: Ana sayfa kontrolleri
 
   @smoke @header @ankastre
-  Scenario Outline: Test03- Beyaz Esya kategorisinde olmasi gereken basliklarin kontrolu
+  Scenario Outline: Test03- Ankastre kategorisinde olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
     Then I go to url:"<url>"
     Then I wait "uyelik button" element

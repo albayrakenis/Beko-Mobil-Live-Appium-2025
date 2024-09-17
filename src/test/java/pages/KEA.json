@@ -16,37 +16,37 @@
         {
           "elementName": "Icecek Hazirlama",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/icecek-hazirlama'] > span"
+          "elementValue": "[href='icecek-hazirlama']"
         },
         {
           "elementName": "Karistirici Dograyici",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/karistirici-dograyici'] > span"
+          "elementValue": "[href='karistirici-dograyici']"
         },
         {
           "elementName": "Pisirici",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/pisirici'] > span"
+          "elementValue": "[href='pisirici']"
         },
         {
           "elementName": "Supurge",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/supurge'] > span"
+          "elementValue": "[href='supurge']"
         }{
           "elementName": "Kahve Makinesi Aksesuarlari",
           "elementType": "cssSelector",
-          "elementValue": "[href='/turk-kahve-makinesi-aksesuarlari-'] > span"
+          "elementValue": "[href='turk-kahve-makinesi-aksesuarlari-']"
         },
 
         {
           "elementName": "Yogurt Makinesi",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/yogurt-makinesi'] > span"
+          "elementValue": "[href='yogurt-kefir-makinesi']"
         },
         {
           "elementName": "Utu",
           "elementType": "cssSelector",
-          "elementValue": ".plp-sub-categories [href='/utu'] > span"
+          "elementValue": "[href='utu']"
         },
         {
           "elementName": "Sol Panel Header Text",
