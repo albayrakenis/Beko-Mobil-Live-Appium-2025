@@ -3,11 +3,16 @@ package commons;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
 import org.json.simple.parser.ParseException;
+import commons.BaseTest;
 import org.openqa.selenium.*;
 import com.github.javafaker.Faker;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -16,11 +21,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
 
-public class CommonLib {
+public class CommonLib extends BaseTest{
 
-//    public CommonLib(){
-//    PageFactory.initElements(Driver);
-//    }
+
     public WebDriver myDriver;
     public WebDriverWait webDriverWait;
     private Parser parser = new Parser();
@@ -28,8 +31,10 @@ public class CommonLib {
     public int defaultTimeout = 20;
 
 
+
     public CommonLib(WebDriver driver) {
         myDriver = driver;
+
         myDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(defaultTimeout));
         myDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(defaultTimeout));
         webDriverWait = new WebDriverWait(myDriver, Duration.ofSeconds(defaultTimeout));
@@ -607,4 +612,11 @@ public class CommonLib {
             System.out.println(">>>>>>>>>>>ERROR:CHECK FUNCTION(allureReport)<<<<<<<<<<");
         }
     }
+
+    public void ıChangeTheFrame() {
+        WebElement element = myDriver.findElement(By.cssSelector("iframe[title='Embed']"));;
+        myDriver.switchTo().frame(element);
+    }
+
+
 }

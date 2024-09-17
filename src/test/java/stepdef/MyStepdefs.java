@@ -9,18 +9,26 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 
-public class MyStepdefs {
+public class MyStepdefs extends BaseTest{
+    private WebDriver myDriver;
     public CommonLib commonLib;
 
 
+    
+
     @Before
     public void setup() {
+
         commonLib = new CommonLib(MyDriver.getMyDriver());
+
     }
+
 
     @When("I see {string} page")
     public void seePage(String page) throws IOException, ParseException {
@@ -29,7 +37,6 @@ public class MyStepdefs {
 
     @When("I go to url:{string}")
     public void navigateURL(String url) {
-      //  Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         commonLib.ıGoToUrl(url);
     }
 
@@ -219,5 +226,10 @@ public class MyStepdefs {
     @And("I create a mail that is start {string} and end with {string}")
     public void ıCreateAMailThatIsStartAndEndWith(String kullaniciAdi, String uzanti) {
         commonLib.ıCreateAMailThatIsStartAndEndWith(kullaniciAdi,uzanti);
+    }
+
+    @And("I change the frame")
+    public void ıChangeTheFrame() {
+    commonLib.ıChangeTheFrame();
     }
 }

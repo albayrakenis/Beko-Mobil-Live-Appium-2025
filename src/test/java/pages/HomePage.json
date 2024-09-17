@@ -199,9 +199,14 @@
           "elementValue": "[href='ankastre'] > span"
         },
         {
-          "elementName": "Beraber secelim button",
+          "elementName": "Beraber Secelim Text",
           "elementType": "cssSelector",
           "elementValue": "[aria-level='1']"
+        },
+        {
+          "elementName": "Beraber Secelim Kucuk Text",
+          "elementType": "cssSelector",
+          "elementValue": "#assistant .bnr-info"
         },
         {
           "elementName": "Teknolojiler",
@@ -244,9 +249,9 @@
           "elementValue": "a:nth-of-type(3)"
         },
         {
-          "elementName": "",
+          "elementName": "Beraber Secelim",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".js-modal-assistant"
         },
         {
           "elementName": "",

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "BeraberSecelim",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+
+        {
+          "elementName": "Secimize yardımcı olalım text",
+          "elementType": "cssSelector",
+          "elementValue": ".modal-title"
+        },
+        {
+          "elementName": "BS beyaz esya",
+          "elementType": "xpath",
+          "elementValue": "//img[@alt='content/gcp/1640865690.2254.jpg']"
+        },
+        {
+          "elementName": "BS buzdolabı",
+          "elementType": "xpath",
+          "elementValue": "//button[.='Buzdolabı']"
+        },
+        {
+          "elementName": "BS benim icin sec",
+          "elementType": "cssSelector",
+          "elementValue": "//button[.='Benim için seç!']"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}

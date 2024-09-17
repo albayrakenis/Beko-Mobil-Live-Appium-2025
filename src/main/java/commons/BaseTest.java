@@ -15,7 +15,7 @@ public class BaseTest {
 
     @BeforeMethod
     @Parameters({"browserName"})
-    public void beforeMethod(String browserName) {
+    public static void beforeMethod(String browserName) {
         System.out.println("Starting the browser session");
         System.out.println("Browser Name:"+browserName);
 
@@ -25,6 +25,17 @@ public class BaseTest {
             chromeOptions.addArguments("start-maximized");
             chromeOptions.addArguments("--remote-allow-origins=*");
             MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
+        }
+        else if(browserName.equalsIgnoreCase("headless")){
+            // headless mode do
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--remote-allow-origins=*");
+            MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
+            MyDriver.getMyDriver().manage().window().maximize();
+
+
         }
         else if(browserName.equalsIgnoreCase("firefox")){
             WebDriverManager.firefoxdriver().setup();
