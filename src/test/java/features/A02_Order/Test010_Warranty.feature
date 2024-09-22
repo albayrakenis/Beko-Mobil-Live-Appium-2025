@@ -28,7 +28,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "sepet ek garanti button" element
     Then I sleep for 3 seconds
     And I wait "sepet sayfasi 4 yillik ek garanti;sepet sayfasi 2 yillik ek garanti" elements
-    Then I wait until element to be clickable and click to "4 yillik ek garanti seç button" element
+    Then I wait until element to be clickable and click to "4 yillik ek garanti ses button" element
     Then I sleep for 3 seconds
     And I wait "Sepete eklenmiş 4 yillik ek garanti text" element
     And I wait "4 yillik ek garanti sil button" element
@@ -36,7 +36,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 3 seconds
     And I wait "Ek Garanti Sepet Button" element
     Then I wait until element to be clickable and click to "Ek Garanti Sepet Button" element
-    Then I wait until element to be clickable and click to "2 yillik ek garanti seç button" element
+    Then I wait until element to be clickable and click to "2 yillik ek garanti ses button" element
     Then I sleep for 3 seconds
     And I wait "Sepete eklenmiş 2 yillik ek garanti text" element
     And I wait "2 yillik ek garanti sil button" element

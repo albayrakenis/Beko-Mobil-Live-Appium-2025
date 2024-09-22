@@ -189,12 +189,12 @@
           "elementValue": ".mnp-menu li:nth-of-type(2) .wty-text"
         },
         {
-          "elementName": "4 yillik ek garanti seç button",
+          "elementName": "4 yillik ek garanti ses button",
           "elementType": "cssSelector",
           "elementValue": "[data-code='GRT305']"
         },
         {
-          "elementName": "2 yillik ek garanti seç button",
+          "elementName": "2 yillik ek garanti ses button",
           "elementType": "cssSelector",
           "elementValue": "[data-code='GRT303']"
         },

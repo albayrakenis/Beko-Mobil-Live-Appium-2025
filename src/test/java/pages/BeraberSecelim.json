@@ -47,7 +47,7 @@
         {
           "elementName": "BS hepa 13",
           "elementType": "xpath",
-          "elementValue": "//button[@data-answer-id='774984']"
+          "elementValue": "(//span[contains(text(), 'Fark etmez')])[3]"
         },
 
         {
