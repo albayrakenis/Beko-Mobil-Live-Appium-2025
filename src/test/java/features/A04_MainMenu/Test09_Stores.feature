@@ -17,9 +17,9 @@ Feature: Ana menü kontrolleri
     And I check "Teknik destek ve servis randevusu text" element text is equal "Teknik Destek ve Servis Randevusu"
     And I wait "il;ilce;mahalle" elements
     When I see "AdresPage" page
-    Then I choose city "KONYA" from list
-    Then I choose town "SELÇUKLU" from list
-    Then I choose neighborhood "KOSOVA" from list
+    Then I choose city "ANKARA" from list
+    Then I choose town "ÇANKAYA" from list
+    Then I choose neighborhood "AKARLAR" from list
     When I see "Magazalar" page
     And I wait until element to be clickable and click to "Magaza ara button" element
     And I scroll until find "Tum liste" element with action

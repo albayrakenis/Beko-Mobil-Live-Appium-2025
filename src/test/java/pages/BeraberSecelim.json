@@ -57,9 +57,15 @@
         },
 
         {
-          "elementName": "buzdolaplarını getir",
+          "elementName": "BS supurgeleri getir",
           "elementType": "xpath",
           "elementValue": "//a[@class='button button--large']"
+        },
+
+        {
+          "elementName": "BS listenen supurge",
+          "elementType": ".pnl-left > h1",
+          "elementValue": "cssSelector"
         }
 
 

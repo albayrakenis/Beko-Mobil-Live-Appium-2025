@@ -20,7 +20,7 @@ Feature: Kullanici islemleri
 
     Examples:
       | username             | passwordWrong | url                                        |
-      | bekos1test@gmail.com | Albayra41     | https://akamai-s1-astra-stage.beko.com.tr/ |
-#      | bekos1test@gmail.com | Albayra41     | https://www.beko.com.tr/                   |
+#      | bekos1test@gmail.com | Albayra41     | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | bekos1test@gmail.com | Albayra41     | https://www.beko.com.tr/                   |
 #      | bekos1test@gmail.com | Albayrak.41   | https://akamai-s1-astra-stage.arcelik.com.tr/                                            |
 #      | bekos1test@gmail.com | Albayrak.41   | https://grundigtr-astra.c1m0wu3z2z-arcelikas1-s1-public.model-t.cc.commerce.ondemand.com/ |
