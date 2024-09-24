@@ -28,10 +28,17 @@
           "elementType": "xpath",
           "elementValue": "//span[contains(.,'Ana Sayfa')]"
         },
+
+        {
+          "elementName": "Hesabim button",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='hum']/a[.='Hesab\u0131m']"
+        },
+
         {
           "elementName": "hesabim button",
-          "elementType": "cssSelector",
-          "elementValue": "[data-selector='user-name']"
+          "elementType": "xpath",
+          "elementValue": "//div[@class='hum']/a[.='Hesab\u0131m']"
         },
         {
           "elementName": "search box",
