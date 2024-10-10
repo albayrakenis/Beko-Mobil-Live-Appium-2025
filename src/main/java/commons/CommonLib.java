@@ -133,6 +133,10 @@ public class CommonLib extends BaseTest{
     public void clickElementWaitUntilClickable(String element)  {
 
 
+        WebElement webElementScroll = myDriver.findElement(getElementLocator(element));
+        Actions actions = new Actions(myDriver);
+        actions.scrollToElement(webElementScroll).perform();
+
         WebElement webElement = null;
         String style = "";
         try {
