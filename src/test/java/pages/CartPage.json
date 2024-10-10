@@ -209,12 +209,12 @@
           "elementValue": "[data-code='GRT303']"
         },
         {
-          "elementName": "Sepete eklenmiş 4 yillik ek garanti text",
+          "elementName": "Sepete eklenmis 4 yillik ek garanti text",
           "elementType": "cssSelector",
           "elementValue": ".cart-row > .cart-row-bottom span"
         },
         {
-          "elementName": "Sepete eklenmiş 2 yillik ek garanti text",
+          "elementName": "Sepete eklenmis 2 yillik ek garanti text",
           "elementType": "xpath",
           "elementValue": "//div[@class='cart-row-option selected']//span[1]"
         },
