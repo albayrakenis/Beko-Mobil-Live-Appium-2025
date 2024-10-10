@@ -35,6 +35,7 @@ Feature: Satin Alma Islemleri
     And I accept on bilgilendirme and satis sozlesmesi
     And I scroll until find "EFT/Havale" element with action
     Then I wait until element to be clickable and click to "EFT/Havale" element
+    And I scroll until find "alisverisi tamamla button" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I sleep for 2 seconds
     Then I wait "Iban Kopyala;Havale Bilgileri" elements

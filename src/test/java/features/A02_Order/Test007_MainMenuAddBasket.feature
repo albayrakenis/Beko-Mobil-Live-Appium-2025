@@ -26,6 +26,6 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-      | username             | password    | url                                        |
-      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
+       | url                                        |
+       | https://akamai-s1-astra-stage.beko.com.tr/ |
 

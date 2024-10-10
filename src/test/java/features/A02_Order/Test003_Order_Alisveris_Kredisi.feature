@@ -35,7 +35,9 @@ Feature: Satin Alma Islemleri
     And I accept on bilgilendirme and satis sozlesmesi
 
     And I scroll until find "Online Alisveris Kredisi" element with action
+    And I scroll until find "alisverisi tamamla button" element with action
     Then I wait until element to be clickable and click to "Online Alisveris Kredisi" element
+    And I scroll until find "alisverisi tamamla button" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I sleep for 6 seconds
     When I see "YapiKrediPage" page

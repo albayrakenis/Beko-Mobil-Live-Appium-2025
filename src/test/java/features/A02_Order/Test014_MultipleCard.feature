@@ -56,6 +56,7 @@ Feature: Satin Alma Islemleri
     Then I send key to "ckk kart tarih" element text:"1230"
     Then I send key to "ckk kart cvv" element text:"000"
     And I accept on bilgilendirme and satis sozlesmesi
+    And I scroll until find "alisverisi tamamla button" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"

@@ -46,6 +46,7 @@ Feature: Satin Alma Islemleri
     Then I send key to "Kart Tarihi Box" element text:"1230"
     Then I send key to "CVV Box" element text:"000"
     When I see "CartPage" page
+    And I scroll until find "alisverisi tamamla button" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
