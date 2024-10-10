@@ -13,6 +13,7 @@ Feature: Kullanici islemleri
     Then I wait "password" element
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<passwordWrong>"
+    And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I check "login hata mesaji" element text is equal "E-posta adresiniz ya da şifreniz yanlış"
     Then I sleep for 5 seconds
@@ -35,6 +36,7 @@ Feature: Kullanici islemleri
     Then I wait "password" element
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
+    And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I check "login hata mesaji" element text is equal "E-posta adresiniz ya da şifreniz yanlış"
     And I sleep for 5 seconds

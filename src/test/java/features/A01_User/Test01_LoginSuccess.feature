@@ -12,6 +12,7 @@ Feature: Kullanici islemleri
     Then I wait "password" element
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
+    And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     When I see "HomePage" page
     And I wait "urunler button" element
@@ -40,6 +41,7 @@ Feature: Kullanici islemleri
     Then I wait "password" element
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
+    And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     When I see "HomePage" page
     And I wait "urunler button" element
