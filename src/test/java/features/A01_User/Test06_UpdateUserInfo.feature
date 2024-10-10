@@ -37,7 +37,7 @@ Feature: Kullanici islemleri
       | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
 
 
-  @updateC @smokeC @regresyon
+  @updateC @smokeC @regresyon @canli
   Scenario Outline: Test106- Canli Ad Soyad Güncelleme
 
     When I see "HomePage" page

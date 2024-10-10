@@ -26,7 +26,7 @@ public class BaseTest {
             chromeOptions.addArguments("--remote-allow-origins=*");
             MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
         }
-        else if(browserName.equalsIgnoreCase("headless")){
+        else if(browserName.equalsIgnoreCase("headless")) {
             // headless mode do
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();

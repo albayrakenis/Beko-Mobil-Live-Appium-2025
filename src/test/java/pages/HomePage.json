@@ -86,6 +86,11 @@
           "elementValue": ".menu-category [href='/isitma-sogutma'] > span"
         },
         {
+          "elementName": "isitma sogutma ve enerji",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/isitma-sogutma-ve-enerji'] > span"
+        },
+        {
           "elementName": "KEA",
           "elementType": "cssSelector",
           "elementValue": ".menu-category [href='/kucuk-ev-aletleri'] > span"
@@ -99,6 +104,16 @@
           "elementName": "Su aritma",
           "elementType": "cssSelector",
           "elementValue": "[title='Su Ar\u0131tma'] > span"
+        },
+        {
+          "elementName": "Enerji Cozumleri",
+          "elementType": "xpath",
+          "elementValue": "//a[@href='/surdurulebilir-enerji-cozumleri']/span"
+        },
+        {
+          "elementName": "Temizlik ve bakim",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Temizlik Ve Bakım Ürünleri'][href='/temizlik-ve-bakim-urunleri'] > span"
         },
         {
           "elementName": "Markalar",

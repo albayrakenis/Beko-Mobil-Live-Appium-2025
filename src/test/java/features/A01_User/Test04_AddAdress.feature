@@ -47,7 +47,7 @@ Feature: Kullanici islemleri
 
 
 
-  @userAdresC @smoke @regresyon
+  @userAdresC @smoke @regresyon @canli
   Scenario Outline:Test104- Canli Adres Ekleme
 
     When I see "HomePage" page
