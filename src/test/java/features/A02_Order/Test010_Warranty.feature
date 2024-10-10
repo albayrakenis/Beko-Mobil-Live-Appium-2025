@@ -8,7 +8,7 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"7285520282"
+    Then I send key to "search box text" element text:"7256520291"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
     When I see "PLP" page
