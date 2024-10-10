@@ -53,6 +53,11 @@
           "elementValue": "[name='distantSales']"
         },
         {
+          "elementName": "footer hizmet",
+          "elementType": "cssSelector",
+          "elementValue": "[title='Hizmet'] > .title"
+        },
+        {
           "elementName": "alisverisi tamamla button",
           "elementType": "xpath",
           "elementValue": "//button[@id='postPayment']"
