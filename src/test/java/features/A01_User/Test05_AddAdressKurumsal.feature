@@ -46,7 +46,7 @@ Feature: Kullanici islemleri
       | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
 
 
-  @userAdres2C @smoke @regresyon @canli
+  @userAdres2C  @regresyon @canli
   Scenario Outline:Test105- Canli Kurumsal Adres Ekleme
 
     When I see "HomePage" page

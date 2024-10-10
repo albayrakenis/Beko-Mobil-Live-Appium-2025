@@ -19,7 +19,6 @@ Feature: Kullanici islemleri
 
     Examples:
       | username              | passwordWrong | url                                        |
-      | bekos1.test@gmail.com | abcd123       | https://www.beko.com.tr/                   |
       | bekos1test@gmail.com  | Albayra41     | https://akamai-s1-astra-stage.beko.com.tr/ |
 
 

@@ -33,7 +33,6 @@ public class BaseTest {
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--remote-allow-origins=*");
             MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
-            MyDriver.getMyDriver().manage().window().maximize();
 
 
         }
