@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kredi @orderOnline
+  @user2 @smoke @kredi @orderOnline @order
   Scenario Outline: Test03- Online Alisveris Kredisi ile Satın Alma
     When I see "HomePage" page
     Then I go to url:"<url>"

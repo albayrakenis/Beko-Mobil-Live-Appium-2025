@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kkOrder @Favorites
+  @user2 @smoke @kkOrder @Favorites @order
   Scenario Outline: Test12- Login favori ekleme
     When I see "HomePage" page
     Then I go to url:"<url>"

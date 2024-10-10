@@ -22,6 +22,7 @@ Feature: Satin Alma Islemleri
     And I scroll until find "Sepeti Onayla Button" element with action
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
     When I see "LoginPage" page
+    And I scroll until find "Uye olmadan devam et button" element with action
     Then I wait "Uye olmadan devam et button" element
     Then I wait until element to be clickable and click to "Uye olmadan devam et button" element
     And I create a mail that is start "kullaniciAdi" and end with "@gmail.com"

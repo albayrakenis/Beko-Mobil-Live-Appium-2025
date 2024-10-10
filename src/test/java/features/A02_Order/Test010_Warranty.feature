@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kkOrder @warranty
+  @user2 @smoke @kkOrder @warranty @order
   Scenario Outline: Test10- Ek Garanti
     When I see "HomePage" page
     Then I go to url:"<url>"

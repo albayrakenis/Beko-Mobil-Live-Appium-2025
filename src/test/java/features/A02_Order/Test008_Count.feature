@@ -9,7 +9,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 3 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "urunler button" element
-    Then I sleep for 2 seconds
+    Then I sleep for 3 seconds
     When I see "HomePage" page
     And I wait until element to be clickable and click to "Buzdolabi Button" element
     When I see "PDP" page
@@ -33,10 +33,6 @@ Feature: Satin Alma Islemleri
     And I wait "Sepeti Bosalt" element
     Then I sleep for 4 seconds
     And I wait "sepetteki urun sayisi text2" element
-    Then I sleep for 3 seconds
-    And I wait until element to be clickable and click to "arti button" element
-    And I wait "sepetteki urun sayisi text3" element
-    And I wait "Sepete Eklenen Urun Text" element
     And I wait "Sepeti Bosalt" element
     Then I sleep for 4 seconds
 

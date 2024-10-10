@@ -13,6 +13,7 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     And I wait until element to be clickable and click to "Buzdolabi Button" element
     When I see "PDP" page
+    And I scroll until find "Filtrele Button" element with action
     And I wait until element to be clickable and click to "Filtrele Button" element
     And I wait until element to be clickable and click to "Stok Durumu" element
     And I wait until element to be clickable and click to "Var Button" element

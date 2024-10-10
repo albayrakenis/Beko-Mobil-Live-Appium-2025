@@ -21,6 +21,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 4 seconds
     And I scroll until find "Pdp ilk urun" element with action
     And I wait until element to be clickable and click to "Pdp ilk urun" element
+    And I scroll until find "Sepete At Button" element with action
     And I wait until element to be clickable and click to "Sepete At Button" element
     And I wait "Urun sepete eklendi text" element
     And I wait until element to be clickable and click to "Sepete Git Button" element
@@ -37,6 +38,6 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-      | username             | password    | url                                        |
-      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
+       | url                                        |
+       | https://akamai-s1-astra-stage.beko.com.tr/ |
 

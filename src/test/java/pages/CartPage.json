@@ -158,6 +158,11 @@
           "elementValue": "//button[@class='btn-plus ']"
         },
         {
+          "elementName": "arti button iki",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-plus maxQtyActive']"
+        },
+        {
           "elementName": "eksi button",
           "elementType": "xpath",
           "elementValue": "//button[@class='btn-minus']"
