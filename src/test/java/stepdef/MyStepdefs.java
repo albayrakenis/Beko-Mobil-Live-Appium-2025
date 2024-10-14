@@ -150,6 +150,7 @@ public class MyStepdefs extends BaseTest{
     }
 
 
+
     @Then("I choose city {string} from list")
     public void ıChooseCityFromList(String City) {
         commonLib.ıChooseCityFromList(City);
@@ -231,5 +232,11 @@ public class MyStepdefs extends BaseTest{
     @And("I change the frame")
     public void ıChangeTheFrame() {
     commonLib.ıChangeTheFrame();
+    }
+
+    @And("I click {string} element")
+    public void ıClickElement(String element) {
+        commonLib.ıClickElement(element);
+
     }
 }

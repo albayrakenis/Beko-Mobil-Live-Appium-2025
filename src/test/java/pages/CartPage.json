@@ -192,19 +192,24 @@
           "elementName": "sepet sayfasi 4 yillik ek garanti",
           "elementType": "cssSelector",
           "elementValue": ".mnp-menu li:nth-of-type(1) .wty-text"
-        },,
+        },
         {
           "elementName": "sepet sayfasi 2 yillik ek garanti",
           "elementType": "cssSelector",
           "elementValue": ".mnp-menu li:nth-of-type(2) .wty-text"
         },
         {
-          "elementName": "4 yillik ek garanti ses button",
-          "elementType": "cssSelector",
-          "elementValue": "[data-code='GRT305']"
+          "elementName": "ek garanti 4",
+          "elementType": "xpath",
+          "elementValue": "(//button[contains(.,'Seç')])[2]"
         },
         {
-          "elementName": "2 yillik ek garanti ses button",
+          "elementName": "4 yillik ek garanti sec button",
+          "elementType": "cssSelector",
+          "elementValue": "[data-warranty-product-code='GRT303']"
+        },
+        {
+          "elementName": "2 yillik ek garanti sec button",
           "elementType": "cssSelector",
           "elementValue": "[data-code='GRT303']"
         },

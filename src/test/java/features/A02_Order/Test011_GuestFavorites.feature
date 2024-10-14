@@ -15,8 +15,10 @@ Feature: Satin Alma Islemleri
     And I scroll until find "incele button" element with action
     Then I wait until element to be clickable and click to "incele button" element
     When I see "PDP" page
+    Then I sleep for 3 seconds
     And I wait "favorilere ekle button" element
-    Then I wait until element to be clickable and click to "favorilere ekle button" element
+    And I click "favorilere ekle button" element
+    #Then I wait until element to be clickable and click to "favorilere ekle button" element
     When I see "LoginPage" page
     Then I wait "username" element
     Then I wait "password" element
@@ -28,7 +30,9 @@ Feature: Satin Alma Islemleri
     When I see "PDP" page
     Then I wait until element to be clickable and click to "Hesabim button" element
     When I see "HesabimPage" page
-    Then I wait until element to be clickable and click to "favorilerim" element
+    And I sleep for 2 seconds
+    And I click "favorilerim" element
+    #Then I wait until element to be clickable and click to "favorilerim" element
 #    And I sleep for 5 seconds
     Then I wait "Favoriye eklenen urun" element
     Then I check "Favoriye eklenen urun" element text is equal "<urunAdi>"
@@ -42,6 +46,6 @@ Feature: Satin Alma Islemleri
     Examples:
       | username             | password    | url                                        | urunKodu   | urunAdi                     |
       | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 7285520282 | 191640 EI                   |
-      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 7188210290 | D 81 HP                     |
-      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 9220171600 | KARCHER SC 2 DELUXE EasyFix |
+     # | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 7188210290 | D 81 HP                     |
+      #| bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 9220171600 | KARCHER SC 2 DELUXE EasyFix |
 

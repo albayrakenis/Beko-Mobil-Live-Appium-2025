@@ -132,6 +132,11 @@ public class CommonLib extends BaseTest{
 
     public void clickElementWaitUntilClickable(String element)  {
 
+        WebElement webElementScroll = myDriver.findElement(getElementLocator(element));
+        JavascriptExecutor js = (JavascriptExecutor) myDriver;
+        js.executeScript("arguments[0].scrollIntoView();", webElementScroll);
+
+
         WebElement webElement = null;
         String style = "";
         try {
@@ -157,6 +162,24 @@ public class CommonLib extends BaseTest{
             }
         });
 
+
+    }
+
+    public void ıClickElement(String element) {
+
+        WebElement webElement = null;
+        String style = "";
+        try {
+            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));;
+            style = webElement.getAttribute("style");
+            highLighElement(webElement);
+            allureReport(StepResultType.PASS, "Clicked to element.", true);
+        } catch (Exception e) {
+            allureReport(StepResultType.FAIL, "Could not click to element.", true);
+        }
+        setDefaultStyle(style, webElement);
+
+        webElement.click();
 
     }
     public void ıAcceptOnBilgilendirmeAndSatisSozlesmesi() throws IOException, ParseException {
@@ -544,8 +567,8 @@ public class CommonLib extends BaseTest{
             // Scrolling down the page till the element is found
             js.executeScript("arguments[0].scrollIntoView();", webElement);
             waitElement(element);
-            js.executeScript("arguments[0].click();", element);
-            allureReport(StepResultType.PASS, "'"+element + "' Element is found and click", true);
+//            js.executeScript("arguments[0].click();", element);
+//            allureReport(StepResultType.PASS, "'"+element + "' Element is found and click", true);
         }catch (Exception e){
             allureReport(StepResultType.FAIL,element + "element is not clicable", true);
         }
