@@ -132,9 +132,9 @@ public class CommonLib extends BaseTest{
 
     public void clickElementWaitUntilClickable(String element)  {
 
-        WebElement webElementScroll = myDriver.findElement(getElementLocator(element));
-        JavascriptExecutor js = (JavascriptExecutor) myDriver;
-        js.executeScript("arguments[0].scrollIntoView();", webElementScroll);
+//        WebElement webElementScroll = myDriver.findElement(getElementLocator(element));
+//        JavascriptExecutor js = (JavascriptExecutor) myDriver;
+//        js.executeScript("arguments[0].scrollIntoView();", webElementScroll);
 
 
         WebElement webElement = null;
