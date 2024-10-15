@@ -41,7 +41,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I sleep for 6 seconds
     When I see "YapiKrediPage" page
-    Then I send key to "Kullanici Kodu" element text:"JW01075945"
+    Then I send key to "Kullanici Kodu" element text:"KX57172524"
     Then I send key to "Mobil Sifre" element text:"123456"
     Then I wait until element to be clickable and click to "Giris Yap" element
     Then I send key to "Akilli sms" element text:"34020"
