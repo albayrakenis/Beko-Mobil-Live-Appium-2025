@@ -13,7 +13,7 @@ Feature: Ana menü kontrolleri
     And I scroll until find "Bilgisayar slider" element with action
     And I wait "Bilgisayar slider" element
 
-    And I sleep for 5 seconds
+
 
 
 

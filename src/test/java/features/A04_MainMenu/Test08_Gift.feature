@@ -13,7 +13,7 @@ Feature: Ana menü kontrolleri
     When I see "HediyeCeki" page
     And I wait "Online hediye ceki text" element
     And I check "Online hediye ceki text" element text is equal "Online Hediye Çeki"
-    And I sleep for 5 seconds
+
 
     Examples:
        | url                                        |

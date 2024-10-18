@@ -79,8 +79,8 @@
         },
         {
           "elementName": "Havale Bilgileri",
-          "elementType": "cssSelector",
-          "elementValue": "#pay-payment-eft button"
+          "elementType": "xpath",
+          "elementValue": "//p[.='Havale Bilgileri']"
         },
         {
           "elementName": "Iban Kopyala",

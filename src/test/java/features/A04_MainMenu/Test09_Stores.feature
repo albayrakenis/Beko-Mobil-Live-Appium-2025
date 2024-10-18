@@ -25,7 +25,7 @@ Feature: Ana menü kontrolleri
     And I scroll until find "Tum liste" element with action
     And I wait "Tum adresler" element
     And I wait "Tum liste" element
-    And I sleep for 5 seconds
+
 
 
 

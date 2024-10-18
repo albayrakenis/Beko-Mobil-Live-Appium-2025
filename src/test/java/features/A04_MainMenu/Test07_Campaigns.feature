@@ -17,7 +17,7 @@ Feature: Ana menü kontrolleri
 
 
 
-    And I sleep for 5 seconds
+
 
 
 
