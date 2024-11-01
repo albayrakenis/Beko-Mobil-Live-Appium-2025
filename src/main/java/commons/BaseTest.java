@@ -30,6 +30,7 @@ public class BaseTest {
             // headless mode do
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("start-maximized");
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--remote-allow-origins=*");
             MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
