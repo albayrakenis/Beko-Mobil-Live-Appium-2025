@@ -239,4 +239,19 @@ public class MyStepdefs extends BaseTest{
         commonLib.ıClickElement(element);
 
     }
+
+    @When("I click {string} element and save the file {string}")
+    public void ıClickElementAndSaveTheFile(String arg0, String arg1) throws InterruptedException {
+        commonLib.ıClickElementAndSaveTheFile(arg0, arg1);
+    }
+
+    @When("broken links check")
+    public void brokenLinksCheck() {
+
+    }
+
+    @When("broken links check {string} categories and {string} file names")
+    public void brokenLinksCheckCategoriesAndFileNames(String kategori, String dosyaAdi) {
+        commonLib.brokenLinksCheckCategoriesAndFileNames(kategori,dosyaAdi);
+    }
 }

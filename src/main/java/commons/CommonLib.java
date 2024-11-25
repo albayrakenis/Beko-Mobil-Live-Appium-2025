@@ -3,23 +3,29 @@ package commons;
 import io.qameta.allure.Allure;
 import io.qameta.allure.model.Status;
 import org.json.simple.parser.ParseException;
-import commons.BaseTest;
 import org.openqa.selenium.*;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
 import java.io.ByteArrayInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.function.Function;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.io.BufferedWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 
 public class CommonLib extends BaseTest{
 
@@ -641,4 +647,252 @@ public class CommonLib extends BaseTest{
     }
 
 
+    public void ıClickElementAndSaveTheFile(String kategori, String dosyaAdi) throws InterruptedException {
+
+
+
+
+        WebDriverWait wait = new WebDriverWait(myDriver, Duration.ofSeconds(10));
+        List<String> list_of_image_error = new ArrayList<>();
+        myDriver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+        allureReport(StepResultType.PASS, "cerezler kabul edildi.", true);
+
+        Thread.sleep(2000);
+
+        try {
+
+            Thread.sleep(2000);
+            myDriver.findElement(By.xpath("//button[@data-target='#main-menu']")).click();
+
+            allureReport(StepResultType.PASS, "Urunler butonuna tiklandi.", true);
+
+            Thread.sleep(2000);
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[.='"+kategori+"'])[1]"))).click();
+            allureReport(StepResultType.PASS, "Kategori butonuna tiklandi.", true);
+            Thread.sleep(2000);
+            //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@class='lv1-li selected']//li[@class='lv2-li no-sub']/a[.='Tüm Ürünler']"))).click();
+
+            WebElement count = myDriver.findElement(By.cssSelector("b"));
+            System.out.println("-------------------------------------------------------------------");
+            String countStr = count.getText();
+            int number =Integer.parseInt(countStr);
+            int a=number/20;
+            Thread.sleep(2000);
+
+            for (int i = 0; i <= a; i++) {
+                WebElement element = myDriver.findElement(By.xpath("//footer[@id='site-footer']"));
+                ((JavascriptExecutor) myDriver).executeScript(
+                        "arguments[0].scrollIntoView({block: 'center'});", element
+                );
+                allureReport(StepResultType.PASS, "1 sayfa asagi kaydirildi.", true);
+                Thread.sleep(2500); // Kaydırmalar arasında bekleme
+            }
+
+            List<WebElement> urunler = myDriver.findElements(By.xpath("//div[@class='products productgridcomponent-page']/article"));
+            for (WebElement urun : urunler) {
+                try {
+                    // Ürünün img elementini bul
+                    WebElement resim = urun.findElement(By.cssSelector("img"));
+                    String src = resim.getAttribute("src"); // Görselin 'src' özelliği
+                    String imgClass = resim.getAttribute("class"); // Görselin 'class' özelliği
+
+                    // Görsel yok veya hatalı ise kaydet
+                    if (src == null || src.isEmpty() || src.equals("null") ||
+                            (imgClass != null && imgClass.contains("lazy error"))) {
+                        list_of_image_error.add(urun.getAttribute("data-config"));
+                    }
+
+                } catch (NoSuchElementException e) {
+                    // Görsel bulunamazsa ürün bilgisi listeye eklenir
+                    list_of_image_error.add(urun.getAttribute("data-config"));
+                }
+            }
+
+            // Hatalı görselleri dosyaya yazdır
+
+            try (FileWriter writer = new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\"+dosyaAdi+".txt")) {
+                for (String error : list_of_image_error) {
+                    writer.write(error + System.lineSeparator());
+                }
+            }
+            try (FileWriter successWriter = new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\tumSonuclar.txt")) {
+                for (String success : list_of_image_error) {
+                    successWriter.write(success + System.lineSeparator());
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // Tarayıcıyı kapat
+            myDriver.quit();
+        }
+
+
+
+
+        System.out.println("Test tamamlandı.");
+
+
+    }
+
+    public void brokenLinksCheck() {
+
+        String[] categories = {"/beyaz-esya", "/ankastre", "/televizyon", "/elektronik", "/isitma-sogutma", "/kucuk-ev-aletleri", "/hijyen-aksesuar", "/arcelik-enerji-cozumleri", "/temizlik-ve-bakim-urunleri", "/su-aritma"};
+        String[] fileNames = {"beyaz-esya", "ankastre", "televizyon", "elektronik", "isitma-sogutma", "kucuk-ev-aletleri", "hijyen-aksesuar", "arcelik-enerji-cozumleri", "temizlik-ve-bakim-urunleri", "su-aritma"};
+
+        try {
+            setupDriver();
+            for (int j = 0; j < categories.length; j++) {
+                myDriver.findElement(By.xpath("//button[@data-target='#main-menu']")).click();
+                Thread.sleep(3000);
+
+                Actions actions = new Actions(myDriver);
+                WebElement categoryElement = myDriver.findElement(By.xpath("//a[@href='" + categories[j] + "']"));
+                actions.moveToElement(categoryElement).perform();
+                Thread.sleep(1000);
+                myDriver.findElement(By.xpath("//li[@class='lv1-li selected']//a[@title='Tüm Ürünler']")).click();
+                waitForPageLoad();
+
+                for (int k = 0; k < 8; k++) {
+                    WebElement footerElement = myDriver.findElement(By.xpath("//footer[@id='site-footer']"));
+                    ((JavascriptExecutor) myDriver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footerElement);
+                    Thread.sleep(3500);
+                }
+
+                List<WebElement> productLinks = myDriver.findElements(By.xpath("//div[@class='products productgridcomponent-page']//a"));
+                List<String> listOK = new ArrayList<>();
+                List<String> listNotFound = new ArrayList<>();
+
+                for (WebElement linkElement : productLinks) {
+                    String href = linkElement.getAttribute("href");
+
+                    if (isValidURL(href)) {
+                        int responseCode = getHttpResponseCode(href);
+                        if (responseCode == 200) {
+                            listOK.add(href);
+                        } else {
+                            listNotFound.add(href);
+                        }
+                    } else {
+                        listNotFound.add(href);
+                    }
+                }
+
+                writeToFile("product_OK_" + fileNames[j] + ".txt", listOK);
+                writeToFile("product_notfound_" + fileNames[j] + ".txt", listNotFound);
+            }
+
+
+            System.out.println("Test Passed!");
+        } catch (Exception e) {
+
+            System.err.println("Test Failed: " + e.getMessage());
+        }
+    }
+
+    private void setupDriver() {
+//        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--start-maximized");
+ //       myDriver = new ChromeDriver(options);
+    }
+
+    private void waitForPageLoad() {
+        new WebDriverWait(myDriver, Duration.ofSeconds(10)).until(
+                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+    }
+
+    private boolean isValidURL(String url) {
+        try {
+            new URL(url).toURI();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private int getHttpResponseCode(String url) {
+        try {
+            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+            connection.setRequestMethod("GET");
+            connection.connect();
+            return connection.getResponseCode();
+        } catch (IOException e) {
+            return -1;
+        }
+    }
+
+
+
+
+
+
+
+    //----------------------------------------------------------------
+
+    public void brokenLinksCheckCategoriesAndFileNames(String kategori, String dosyaAdi) {
+
+        try {
+            Thread.sleep(1000);
+            myDriver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+            myDriver.findElement(By.xpath("//button[@data-target='#main-menu']")).click();
+            Thread.sleep(3000);
+
+            Actions actions = new Actions(myDriver);
+            WebElement categoryElement = myDriver.findElement(By.xpath("(//a[@href='" + kategori + "'])[1]"));
+            actions.moveToElement(categoryElement).perform();
+            Thread.sleep(1000);
+            myDriver.findElement(By.xpath("//li[@class='lv1-li selected']//a[@title='Tüm Ürünler']")).click();
+            waitForPageLoad();
+
+            for (int k = 0; k < 8; k++) {
+                WebElement footerElement = myDriver.findElement(By.xpath("//footer[@id='site-footer']"));
+                ((JavascriptExecutor) myDriver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footerElement);
+                Thread.sleep(3500);
+            }
+
+            List<WebElement> productLinks = myDriver.findElements(By.xpath("//div[@class='products productgridcomponent-page']//a"));
+            List<String> listOK = new ArrayList<>();
+            List<String> listNotFound = new ArrayList<>();
+
+            for (WebElement linkElement : productLinks) {
+                String href = linkElement.getAttribute("href");
+
+                if (isValidURL(href)) {
+                    int responseCode = getHttpResponseCode(href);
+                    if (responseCode == 200) {
+                        listOK.add(href);
+                    } else {
+                        listNotFound.add(href);
+                    }
+                } else {
+                    listNotFound.add(href);
+                }
+            }
+
+            writeToFile("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\404Check.txt", listOK);
+            writeToFile("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\404Check.txt", listNotFound);
+
+
+            System.out.println("Test Passed!");
+        } catch (Exception e) {
+
+            System.err.println("Test Failed: " + e.getMessage());
+        }
+
+    }
+    public void writeToFile(String fileName, List<String> data) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\404Check.txt"))) {
+            for (String line : data) {
+                writer.write(line);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + fileName);
+        }
+    }
+
+
+
 }
+
