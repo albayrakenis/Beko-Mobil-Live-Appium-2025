@@ -45,7 +45,7 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | username             | password    | url                                        | urunKodu   | urunAdi                     |
-      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 7285520282 | 191640 EI                   |
+      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 7285520282 | 191640 EI                   |
      # | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 7188210290 | D 81 HP                     |
       #| bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 9220171600 | KARCHER SC 2 DELUXE EasyFix |
 

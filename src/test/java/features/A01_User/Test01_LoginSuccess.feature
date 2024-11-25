@@ -23,7 +23,7 @@ Feature: Kullanici islemleri
     Examples:
       | username             | password | url                                        |
 
-      | bekos1test@gmail.com | Albayrak.41  | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | beko.s1test@gmail.com | Albayrak.41  | https://akamai-s1-astra-stage.beko.com.tr/ |
 #      | lefyazardu@gufum.com | abcd123  | https://akamai-s1-astra-stage.arcelik.com.tr/                                             |
 #      | testititre@gufum.com | abcd123  | https://grundigtr-astra.c1m0wu3z2z-arcelikas1-s1-public.model-t.cc.commerce.ondemand.com/ |
 

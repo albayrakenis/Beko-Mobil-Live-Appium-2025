@@ -19,7 +19,7 @@ Feature: Kullanici islemleri
 
     Examples:
       | usernameWrong        | password  |
-      | bekos1test@gmail.com | Albayra41 |
+      | beko.s1test@gmail.com | Albayra41 |
 
 
   @userC @yanlissifre @canli @regresyon

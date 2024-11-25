@@ -67,5 +67,5 @@ Feature: Satin Alma Islemleri
     Examples:
       | username             | password    | url                                        | urunKodu   |
       #| gurtobomlo@gufum.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 8818541200 |
-      | gurtobomlo@gufum.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 8912281200 |
+      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 8912281200 |
 

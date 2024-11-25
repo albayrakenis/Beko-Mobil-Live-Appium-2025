@@ -44,7 +44,7 @@ Feature: Kullanici islemleri
 
     Examples:
       | username             | password    | url                                        |
-      | bekos1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
 
 
   @userAdres2C  @regresyon @canli
