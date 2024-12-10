@@ -31,7 +31,7 @@
         {
           "elementName": "Supurge",
           "elementType": "cssSelector",
-          "elementValue": "[href='supurge']"
+          "elementValue": "[href='elektrikli-supurge'] > span"
         }{
           "elementName": "Kahve Makinesi Aksesuarlari",
           "elementType": "cssSelector",

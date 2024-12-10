@@ -32,6 +32,7 @@
           "elementType": "cssSelector",
           "elementValue": "#credit-card-form [name='cardOwner']"
         },
+
         {
           "elementName": "Kart Tarihi Box",
           "elementType": "cssSelector",
@@ -225,8 +226,8 @@
         },
         {
           "elementName": "4 yillik ek garanti sil button",
-          "elementType": "cssSelector",
-          "elementValue": "[data-entry-product-code='GRT305']"
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-remove js-execute-entry-action-button']"
         },
         {
           "elementName": "2 yillik ek garanti sil button",

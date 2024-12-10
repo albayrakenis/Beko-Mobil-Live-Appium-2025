@@ -3,7 +3,7 @@ Feature: Satin Alma Islemleri
   @user2 @smoke @guestOrder @order
   Scenario Outline: Test13- Guest, Kredi Karti ile Satın Alma
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     When I see "HomePage" page
     Then I wait "search box" element
@@ -46,12 +46,13 @@ Feature: Satin Alma Islemleri
     Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "Adres Kaydet" element
     And I sleep for 5 seconds
+    And I send key to "Tc kimlik" element text:"49646044276"
     And I accept on bilgilendirme and satis sozlesmesi
     And I scroll until find "Kredi/Banka Karti" element with action
     Then I wait until element to be clickable and click to "Kredi/Banka Karti" element
     Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
-    Then I send key to "Kart Numarasi Box" element text:"4446763125813623"
+    Then I send key to "Kart Numarasi Box" element text:"5406675406675403"
     And I scroll until find "CVV Box" element with action
     Then I send key to "Kart Sahibi Box" element text:"Enis Albayrak"
     Then I send key to "Kart Tarihi Box" element text:"1230"
@@ -66,7 +67,7 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-      | url                                        | urunKodu   |
-      | https://akamai-s1-astra-stage.beko.com.tr/ | 8912281200 |
-      | https://akamai-s1-astra-stage.beko.com.tr/ | 7663710277 |
+      | url | urunKodu   |
+      | url | 8912281200 |
+      | url | 7188270230 |
 

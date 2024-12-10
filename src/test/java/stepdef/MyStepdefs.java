@@ -254,4 +254,14 @@ public class MyStepdefs extends BaseTest{
     public void brokenLinksCheckCategoriesAndFileNames(String kategori, String dosyaAdi) {
         commonLib.brokenLinksCheckCategoriesAndFileNames(kategori,dosyaAdi);
     }
+
+    @Then("I login with {string} and {string}")
+    public void ıLoginWithAnd(String arg0, String arg1) {
+        commonLib.ıLoginWithAnd(arg0, arg1);
+    }
+
+    @When("I go to {string} with configuration")
+    public void ıGoToWithConfiguration(String arg0) {
+        commonLib.ıGoToWithConfiguration(arg0);
+    }
 }

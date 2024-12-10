@@ -1,17 +1,17 @@
 Feature: Satin Alma Islemleri
 
+
   @user2 @smoke @collect @order
-  Scenario Outline: Test04- Click and Collect ile Satın Alma
+  Scenario Outline: Test05- Click and Collect ile Satın Alma
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
     Then I wait "password" element
-    Then I send key to "username" element text:"<username>"
-    Then I send key to "password" element text:"<password>"
+    Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 7 seconds
@@ -48,7 +48,6 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "Fatura Adresi" element
     And I wait until element to be clickable and click to "Fatura Adresi Secme" element
     Then I sleep for 5 seconds
-    And I accept on bilgilendirme and satis sozlesmesi
     When I see "CartPage" page
     Then I sleep for 3 seconds
     And I scroll until find "Kredi/Banka Karti" element with action
@@ -62,15 +61,16 @@ Feature: Satin Alma Islemleri
     Then I send key to "Kart Sahibi Box" element text:"Enis Albayrak"
     Then I send key to "Kart Tarihi Box" element text:"1230"
     Then I send key to "CVV Box" element text:"000"
+    And I accept on bilgilendirme and satis sozlesmesi
     When I see "CartPage" page
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
+    And I sleep for 4 seconds
     Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
 
     Examples:
-      | username             | password    |url|
-      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/  |
-
+      | username   | password | url |
+      | kullanici1 | sifre    | url |

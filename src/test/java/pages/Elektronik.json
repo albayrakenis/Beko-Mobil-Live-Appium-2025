@@ -30,7 +30,7 @@
         {
           "elementName": "Hobi Oyunlari",
           "elementType": "cssSelector",
-          "elementValue": "[href='hobi-oyun'] > span"
+          "elementValue": "[href='hobi---oyun-gaming-urunleri'] > span"
         },
         {
           "elementName": "Ses ve Goruntu Sistemleri",

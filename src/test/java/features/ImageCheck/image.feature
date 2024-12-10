@@ -4,7 +4,7 @@ Feature: Urun Gorselleri
   @image
   Scenario Outline: PLP de urun gorselleri kontrolu
 
-    Given I go to url:"https://www.beko.com.tr/"
+    Given I go to "urlCanli" with configuration
     When I click "<kategori>" element and save the file "<Dosya Adi>"
 
 

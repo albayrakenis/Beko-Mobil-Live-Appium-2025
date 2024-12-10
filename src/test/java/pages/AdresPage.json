@@ -25,6 +25,11 @@
           "elementValue": "[for='sw_adr_2']"
         },
         {
+          "elementName": "Tc kimlik",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='tcknArea']"
+        },
+        {
           "elementName": "Ad Soyad",
           "elementType": "cssSelector",
           "elementValue": "#fullName"

@@ -3,7 +3,7 @@ Feature: Ana menü kontrolleri
   @smoke @banner @main
   Scenario Outline: Test01- Headerda olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to "<url>" with configuration
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
     When I see "HomePage" page
@@ -27,6 +27,6 @@ Feature: Ana menü kontrolleri
 
 
     Examples:
-      | username             | password    | url                                        |
-      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | username              | password    | url |
+      | beko.s1test@gmail.com | Albayrak.41 | url |
 

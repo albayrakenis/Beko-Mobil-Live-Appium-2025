@@ -3,7 +3,7 @@ Feature: Ana menü kontrolleri
   @smoke @kampanyalar @main
   Scenario Outline: Test07- Kampanyalar
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to "<url>" with configuration
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
     When I see "HomePage" page
@@ -22,6 +22,6 @@ Feature: Ana menü kontrolleri
 
 
     Examples:
-       | url                                        |
-       | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | url |
+      | url |
 

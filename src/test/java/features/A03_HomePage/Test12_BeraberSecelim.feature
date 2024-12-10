@@ -3,7 +3,7 @@ Feature: Ana sayfa kontrolleri
   @smoke @header @beraber
   Scenario Outline: Test12- Beraber Secelim
 
-    Then I go to url:"<url>"
+    Then I go to "<url>" with configuration
     When I see "HomePage" page
     And I sleep for 2 seconds
     And I scroll until find "Beraber Secelim" element with action
@@ -39,6 +39,6 @@ Feature: Ana sayfa kontrolleri
 
 
     Examples:
-      | url                                        |
-      | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | url |
+      | url |
 

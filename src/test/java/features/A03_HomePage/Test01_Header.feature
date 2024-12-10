@@ -1,10 +1,10 @@
 Feature: Ana sayfa kontrolleri
 
-  @smoke @header @basliklar
+  @smoke @header @basliklar25
   Scenario Outline: Test01- Headerda olmasi gereken basliklarin kontrolu
 
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to "<url>" with configuration
     When I see "HomePage" page
     Then I wait "uyelik button" element
     Then I wait until element to be clickable and click to "urunler button" element
@@ -15,15 +15,15 @@ Feature: Ana sayfa kontrolleri
 
 
     Examples:
-      | url                                        |
-      | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | url |
+      | url |
 
 
   @canli @headerC @basliklarC @regresyon
   Scenario Outline: Test101- Canli Headerda olmasi gereken basliklarin kontrolu
 
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to "<urlCanli>" with configuration
     When I see "HomePage" page
     Then I wait "uyelik button" element
     Then I wait until element to be clickable and click to "Cerezleri kabul et" element
@@ -34,6 +34,6 @@ Feature: Ana sayfa kontrolleri
 
 
     Examples:
-      | url                      |
-      | https://www.beko.com.tr/ |
+      | urlCanli |
+      | url |
 

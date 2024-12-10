@@ -103,6 +103,7 @@ public class CommonLib extends BaseTest{
     public void ıGoToUrl(String url) {
         try {
 
+           // url=ConfigurationReader.getProperty(url);
 
             myDriver.navigate().to(url);
             sleep(2);
@@ -433,7 +434,7 @@ public class CommonLib extends BaseTest{
 
     public void ıChooseCityFromList(String City){
 
-//        Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #cityCode")));
+
         Select select = new Select( myDriver.findElement(By.id("cityCode")));
         select.selectByVisibleText(City);
 
@@ -711,15 +712,16 @@ public class CommonLib extends BaseTest{
             // Hatalı görselleri dosyaya yazdır
 
             try (FileWriter writer = new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\"+dosyaAdi+".txt")) {
+            //try (FileWriter writer = new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\a.txt")) {
                 for (String error : list_of_image_error) {
                     writer.write(error + System.lineSeparator());
                 }
             }
-            try (FileWriter successWriter = new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\tumSonuclar.txt")) {
-                for (String success : list_of_image_error) {
-                    successWriter.write(success + System.lineSeparator());
-                }
-            }
+//            try (FileWriter successWriter = new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\tumSonuclar.txt")) {
+//                for (String success : list_of_image_error) {
+//                    successWriter.write(success + System.lineSeparator());
+//                }
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -891,6 +893,39 @@ public class CommonLib extends BaseTest{
             System.err.println("Error writing to file: " + fileName);
         }
     }
+
+    public void ıLoginWithAnd(String username, String sifre) {
+       username =ConfigurationReader.getProperty("kullanici1");
+       sifre =ConfigurationReader.getProperty("sifre");
+        try{
+        waitElement("username");
+        waitElement("password");
+
+        sendKeys("username", username);
+        sendKeys("password", sifre);
+        allureReport(StepResultType.PASS, "Url opened successfully", true);
+    } catch (Exception e) {
+        allureReport(StepResultType.FAIL, "Url could not opened successfully", true);
+    }
+
+
+    }
+
+    public void ıGoToWithConfiguration(String url) {
+
+        try {
+
+            url=ConfigurationReader.getProperty(url);
+
+            myDriver.navigate().to(url);
+            sleep(2);
+            allureReport(StepResultType.PASS, "Url opened successfully", true);
+        } catch (Exception e) {
+            allureReport(StepResultType.FAIL, "Url could not opened successfully", true);
+        }
+
+    }
+
 
 
 

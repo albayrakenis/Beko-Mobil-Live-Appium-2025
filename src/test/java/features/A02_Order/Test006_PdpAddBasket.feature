@@ -3,7 +3,7 @@ Feature: Satin Alma Islemleri
   @smoke  @order @pdpAddBasket
   Scenario Outline: Test06- PDP den Sepete Urun Ekleme
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    When I go to "<url>" with configuration
     And I sleep for 5 seconds
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
@@ -38,6 +38,6 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-       | url                                        |
-       | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | url |
+      | url |
 
