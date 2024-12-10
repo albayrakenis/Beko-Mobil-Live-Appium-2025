@@ -36,7 +36,7 @@
         {
           "elementName": "Teknik destek footer",
           "elementType": "cssSelector",
-          "elementValue": ".customer-support li > .desc"
+          "elementValue": ".customer-support li:nth-of-type(2) .desc"
         },
         {
           "elementName": "",

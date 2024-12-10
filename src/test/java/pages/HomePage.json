@@ -218,7 +218,7 @@
         {
           "elementName": "Isitma sogutma slider",
           "elementType": "cssSelector",
-          "elementValue": "[href='isitma-sogutma'] > span"
+          "elementValue": "[href='isitma-sogutma-ve-enerji'] > span"
         },
         {
           "elementName": "Kucuk ev aletleri slider",
@@ -258,7 +258,7 @@
         {
           "elementName": "Size ozel text",
           "elementType": "cssSelector",
-          "elementValue": ".nav-link"
+          "elementValue": "[href='/kampanyalar/size-ozel']"
         },
         {
           "elementName": "Hediye Ceki",

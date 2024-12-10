@@ -202,7 +202,7 @@
         {
           "elementName": "ek garanti 4",
           "elementType": "xpath",
-          "elementValue": "(//button[contains(.,'Seç')])[2]"
+          "elementValue": "(//button[contains(.,'Se\u00E7')])[3]"
         },
         {
           "elementName": "4 yillik ek garanti sec button",
@@ -212,7 +212,7 @@
         {
           "elementName": "2 yillik ek garanti sec button",
           "elementType": "cssSelector",
-          "elementValue": "[data-code='GRT303']"
+          "elementValue": "[data-code='GRT331']"
         },
         {
           "elementName": "Sepete eklenmis 4 yillik ek garanti text",
@@ -230,9 +230,14 @@
           "elementValue": "//button[@class='btn-remove js-execute-entry-action-button']"
         },
         {
+          "elementName": "ek garanti sec sepet sayfasi",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-extra-warranty js-get-warranty']"
+        },
+        {
           "elementName": "2 yillik ek garanti sil button",
           "elementType": "cssSelector",
-          "elementValue": "[data-entry-product-code='GRT303']"
+          "elementValue": "[data-entry-product-code='GRT331']"
         },
         {
           "elementName": "Teslimat adresi seciniz",
