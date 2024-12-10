@@ -3,12 +3,12 @@ Feature: Satin Alma Islemleri
   @user2 @smoke @kkOrder @warranty @order
   Scenario Outline: Test10- Ek Garanti
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"7256520291"
+    Then I send key to "search box text" element text:"7188270230"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
     When I see "PLP" page
@@ -46,6 +46,6 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "2 yillik ek garanti sil button" element
 
     Examples:
-      | username             | password    |url|
-      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/  |
+      | username   | password | url |
+      | kullanici1 | sifre    | url |
 

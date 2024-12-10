@@ -4,7 +4,7 @@ Feature: Ana sayfa kontrolleri
   Scenario Outline: Test11- Tarifler sayfasinin kontrolu
 
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to "<url>" with configuration
     And I scroll until find "Tum tarifler button" element with action
     And I sleep for 2 seconds
     Then I wait "Tum tarifler button;Tarifler text;Devamini gor text;anasayfa ornek tarif" elements
@@ -33,5 +33,5 @@ Feature: Ana sayfa kontrolleri
 
 
     Examples:
-      | username             | password    | url                                        |
-      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | username              | password    | url |
+      | beko.s1test@gmail.com | Albayrak.41 | url |

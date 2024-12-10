@@ -3,7 +3,7 @@ Feature: Satin Alma Islemleri
   @smoke  @order @deleteProduct
   Scenario Outline: Test09- Sepette Urun Sayisi Azaltma
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    When I go to "<url>" with configuration
     And I sleep for 5 seconds
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
@@ -43,6 +43,6 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-      | username             | password    | url                                        |
-      | beko.s1test@gmail.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | username   | password | url |
+      | kullanici1 | sifre    | url |
 

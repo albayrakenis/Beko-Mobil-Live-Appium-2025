@@ -3,7 +3,7 @@ Feature: Ana sayfa kontrolleri
   @smoke @header @aritma
   Scenario Outline: Test09- Su Aritma kategorisinde olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to "<url>" with configuration
     Then I wait "uyelik button" element
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "urunler button" element
@@ -16,6 +16,6 @@ Feature: Ana sayfa kontrolleri
 
 
     Examples:
-      | url                                        |
-      | https://akamai-s1-astra-stage.beko.com.tr/ |
+      | url |
+      | url |
 
