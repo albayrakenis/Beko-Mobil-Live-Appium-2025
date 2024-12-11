@@ -35,16 +35,12 @@ public class TestRunner2 extends BaseTest {
         testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
-  //  @DataProvider(parallel = true)
-    //public Object[][] scenarios() {
-   //     return testNGCucumberRunner.provideScenarios();
-   // }
-
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
-        System.setProperty("dataproviderthreadcount", "3"); // Maksimum 3 paralel iş parçacığı
         return testNGCucumberRunner.provideScenarios();
     }
+
+
 
 
 
