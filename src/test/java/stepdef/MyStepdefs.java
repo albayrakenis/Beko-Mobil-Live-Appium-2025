@@ -264,4 +264,9 @@ public class MyStepdefs extends BaseTest{
     public void ıGoToWithConfiguration(String arg0) {
         commonLib.ıGoToWithConfiguration(arg0);
     }
+
+    @Then("I login with {string} and {string} canli")
+    public void ıLoginWithAndCanli(String arg0, String arg1) {
+        commonLib.ıLoginWithAndCanli(arg0, arg1);
+    }
 }

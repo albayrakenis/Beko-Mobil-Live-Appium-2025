@@ -1,9 +1,9 @@
+@canliUser
 Feature: Kullanici testleri canli
 
-  @user2C @canli @adresSilC @regresyon
-  Scenario Outline: Test100- Canli Onceki Adresleri Silme
+  Background:
     When I see "HomePage" page
-    Then I go to url:"<url>"
+    Then I go to url:"https://www.beko.com.tr/"
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
     Then I wait until element to be clickable and click to "Cerezleri kabul et" element
@@ -11,7 +11,12 @@ Feature: Kullanici testleri canli
     When I see "LoginPage" page
     Then I wait "username" element
     Then I wait "password" element
-    Then I login with "<username>" and "<password>"
+
+
+  @user2C @canli @adresSilC @regresyon
+  Scenario Outline: Test100- Canli Onceki Adresleri Silme
+
+    Then I login with "<username>" and "<password>" canli
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 7 seconds
@@ -27,44 +32,11 @@ Feature: Kullanici testleri canli
       | kullaniciCanli | sifre    | urlCanli |
 
 
-  @userC @loginSuccessC @canli @regresyon
-  Scenario Outline: Test101- Canli Basarili Giris
-    Then I go to url:"<url>"
-    When I see "HomePage" page
-    Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
-    Then I login with "<username>" and "<password>"
-    And I scroll until find "giris yap" element with action
-    Then I wait until element to be clickable and click to "giris yap" element
-    When I see "HomePage" page
-    And I wait "urunler button" element
-    And I sleep for 5 seconds
-    And I wait "Hesabim button" element
-
-
-
-    Examples:
-      | username       | password | url      |
-      | kullaniciCanli | sifre    | urlCanli |
-
 
   @userC @loginSuccessC @canli @regresyon
   Scenario Outline: Test101- Canli Basarili Giris
-    Then I go to url:"<url>"
-    When I see "HomePage" page
-    Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
-    Then I login with "<username>" and "<password>"
+
+    Then I login with "<username>" and "<password>" canli
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     When I see "HomePage" page
@@ -80,15 +52,7 @@ Feature: Kullanici testleri canli
 
   @userC  @yanlissifre @canli @regresyon
   Scenario Outline: Test102- Canli Yanlis Sifre ile Giris Denemesi
-    Then I go to url:"<url>"
-    When I see "HomePage" page
-    Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
+
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     And I scroll until find "giris yap" element with action
@@ -105,15 +69,7 @@ Feature: Kullanici testleri canli
 
   @userC @yanlissifre @canli @regresyon
   Scenario Outline: Test103- Canli Yanlis Kullanici Adi ile Giriş Denemesi
-    Then I go to url:"<url>"
-    When I see "HomePage" page
-    Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
+
     Then I send key to "username" element text:"<username>"
     Then I send key to "password" element text:"<password>"
     And I scroll until find "giris yap" element with action
@@ -131,16 +87,8 @@ Feature: Kullanici testleri canli
   @userAdresC  @regresyon @canli
   Scenario Outline:Test104- Canli Adres Ekleme
 
-    When I see "HomePage" page
-    Then I go to url:"<url>"
-    Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
-    Then I login with "<username>" and "<password>"
+
+    Then I login with "<username>" and "<password>" canli
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 7 seconds
@@ -178,16 +126,8 @@ Feature: Kullanici testleri canli
   @userAdres2C  @regresyon @canli
   Scenario Outline:Test105- Canli Kurumsal Adres Ekleme
 
-    When I see "HomePage" page
-    Then I go to url:"<url>"
-    Then I wait "uyelik button" element
-    Then I sleep for 1 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
-    Then I login with "<username>" and "<password>"
+
+    Then I login with "<username>" and "<password>" canli
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 10 seconds
@@ -225,16 +165,8 @@ Feature: Kullanici testleri canli
   @updateC @smokeC @regresyon @canli
   Scenario Outline: Test106- Canli Ad Soyad Güncelleme
 
-    When I see "HomePage" page
-    Then I go to url:"<url>"
-    Then I wait "uyelik button" element
-    Then I sleep for 4 seconds
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    When I see "LoginPage" page
-    Then I wait "username" element
-    Then I wait "password" element
-    Then I login with "<username>" and "<password>"
+
+    Then I login with "<username>" and "<password>" canli
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 10 seconds

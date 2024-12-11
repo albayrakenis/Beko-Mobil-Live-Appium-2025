@@ -911,6 +911,25 @@ public class CommonLib extends BaseTest{
 
     }
 
+    public void ıLoginWithAndCanli(String username, String sifre) {
+
+
+       username =ConfigurationReader.getProperty("kullaniciCanli");
+       sifre =ConfigurationReader.getProperty("sifre");
+        try{
+        waitElement("username");
+        waitElement("password");
+
+        sendKeys("username", username);
+        sendKeys("password", sifre);
+        allureReport(StepResultType.PASS, "Url opened successfully", true);
+    } catch (Exception e) {
+        allureReport(StepResultType.FAIL, "Url could not opened successfully", true);
+    }
+
+
+    }
+
     public void ıGoToWithConfiguration(String url) {
 
         try {
