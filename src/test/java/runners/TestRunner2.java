@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 
 @CucumberOptions(
-        tags = "@smoke",
+        tags = "@main",
         plugin = {"pretty",
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json",
@@ -35,10 +35,18 @@ public class TestRunner2 extends BaseTest {
         testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
-    @DataProvider(parallel = false)
+  //  @DataProvider(parallel = true)
+    //public Object[][] scenarios() {
+   //     return testNGCucumberRunner.provideScenarios();
+   // }
+
+    @DataProvider(parallel = true)
     public Object[][] scenarios() {
+        System.setProperty("dataproviderthreadcount", "3"); // Maksimum 3 paralel iş parçacığı
         return testNGCucumberRunner.provideScenarios();
     }
+
+
 
     @AfterClass(alwaysRun = false)
     public void tearDownClass() {

@@ -34,7 +34,7 @@ public class TestRunner extends BaseTest {
         return testNGCucumberRunner.provideScenarios();
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = false)
     public void tearDownClass() {
         testNGCucumberRunner.finish();
     }
