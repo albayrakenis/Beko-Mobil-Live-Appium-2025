@@ -602,12 +602,12 @@
           "elementValue": ""
         },
         {
-          "elementName": "",
+          "elementName": "Elektrikli Supurge",
           "elementType": "xpath",
           "elementValue": "//span[.='Elektrikli S\u00FCp\u00FCrge']"
         },
         {
-          "elementName": "",
+          "elementName": "Utu",
           "elementType": "xpath",
           "elementValue": "//span[.='\u00DCt\u00FC']"
         },
@@ -617,52 +617,52 @@
           "elementValue": "//span[.='Kahve Makinesi']"
         },
         {
-          "elementName": "",
+          "elementName": "Cay Makinesi",
           "elementType": "cssSelector",
           "elementValue": "[href='/cay-makinesi'] > span"
         },
         {
-          "elementName": "",
+          "elementName": "Semaver",
           "elementType": "xpath",
           "elementValue": "//span[.='Semaver']"
         },
         {
-          "elementName": "",
+          "elementName": "Kettle",
           "elementType": "xpath",
           "elementValue": "//span[.='Kettle']"
         },
         {
-          "elementName": "",
+          "elementName": "Kati Meyve Sikacagi",
           "elementType": "cssSelector",
           "elementValue": "[href='/kati-meyve-sikacagi'] > span"
         },
         {
-          "elementName": "",
+          "elementName": "Narenciye Sikacagi",
           "elementType": "cssSelector",
           "elementValue": "[href='/narenciye-sikacagi'] > span"
         },
         {
-          "elementName": "",
+          "elementName": "Karistirici Dograyici",
           "elementType": "xpath",
           "elementValue": "//span[.='Kar\u0131\u015Ft\u0131r\u0131c\u0131 Do\u011Fray\u0131c\u0131']"
         },
         {
-          "elementName": "",
+          "elementName": "Pisirici",
           "elementType": "xpath",
-          "elementValue": "//span[.='Pişirici']"
+          "elementValue": "//span[.='Pi\u015Firici']"
         },
         {
-          "elementName": "",
+          "elementName": "Kisisel Bakim",
           "elementType": "xpath",
           "elementValue": "//span[.='Ki\u015Fisel Bak\u0131m']"
         },
         {
-          "elementName": "",
+          "elementName": "Uv Temizleme Cihazi",
           "elementType": "cssSelector",
           "elementValue": "[href='/uv-temizleme-cihazi'] > span"
         },
         {
-          "elementName": "",
+          "elementName": "Outdoor Ekipman",
           "elementType": "xpath",
           "elementValue": "//span[.='Outdoor Ekipman']"
         },

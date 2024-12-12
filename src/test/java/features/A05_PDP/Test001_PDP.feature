@@ -32,13 +32,11 @@ Feature: Satin Alma Islemleri
 #    And I wait until element to be clickable and click to "arti button" element
 #    And I wait "Sepete Eklenen Urun Text" element
 #    And I wait "Sepeti Bosalt" element
-    Then I sleep for 4 seconds
 #    And I wait "sepetteki urun sayisi text2" element
 #    Then I sleep for 3 seconds
 #    And I wait "eksi button" element
 #    And I wait until element to be clickable and click to "eksi button" element
 #    And I wait "sepetteki urun sayisi text" element
-    Then I sleep for 3 seconds
 
 
 
@@ -97,6 +95,23 @@ Feature: Satin Alma Islemleri
       | isitma sogutma | Vantilator                 | url |
       | isitma sogutma | Nem Alma Cihazi            | url |
       | isitma sogutma | Tum Urunler                | url |
+
+
+
+      | KEA            | Elektrikli Supurge         | url |
+      | KEA            | Utu                        | url |
+      | KEA            | Kahve Makinesi             | url |
+      | KEA            | Cay Makinesi               | url |
+      | KEA            | Semaver                    | url |
+      | KEA            | Kettle                     | url |
+      | KEA            | Kati Meyve Sikacagi        | url |
+      | KEA            | Narenciye Sikacagi         | url |
+      | KEA            | Karistirici Dograyici      | url |
+      | KEA            | Pisirici                   | url |
+      | KEA            | Kisisel Bakim              | url |
+      | KEA            | Uv Temizleme Cihazi        | url |
+      | KEA            | Outdoor Ekipman            | url |
+      | KEA            | Tum Urunler                | url |
 
 
 

@@ -957,10 +957,10 @@ public class CommonLib extends BaseTest{
         try {
             actions.moveToElement(myelem).perform();
             myelem2.click();
-            allureReport(StepResultType.PASS,header + "text is cleared", true);
+            allureReport(StepResultType.PASS,header + category+ "sayfasina gidildi", true);
 
         }catch (Exception e){
-            allureReport(StepResultType.FAIL,category + "text is not cleared", true);
+            allureReport(StepResultType.FAIL,header + category+ "sayfasina gidilemedi", true);
         }
     }
 
