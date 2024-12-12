@@ -17,12 +17,32 @@
         {
           "elementName": "BS KEA",
           "elementType": "xpath",
-          "elementValue": "//button[@data-answer-id='812365']"
+          "elementValue": "[data-answer-id='1058618'] > .button__text"
         },
         {
           "elementName": "BS Supurge",
           "elementType": "xpath",
-          "elementValue": "//button[@data-answer-id='812376']"
+          "elementValue": "//span[.='S\u00FCp\u00FCrge']"
+        },
+        {
+          "elementName": "BS Beyaz esya",
+          "elementType": "cssSelector",
+          "elementValue": "[data-answer-id='1058615'] > .button__text"
+        },
+        {
+          "elementName": "BS Derin dondurucu",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Derin Dondurucu']"
+        },
+        {
+          "elementName": "BS cekmeceli",
+          "elementType": "xpath",
+          "elementValue": "//span[.='\u00C7ekmeceli (Dikey)']"
+        },
+        {
+          "elementName": "BS Derin dondurucu",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Derin Dondurucu']"
         },
         {
           "elementName": "BS elektrikli supurge",
@@ -30,14 +50,14 @@
           "elementValue": "//button[@data-answer-id='774967']"
         },
         {
-          "elementName": "BS fark etmez",
+          "elementName": "BS emin degilim",
           "elementType": "xpath",
-          "elementValue": "//button[@data-answer-id='774972']"
+          "elementValue": "//span[.='Emin de\u011Filim']"
         },
         {
           "elementName": "BS onemli degil",
           "elementType": "xpath",
-          "elementValue": "//button[@data-answer-id='774974']"
+          "elementValue": "//button[@data-answer-id='1057417']"
         },
         {
           "elementName": "BS litre fark etmez",
@@ -45,9 +65,9 @@
           "elementValue": "//button[@data-answer-id='774978']"
         },
         {
-          "elementName": "BS hepa 13",
+          "elementName": "BS Henuz karar vermedim",
           "elementType": "xpath",
-          "elementValue": "(//span[contains(text(), 'Fark etmez')])[3]"
+          "elementValue": "//span[.='Hen\u00FCz karar vermedim']"
         },
 
         {
@@ -57,9 +77,9 @@
         },
 
         {
-          "elementName": "BS supurgeleri getir",
+          "elementName": "BS donduruculari getir",
           "elementType": "xpath",
-          "elementValue": "//a[@class='button button--large']"
+          "elementValue": "//a[@class='button button--large button--primary']"
         },
 
         {

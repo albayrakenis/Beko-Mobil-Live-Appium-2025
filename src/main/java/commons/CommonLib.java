@@ -643,7 +643,7 @@ public class CommonLib extends BaseTest{
     }
 
     public void ıChangeTheFrame() {
-        WebElement element = myDriver.findElement(By.cssSelector("iframe[title='Embed']"));;
+        WebElement element = myDriver.findElement(By.cssSelector("iframe[title='Beraber Se\u00E7elim ANASAYFA']"));;
         myDriver.switchTo().frame(element);
     }
 
