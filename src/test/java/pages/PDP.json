@@ -94,6 +94,96 @@
           "elementValue": "//div[@class='hum']/a[.='Hesab\u0131m']"
         },
         {
+          "elementName": "Uc nokta",
+          "elementType": "xpath",
+          "elementValue": "//article[1]//button[@class='btn-more js-ov-trg js-share-more evt-initialized']"
+        },
+        {
+          "elementName": "Favorilerime ekle",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='g-recaptcha-btn-favourite']/span[1]"
+        },
+        {
+          "elementName": "Popup kapatma",
+          "elementType": "cssSelector",
+          "elementValue": "#prd_popup > .mnp-header .icon"
+        },
+        {
+          "elementName": "Evime ne zaman ulasir",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-info1 > span"
+        },
+        {
+          "elementName": "Favorilere ekle kalp",
+          "elementType": "cssSelector",
+          "elementValue": ".only-d-f > #g-recaptcha-btn-favourite > svg"
+        },
+        {
+          "elementName": "urun teknik ozellikleri",
+          "elementType": "cssSelector",
+          "elementValue": "#pdp-technical button"
+        },
+        {
+          "elementName": "Genel bakis",
+          "elementType": "cssSelector",
+          "elementValue": "[href='#pdp-general']"
+        },
+        {
+          "elementName": "Teknik ozellikleri",
+          "elementType": "cssSelector",
+          "elementValue": "[href='#pdp-technical']"
+        },
+        {
+          "elementName": "Hangi magazada var",
+          "elementType": "cssSelector",
+          "elementValue": "[href='#pdp-store-locator']"
+        },
+        {
+          "elementName": "Taksit secenekleri",
+          "elementType": "cssSelector",
+          "elementValue": "[href='#pdp-installments']"
+        },
+        {
+          "elementName": "Yorumlar",
+          "elementType": "cssSelector",
+          "elementValue": "[href='#pdp-allreviews']"
+        },
+        {
+          "elementName": "il",
+          "elementType": "cssSelector",
+          "elementValue": "[for='cityCode']"
+        },
+        {
+          "elementName": "ilce",
+          "elementType": "cssSelector",
+          "elementValue": "[for='townCode']"
+        },
+        {
+          "elementName": "Magaza bul",
+          "elementType": "cssSelector",
+          "elementValue": ".js-find-store-btn"
+        },
+        {
+          "elementName": "En yakin",
+          "elementType": "cssSelector",
+          "elementValue": ".js-find-location-btn"
+        },
+        {
+          "elementName": "PLP Kategori Adi",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "Sirala button",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-sort > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
           "elementName": "",
           "elementType": "cssSelector",
           "elementValue": ""
