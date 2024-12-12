@@ -5,7 +5,6 @@ import io.qameta.allure.model.Status;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
@@ -18,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -158,6 +156,12 @@ public class CommonLib extends BaseTest{
 
         webElement.click();
 
+    }
+
+    public void hover(String element) {
+        WebElement elem =myDriver.findElement(getElementLocator(element));
+        Actions actions = new Actions(myDriver);
+        actions.moveToElement(elem).perform();
     }
 
     public void clickElementWaitUntilClickable2(String element)  {
@@ -944,6 +948,22 @@ public class CommonLib extends BaseTest{
         }
 
     }
+
+    public void ıHoverHeaderAndClickCategory(String header, String category) throws IOException, ParseException {
+        Actions actions = new Actions(myDriver);
+
+        WebElement myelem = myDriver.findElement(getElementLocator(header));
+        WebElement myelem2 = myDriver.findElement(getElementLocator(category));
+        try {
+            actions.moveToElement(myelem).perform();
+            myelem2.click();
+            allureReport(StepResultType.PASS,header + "text is cleared", true);
+
+        }catch (Exception e){
+            allureReport(StepResultType.FAIL,category + "text is not cleared", true);
+        }
+    }
+
 
 
 

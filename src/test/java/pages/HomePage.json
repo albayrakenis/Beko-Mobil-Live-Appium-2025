@@ -286,38 +286,429 @@
           "elementValue": ".js-modal-assistant"
         },
         {
-          "elementName": "",
+          "elementName": "Artirilmis gerceklik",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='container-fluid']//div[@id='featured-technology']//div[2]//a[contains(.,'İncele')]"
+        },
+        {
+          "elementName": "AR text",
+          "elementType": "xpath",
+          "elementValue": "//h1[@class='bnr-title']"
+        },
+        {
+          "elementName": "AR arama sonuclari",
+          "elementType": "xpath",
+          "elementValue": "//h1[@class='title']"
+        },
+        {
+          "elementName": "AR ilk urun",
+          "elementType": "xpath",
+          "elementValue": "(//a[contains(.,'\u0130ncele')])[1]"
+        },
+        {
+          "elementName": "PDP AR yazisi",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='ar-title']"
+        },
+        {
+          "elementName": "Bilgisayar baslik",
           "elementType": "cssSelector",
+          "elementValue": "[title='Bilgisayar'] > span"
+        },
+        {
+          "elementName": "Beyaz Esya",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/beyaz-esya'] > span"
+        },
+        {
+          "elementName": "Ankastre",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre']"
+        },
+        {
+          "elementName": "Televizyon",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Televizyon']"
+        },
+        {
+          "elementName": "Elektronik",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Elektronik']"
+        },
+        {
+          "elementName": "Isitma-Sogutma",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/isitma-sogutma-ve-enerji'] > span"
+        },
+        {
+          "elementName": "KEA",
+          "elementType": "cssSelector",
+          "elementValue": ".menu-category [href='/kucuk-ev-aletleri'] > span"
+        },
+        {
+          "elementName": "Hijyen",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Hijyen-Aksesuar-Oto']"
+        },
+
+        {
+          "elementName": "Buzdolabi",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Buzdolab\u0131']"
+        },
+        {
+          "elementName": "Derin Dondurucu",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Derin Dondurucu']"
+        },
+        {
+          "elementName": "Bulasik Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/bulasik-makinesi'] > span"
+        },
+        {
+          "elementName": "Camasir Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/camasir-makinesi'] > span"
+        },
+        {
+          "elementName": "Kurutma Makinesi",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Kurutma Makinesi']"
+        },
+        {
+          "elementName": "Kurutmali Camasir Makinesi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/kurutmali-camasir-makinesi'] > span"
+        },
+        {
+          "elementName": "Firin",
+          "elementType": "xpath",
+          "elementValue": "//span[.='F\u0131r\u0131n']"
+        },
+        {
+          "elementName": "Mikrodalga",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/mikrodalga-firin'] > span"
+        },
+        {
+          "elementName": "Set Ustu",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/set-ustu-ocak'] > span"
+        },
+        {
+          "elementName": "Su Sebili",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Su Sebili']"
+        },
+        {
+          "elementName": "Tum Urunler",
+          "elementType": "xpath",
+          "elementValue": "//li[@class='lv1-li selected']//li[@class='lv2-li no-sub']/a[.='Tüm \u00DCr\u00FCnler']"
+        },
+        {
+          "elementName": "---------------------------------------------------------------------------------",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "Ankastre Firin",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre F\u0131r\u0131n']"
+        },
+        {
+          "elementName": "Ankastre Mikro Dalgalar",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre Mikro Dalgalar']"
+        },
+        {
+          "elementName": "Ankastre Ocaklar",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre Ocaklar']"
+        },
+        {
+          "elementName": "Ankastre Davlumbazlar",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre Davlumbazlar']"
+        },
+        {
+          "elementName": "Ankastre Aspiratorler",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre Aspirat\u00F6rler']"
+        },
+        {
+          "elementName": "Ankastre Bulasik Makinesi",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ankastre Bula\u015F\u0131k Makineleri']"
+        },
+        {
+          "elementName": "Ankastre Buzdolabi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/ankastre-buzdolabi'] > span"
+        },
+        {
+          "elementName": "-------------------------------TELEVİZYON-----------------------------------------------------",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "4K OLED TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='4K OLED TV']"
+        },
+        {
+          "elementName": "Google TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Google TV']"
+        },
+        {
+          "elementName": "Android TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Android TV']"
+        },
+        {
+          "elementName": "4K UHD TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='4K UHD TV']"
+        },
+        {
+          "elementName": "Buyuk Ekran TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/buyuk-ekran-tv'] > span"
+        },
+        {
+          "elementName": "Smart TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Smart TV']"
+        },
+        {
+          "elementName": "Full HD TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Full HD TV']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Mutfak Televizyonu']"
+        },
+        {
+          "elementName": "LED & LCD TV",
+          "elementType": "xpath",
+          "elementValue": "//span[.='LED & LCD TV']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Mini Led TV']"
+        },
+        {
+          "elementName": "QLED",
+          "elementType": "xpath",
+          "elementValue": "//span[.='QLED']"
+        },
+        {
+          "elementName": "---------------------------ELEKTRONİK-------------------------------------",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "Cep Telefonu",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Cep Telefonu']"
+        },
+        {
+          "elementName": "Cep Telefonu Aksesuarlar",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Cep Telefonu Aksesuarlar\u0131']"
+        },
+        {
+          "elementName": "Giyilebilir Teknoloji",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Giyilebilir Teknoloji']"
+        },
+        {
+          "elementName": "Bilgisayar",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Bilgisayar']"
+        },
+        {
+          "elementName": "Goruntu Sistemleri",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ses & G\u00F6r\u00FCnt\u00FC Sistemleri']"
+        },
+        {
+          "elementName": "Odeme Sistemleri",
+          "elementType": "xpath",
+          "elementValue": "//span[.='\u00D6deme Sistemleri']"
+        },
+        {
+          "elementName": "Spor ve Outdoor",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Spor ve Outdoor']"
+        },
+        {
+          "elementName": "Hobi - Oyun",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Hobi - Oyun (Gaming) \u00DCr\u00FCnleri']"
+        },
+        {
+          "elementName": "-------------------------isitma sogutma----------------------------",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "Klima",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Klima']"
+        },
+        {
+          "elementName": "Kombi",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Kombi']"
+        },
+        {
+          "elementName": "Termosifon",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Termosifon']"
+        },
+        {
+          "elementName": "Elektrikli Isitici",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Elektrikli Is\u0131t\u0131c\u0131']"
+        },
+        {
+          "elementName": "ic Hava Kalitesi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/ic-hava-kalitesi'] > span"
+        },
+        {
+          "elementName": "Hava Sogutucu",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/hava-sogutucu'] > span"
+        },
+        {
+          "elementName": "Vantilator",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/vantilator'] > span"
+        },
+        {
+          "elementName": "Nem Alma Cihazi",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/nem-alma-cihazi'] > span"
+        },
+        {
+          "elementName": "-------------------------------KEA-----------------------------------------------",
+          "elementType": "xpath",
           "elementValue": ""
         },
         {
           "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementType": "xpath",
+          "elementValue": "//span[.='Elektrikli S\u00FCp\u00FCrge']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='\u00DCt\u00FC']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Kahve Makinesi']"
         },
         {
           "elementName": "",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[href='/cay-makinesi'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Semaver']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Kettle']"
         },
         {
           "elementName": "",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[href='/kati-meyve-sikacagi'] > span"
         },
         {
           "elementName": "",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "[href='/narenciye-sikacagi'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Kar\u0131\u015Ft\u0131r\u0131c\u0131 Do\u011Fray\u0131c\u0131']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Pişirici']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Ki\u015Fisel Bak\u0131m']"
         },
         {
           "elementName": "",
           "elementType": "cssSelector",
+          "elementValue": "[href='/uv-temizleme-cihazi'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Outdoor Ekipman']"
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
           "elementValue": ""
         },
         {
           "elementName": "",
-          "elementType": "cssSelector",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "xpath",
           "elementValue": ""
         }
 

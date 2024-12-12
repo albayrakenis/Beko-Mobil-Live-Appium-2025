@@ -269,4 +269,13 @@ public class MyStepdefs extends BaseTest{
     public void ıLoginWithAndCanli(String arg0, String arg1) {
         commonLib.ıLoginWithAndCanli(arg0, arg1);
     }
+
+    @And("I hover {string} header and click {string} category")
+    public void ıHoverHeaderAndClickCategory(String header, String category) throws IOException, ParseException {
+        commonLib.ıHoverHeaderAndClickCategory(header, category);
+    }
+
+    @And("I hover {string} header and click {string} category with string")
+    public void ıHoverHeaderAndClickCategoryWithString(String arg0, String arg1) {
+    }
 }
