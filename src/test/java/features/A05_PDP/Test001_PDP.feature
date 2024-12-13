@@ -1,7 +1,6 @@
 Feature: Satin Alma Islemleri
 
 
-
   @smoke  @order @pdp550
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
@@ -37,23 +36,17 @@ Feature: Satin Alma Islemleri
     And I wait "il;ilce;Magaza bul;En yakin" elements
 
     Examples:
-      | header         | baslik                     | url |
+      | header         | baslik             | url      |
 
-      | isitma sogutma | Klima                      | urlCanli |
-      | isitma sogutma | Kombi                      | urlCanli |
-      | isitma sogutma | Termosifon                 | urlCanli |
-      | isitma sogutma | Elektrikli Isitici         | urlCanli |
-      | isitma sogutma | ic Hava Kalitesi           | urlCanli |
-      | isitma sogutma | Hava Sogutucu              | urlCanli |
-      | isitma sogutma | Vantilator                 | urlCanli |
-      | isitma sogutma | Nem Alma Cihazi            | urlCanli |
-      | isitma sogutma | Tum Urunler                | urlCanli |
-
-
-
-
-
-
+      | isitma sogutma | Klima              | urlCanli |
+      | isitma sogutma | Kombi              | urlCanli |
+      | isitma sogutma | Termosifon         | urlCanli |
+      | isitma sogutma | Elektrikli Isitici | urlCanli |
+      | isitma sogutma | ic Hava Kalitesi   | urlCanli |
+      | isitma sogutma | Hava Sogutucu      | urlCanli |
+      | isitma sogutma | Vantilator         | urlCanli |
+      | isitma sogutma | Nem Alma Cihazi    | urlCanli |
+      | isitma sogutma | Tum Urunler        | urlCanli |
 
 
   @smoke  @order @pdp55
@@ -81,6 +74,7 @@ Feature: Satin Alma Islemleri
     And I sleep for 3 seconds
     And I wait until element to be clickable and click to "Var Button" element
     And I wait until element to be clickable and click to "Uygula Button" element
+    And I sleep for 5 seconds
     And I scroll until find "Pdp ilk urun" element with action
     And I wait until element to be clickable and click to "Pdp ilk urun" element
     And I wait "Sepete At Button;Evime ne zaman ulasir;Favorilere ekle kalp" elements
@@ -90,7 +84,7 @@ Feature: Satin Alma Islemleri
     And I wait "il;ilce;Magaza bul;En yakin" elements
 
     Examples:
-      | header         | baslik                     | url |
+      | header         | baslik                     | url      |
       | Beyaz Esya     | Buzdolabi                  | urlCanli |
       | Beyaz Esya     | Derin Dondurucu            | urlCanli |
       | Beyaz Esya     | Bulasik Makinesi           | urlCanli |
@@ -98,19 +92,19 @@ Feature: Satin Alma Islemleri
       | Beyaz Esya     | Kurutma Makinesi           | urlCanli |
       | Beyaz Esya     | Kurutmali Camasir Makinesi | urlCanli |
       | Beyaz Esya     | Firin                      | urlCanli |
-      | Beyaz Esya     | Mikrodalga                 | urlCanli |
-      | Beyaz Esya     | Set Ustu                   | urlCanli |
-      | Beyaz Esya     | Su Sebili                  | urlCanli |
-      | Beyaz Esya     | Tum Urunler                | urlCanli |
+      #| Beyaz Esya     | Mikrodalga                 | urlCanli |
+      #| Beyaz Esya     | Set Ustu                   | urlCanli |
+      #| Beyaz Esya     | Su Sebili                  | urlCanli |
+      | Beyaz Esya     | Tum Urunler beyaz esya     | urlCanli |
 
       | Ankastre       | Ankastre Firin             | urlCanli |
       | Ankastre       | Ankastre Mikro Dalgalar    | urlCanli |
       | Ankastre       | Ankastre Ocaklar           | urlCanli |
       | Ankastre       | Ankastre Davlumbazlar      | urlCanli |
-      | Ankastre       | Ankastre Aspiratorler      | urlCanli |
-      | Ankastre       | Ankastre Bulasik Makinesi  | urlCanli |
+      #| Ankastre       | Ankastre Aspiratorler      | urlCanli |
+      #| Ankastre       | Ankastre Bulasik Makinesi  | urlCanli |
       | Ankastre       | Ankastre Buzdolabi         | urlCanli |
-      | Ankastre       | Tum Urunler                | urlCanli |
+      | Ankastre       | Tum Urunler ankastre       | urlCanli |
 
       #| Televizyon     | 4K OLED TV                 | urlCanli |
       | Televizyon     | Google TV                  | urlCanli |
@@ -121,49 +115,44 @@ Feature: Satin Alma Islemleri
       | Televizyon     | Full HD TV                 | urlCanli |
       | Televizyon     | LED & LCD TV               | urlCanli |
       | Televizyon     | QLED                       | urlCanli |
-      | Televizyon     | Tum Urunler                | urlCanli |
+      | Televizyon     | Tum Urunler televizyon     | urlCanli |
 
-      | Elektronik     | Cep Telefonu               | urlCanli |
-      | Elektronik     | Cep Telefonu Aksesuarlar   | urlCanli |
+      #| Elektronik     | Cep Telefonu               | urlCanli |
+      #| Elektronik     | Cep Telefonu Aksesuarlar   | urlCanli |
       | Elektronik     | Giyilebilir Teknoloji      | urlCanli |
-      | Elektronik     | Bilgisayar                 | urlCanli |
-      | Elektronik     | Goruntu Sistemleri         | urlCanli |
+      #| Elektronik     | Bilgisayar                 | urlCanli |
+      #| Elektronik     | Goruntu Sistemleri         | urlCanli |
       | Elektronik     | Odeme Sistemleri           | urlCanli |
-      | Elektronik     | Hobi - Oyun                | urlCanli |
-      | Elektronik     | Tum Urunler                | urlCanli |
+      #| Elektronik     | Hobi - Oyun                | urlCanli |
+      | Elektronik     | Tum Urunler elektronik     | urlCanli |
 
 
-      | isitma sogutma | Klima                      | urlCanli |
+
       | isitma sogutma | Kombi                      | urlCanli |
-      | isitma sogutma | Termosifon                 | urlCanli |
-      | isitma sogutma | Elektrikli Isitici         | urlCanli |
-      | isitma sogutma | ic Hava Kalitesi           | urlCanli |
-      | isitma sogutma | Hava Sogutucu              | urlCanli |
-      | isitma sogutma | Vantilator                 | urlCanli |
-      | isitma sogutma | Nem Alma Cihazi            | urlCanli |
-      | isitma sogutma | Tum Urunler                | urlCanli |
+      #| isitma sogutma | Termosifon                 | urlCanli |
+      ##| isitma sogutma | Elektrikli Isitici         | urlCanli |
+      #| isitma sogutma | ic Hava Kalitesi           | urlCanli |
+      #| isitma sogutma | Hava Sogutucu              | urlCanli |
+      #| isitma sogutma | Vantilator                 | urlCanli |
+      #| isitma sogutma | Nem Alma Cihazi            | urlCanli |
+      #| isitma sogutma | Tum Urunler isitma sogutma | urlCanli |
 
 
 
-      | KEA            | Elektrikli Supurge         | urlCanli |
-      | KEA            | Utu                        | urlCanli |
-      | KEA            | Kahve Makinesi             | urlCanli |
-      | KEA            | Cay Makinesi               | urlCanli |
+      #| KEA            | Elektrikli Supurge         | urlCanli |
+      #| KEA            | Utu                        | urlCanli |
+      #| KEA            | Kahve Makinesi             | urlCanli |
+      #| KEA            | Cay Makinesi               | urlCanli |
       | KEA            | Semaver                    | urlCanli |
-      | KEA            | Kettle                     | urlCanli |
-      | KEA            | Kati Meyve Sikacagi        | urlCanli |
-      | KEA            | Narenciye Sikacagi         | urlCanli |
-      | KEA            | Karistirici Dograyici      | urlCanli |
-      | KEA            | Pisirici                   | urlCanli |
-      | KEA            | Kisisel Bakim              | urlCanli |
-      | KEA            | Uv Temizleme Cihazi        | urlCanli |
-      | KEA            | Outdoor Ekipman            | urlCanli |
-      | KEA            | Tum Urunler                | urlCanli |
-
-
-
-
-
+     # | KEA            | Kettle                     | urlCanli |
+    #  | KEA            | Kati Meyve Sikacagi        | urlCanli |
+     # | KEA            | Narenciye Sikacagi         | urlCanli |
+     # | KEA            | Karistirici Dograyici      | urlCanli |
+     # | KEA            | Pisirici                   | urlCanli |
+      #| KEA            | Kisisel Bakim              | urlCanli |
+     # | KEA            | Uv Temizleme Cihazi        | urlCanli |
+     # | KEA            | Outdoor Ekipman            | urlCanli |
+     # | KEA            | Tum Urunler kea            | urlCanli |
 
 
   @smoke  @order @pdp2

@@ -407,6 +407,36 @@
           "elementValue": "//li[@class='lv1-li selected']//li[@class='lv2-li no-sub']/a[.='T\u00FCm \u00DCr\u00FCnler']"
         },
         {
+          "elementName": "Tum Urunler beyaz esya",
+          "elementType": "cssSelector",
+          "elementValue": "[title='T\u00FCm \u00DCr\u00FCnler'][href='/beyaz-esya']"
+        },
+        {
+          "elementName": "Tum Urunler ankastre",
+          "elementType": "cssSelector",
+          "elementValue": "[title='T\u00FCm \u00DCr\u00FCnler'][href='/ankastre']"
+        },
+        {
+          "elementName": "Tum Urunler televizyon",
+          "elementType": "cssSelector",
+          "elementValue": "[title='T\u00FCm \u00DCr\u00FCnler'][href='/televizyon']"
+        },
+        {
+          "elementName": "Tum Urunler elektronik",
+          "elementType": "cssSelector",
+          "elementValue": "[title='T\u00FCm \u00DCr\u00FCnler'][href='/elektronik']"
+        },
+        {
+          "elementName": "Tum Urunler isitma sogutma",
+          "elementType": "cssSelector",
+          "elementValue": "[title='T\u00FCm \u00DCr\u00FCnler'][href='/isitma-sogutma-ve-enerji']"
+        },
+        {
+          "elementName": "Tum Urunler kea",
+          "elementType": "cssSelector",
+          "elementValue": "[title='T\u00FCm \u00DCr\u00FCnler'][href='/kucuk-ev-aletleri']"
+        },
+        {
           "elementName": "---------------------------------------------------------------------------------",
           "elementType": "xpath",
           "elementValue": ""
