@@ -37,73 +37,73 @@ Feature: Satin Alma Islemleri
     Examples:
       | header         | baslik                     | url |
       | Beyaz Esya     | Buzdolabi                  | urlCanli |
-      | Beyaz Esya     | Derin Dondurucu            | url |
-      | Beyaz Esya     | Bulasik Makinesi           | url |
-      | Beyaz Esya     | Camasir Makinesi           | url |
-      | Beyaz Esya     | Kurutma Makinesi           | url |
-      | Beyaz Esya     | Kurutmali Camasir Makinesi | url |
-      | Beyaz Esya     | Firin                      | url |
-      | Beyaz Esya     | Mikrodalga                 | url |
-      | Beyaz Esya     | Set Ustu                   | url |
-      | Beyaz Esya     | Su Sebili                  | url |
-      | Beyaz Esya     | Tum Urunler                | url |
+      | Beyaz Esya     | Derin Dondurucu            | urlCanli |
+      | Beyaz Esya     | Bulasik Makinesi           | urlCanli |
+      | Beyaz Esya     | Camasir Makinesi           | urlCanli |
+      | Beyaz Esya     | Kurutma Makinesi           | urlCanli |
+      | Beyaz Esya     | Kurutmali Camasir Makinesi | urlCanli |
+      | Beyaz Esya     | Firin                      | urlCanli |
+      | Beyaz Esya     | Mikrodalga                 | urlCanli |
+      | Beyaz Esya     | Set Ustu                   | urlCanli |
+      | Beyaz Esya     | Su Sebili                  | urlCanli |
+      | Beyaz Esya     | Tum Urunler                | urlCanli |
 
-      | Ankastre       | Ankastre Firin             | url |
-      | Ankastre       | Ankastre Mikro Dalgalar    | url |
-      | Ankastre       | Ankastre Ocaklar           | url |
-      | Ankastre       | Ankastre Davlumbazlar      | url |
-      | Ankastre       | Ankastre Aspiratorler      | url |
-      | Ankastre       | Ankastre Bulasik Makinesi  | url |
-      | Ankastre       | Ankastre Buzdolabi         | url |
-      | Ankastre       | Tum Urunler                | url |
+      | Ankastre       | Ankastre Firin             | urlCanli |
+      | Ankastre       | Ankastre Mikro Dalgalar    | urlCanli |
+      | Ankastre       | Ankastre Ocaklar           | urlCanli |
+      | Ankastre       | Ankastre Davlumbazlar      | urlCanli |
+      | Ankastre       | Ankastre Aspiratorler      | urlCanli |
+      | Ankastre       | Ankastre Bulasik Makinesi  | urlCanli |
+      | Ankastre       | Ankastre Buzdolabi         | urlCanli |
+      | Ankastre       | Tum Urunler                | urlCanli |
 
-      | Televizyon     | 4K OLED TV                 | url |
-      | Televizyon     | Google TV                  | url |
-      | Televizyon     | Android TV                 | url |
-      | Televizyon     | 4K UHD TV                  | url |
-      | Televizyon     | Buyuk Ekran TV             | url |
-      | Televizyon     | Smart TV                   | url |
-      | Televizyon     | Full HD TV                 | url |
-      | Televizyon     | LED & LCD TV               | url |
-      | Televizyon     | QLED                       | url |
-      | Televizyon     | Tum Urunler                | url |
+      | Televizyon     | 4K OLED TV                 | urlCanli |
+      | Televizyon     | Google TV                  | urlCanli |
+      | Televizyon     | Android TV                 | urlCanli |
+      | Televizyon     | 4K UHD TV                  | urlCanli |
+      | Televizyon     | Buyuk Ekran TV             | urlCanli |
+      | Televizyon     | Smart TV                   | urlCanli |
+      | Televizyon     | Full HD TV                 | urlCanli |
+      | Televizyon     | LED & LCD TV               | urlCanli |
+      | Televizyon     | QLED                       | urlCanli |
+      | Televizyon     | Tum Urunler                | urlCanli |
 
-      | Elektronik     | Cep Telefonu               | url |
-      | Elektronik     | Cep Telefonu Aksesuarlar   | url |
-      | Elektronik     | Giyilebilir Teknoloji      | url |
-      | Elektronik     | Bilgisayar                 | url |
-      | Elektronik     | Goruntu Sistemleri         | url |
-      | Elektronik     | Odeme Sistemleri           | url |
-      | Elektronik     | Hobi - Oyun                | url |
-      | Elektronik     | Tum Urunler                | url |
-
-
-      | isitma sogutma | Klima                      | url |
-      | isitma sogutma | Kombi                      | url |
-      | isitma sogutma | Termosifon                 | url |
-      | isitma sogutma | Elektrikli Isitici         | url |
-      | isitma sogutma | ic Hava Kalitesi           | url |
-      | isitma sogutma | Hava Sogutucu              | url |
-      | isitma sogutma | Vantilator                 | url |
-      | isitma sogutma | Nem Alma Cihazi            | url |
-      | isitma sogutma | Tum Urunler                | url |
+      | Elektronik     | Cep Telefonu               | urlCanli |
+      | Elektronik     | Cep Telefonu Aksesuarlar   | urlCanli |
+      | Elektronik     | Giyilebilir Teknoloji      | urlCanli |
+      | Elektronik     | Bilgisayar                 | urlCanli |
+      | Elektronik     | Goruntu Sistemleri         | urlCanli |
+      | Elektronik     | Odeme Sistemleri           | urlCanli |
+      | Elektronik     | Hobi - Oyun                | urlCanli |
+      | Elektronik     | Tum Urunler                | urlCanli |
 
 
+      | isitma sogutma | Klima                      | urlCanli |
+      | isitma sogutma | Kombi                      | urlCanli |
+      | isitma sogutma | Termosifon                 | urlCanli |
+      | isitma sogutma | Elektrikli Isitici         | urlCanli |
+      | isitma sogutma | ic Hava Kalitesi           | urlCanli |
+      | isitma sogutma | Hava Sogutucu              | urlCanli |
+      | isitma sogutma | Vantilator                 | urlCanli |
+      | isitma sogutma | Nem Alma Cihazi            | urlCanli |
+      | isitma sogutma | Tum Urunler                | urlCanli |
 
-      | KEA            | Elektrikli Supurge         | url |
-      | KEA            | Utu                        | url |
-      | KEA            | Kahve Makinesi             | url |
-      | KEA            | Cay Makinesi               | url |
-      | KEA            | Semaver                    | url |
-      | KEA            | Kettle                     | url |
-      | KEA            | Kati Meyve Sikacagi        | url |
-      | KEA            | Narenciye Sikacagi         | url |
-      | KEA            | Karistirici Dograyici      | url |
-      | KEA            | Pisirici                   | url |
-      | KEA            | Kisisel Bakim              | url |
-      | KEA            | Uv Temizleme Cihazi        | url |
-      | KEA            | Outdoor Ekipman            | url |
-      | KEA            | Tum Urunler                | url |
+
+
+      | KEA            | Elektrikli Supurge         | urlCanli |
+      | KEA            | Utu                        | urlCanli |
+      | KEA            | Kahve Makinesi             | urlCanli |
+      | KEA            | Cay Makinesi               | urlCanli |
+      | KEA            | Semaver                    | urlCanli |
+      | KEA            | Kettle                     | urlCanli |
+      | KEA            | Kati Meyve Sikacagi        | urlCanli |
+      | KEA            | Narenciye Sikacagi         | urlCanli |
+      | KEA            | Karistirici Dograyici      | urlCanli |
+      | KEA            | Pisirici                   | urlCanli |
+      | KEA            | Kisisel Bakim              | urlCanli |
+      | KEA            | Uv Temizleme Cihazi        | urlCanli |
+      | KEA            | Outdoor Ekipman            | urlCanli |
+      | KEA            | Tum Urunler                | urlCanli |
 
 
 
