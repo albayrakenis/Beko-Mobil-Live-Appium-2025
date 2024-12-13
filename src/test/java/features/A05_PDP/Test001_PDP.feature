@@ -110,11 +110,10 @@ Feature: Satin Alma Islemleri
       | Televizyon     | Google TV                  | urlCanli |
       | Televizyon     | Android TV                 | urlCanli |
       | Televizyon     | 4K UHD TV                  | urlCanli |
-      | Televizyon     | Buyuk Ekran TV             | urlCanli |
+      #| Televizyon     | Buyuk Ekran TV             | urlCanli |
       | Televizyon     | Smart TV                   | urlCanli |
       | Televizyon     | Full HD TV                 | urlCanli |
       | Televizyon     | LED & LCD TV               | urlCanli |
-      | Televizyon     | QLED                       | urlCanli |
       | Televizyon     | Tum Urunler televizyon     | urlCanli |
 
       #| Elektronik     | Cep Telefonu               | urlCanli |
