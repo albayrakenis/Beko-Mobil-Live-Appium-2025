@@ -15,6 +15,9 @@ Feature: Ana menü kontrolleri
 
     And I wait "Beraber cozelim text" element
     And I check "Beraber cozelim text" element text is equal "Beraber Çözelim hizmetine hoş geldiniz!"
+    And I wait until element to be clickable and click to "Menuyu acma" element
+    And I wait "Yeni Talep Olusturma;Garanti Uzatma;Garanti Sorgula;Acik Taleplerim;Urun Kilavuzu;Yetkili Servis Sorgulama" elements
+
 
 #    And I wait "Destek box" element
 #    And I scroll until find "Destek kaydi ac" element with action

@@ -14,14 +14,40 @@
           "elementValue": "//span[@class='hide-on-mobile ']/div[@class='landingPageTextTitle_Beko']"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
-        }
-{
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Menuyu acma",
+          "elementType": "xpath",
+          "elementValue": "//lightning-primitive-icon[2]"
+        },
+        {
+          "elementName": "Garanti Uzatma",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Garanti Uzatma']"
+        },
+        {
+          "elementName": "Yeni Talep Olusturma",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Yeni Talep Olu\u015Ftur']"
+        },
+
+        {
+          "elementName": "Garanti Sorgula",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Garanti Sorgula']"
+        },
+        {
+          "elementName": "Acik Taleplerim",
+          "elementType": "xpath",
+          "elementValue": "//span[.='A\u00E7\u0131k Taleplerim']"
+        },
+        {
+          "elementName": "Urun Kilavuzu",
+          "elementType": "xpath",
+          "elementValue": "//span[.='\u00DCr\u00FCn Kılavuzu']"
+        },
+        {
+          "elementName": "Yetkili Servis Sorgulama",
+          "elementType": "xpath",
+          "elementValue": "//a[@role='menuitem']//span[.='Yetkili Servis Sorgulama']"
         },
         {
           "elementName": "",

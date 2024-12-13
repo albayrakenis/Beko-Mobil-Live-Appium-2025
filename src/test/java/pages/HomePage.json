@@ -404,7 +404,7 @@
         {
           "elementName": "Tum Urunler",
           "elementType": "xpath",
-          "elementValue": "//li[@class='lv1-li selected']//li[@class='lv2-li no-sub']/a[.='Tüm \u00DCr\u00FCnler']"
+          "elementValue": "//li[@class='lv1-li selected']//li[@class='lv2-li no-sub']/a[.='T\u00FCm \u00DCr\u00FCnler']"
         },
         {
           "elementName": "---------------------------------------------------------------------------------",

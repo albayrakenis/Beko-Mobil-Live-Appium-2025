@@ -38,14 +38,21 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | header         | baslik                     | url |
-      | Ankastre       | Ankastre Firin             | urlCanli |
-      | Ankastre       | Ankastre Mikro Dalgalar    | urlCanli |
-      | Ankastre       | Ankastre Ocaklar           | urlCanli |
-      | Ankastre       | Ankastre Davlumbazlar      | urlCanli |
-      | Ankastre       | Ankastre Aspiratorler      | urlCanli |
-      | Ankastre       | Ankastre Bulasik Makinesi  | urlCanli |
-      | Ankastre       | Ankastre Buzdolabi         | urlCanli |
-      | Ankastre       | Tum Urunler                | urlCanli |
+      | KEA            | Elektrikli Supurge         | urlCanli |
+      | KEA            | Utu                        | urlCanli |
+      | KEA            | Kahve Makinesi             | urlCanli |
+      | KEA            | Cay Makinesi               | urlCanli |
+      | KEA            | Semaver                    | urlCanli |
+      | KEA            | Kettle                     | urlCanli |
+      | KEA            | Kati Meyve Sikacagi        | urlCanli |
+      | KEA            | Narenciye Sikacagi         | urlCanli |
+      | KEA            | Karistirici Dograyici      | urlCanli |
+      | KEA            | Pisirici                   | urlCanli |
+      | KEA            | Kisisel Bakim              | urlCanli |
+      | KEA            | Uv Temizleme Cihazi        | urlCanli |
+      | KEA            | Outdoor Ekipman            | urlCanli |
+      | KEA            | Tum Urunler                | urlCanli |
+
 
 
 
