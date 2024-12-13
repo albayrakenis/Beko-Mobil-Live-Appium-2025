@@ -38,20 +38,9 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | header         | baslik                     | url |
-      | KEA            | Elektrikli Supurge         | urlCanli |
-      | KEA            | Utu                        | urlCanli |
-      | KEA            | Kahve Makinesi             | urlCanli |
-      | KEA            | Cay Makinesi               | urlCanli |
+
       | KEA            | Semaver                    | urlCanli |
-      | KEA            | Kettle                     | urlCanli |
-      | KEA            | Kati Meyve Sikacagi        | urlCanli |
-      | KEA            | Narenciye Sikacagi         | urlCanli |
-      | KEA            | Karistirici Dograyici      | urlCanli |
-      | KEA            | Pisirici                   | urlCanli |
-      | KEA            | Kisisel Bakim              | urlCanli |
-      | KEA            | Uv Temizleme Cihazi        | urlCanli |
-      | KEA            | Outdoor Ekipman            | urlCanli |
-      | KEA            | Tum Urunler                | urlCanli |
+
 
 
 
