@@ -278,4 +278,9 @@ public class MyStepdefs extends BaseTest{
     @And("I hover {string} header and click {string} category with string")
     public void ıHoverHeaderAndClickCategoryWithString(String arg0, String arg1) {
     }
+
+    @Then("I choose city {string} and town {string} from fast delivery list")
+    public void ıChooseCityAndTownFromFastDeliveryList(String il, String ilce) {
+        commonLib.ıChooseCityAndTownFromFastDeliveryList(il, ilce);
+    }
 }

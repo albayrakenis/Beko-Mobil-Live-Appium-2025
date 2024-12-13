@@ -29,8 +29,8 @@
         },
         {
           "elementName": "Var Button",
-          "elementType": "cssSelector",
-          "elementValue": "[for='fg_ValuesStatus_inStock_1']"
+          "elementType": "xpath",
+          "elementValue": "//label[contains(.,'Var')]"
         },
         {
           "elementName": "Uygula Button",
@@ -179,9 +179,9 @@
           "elementValue": ".btn-sort > span"
         },
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Sepete at pdp",
+          "elementType": "xpath",
+          "elementValue": "//span[.='Sepete At']"
         },
         {
           "elementName": "",

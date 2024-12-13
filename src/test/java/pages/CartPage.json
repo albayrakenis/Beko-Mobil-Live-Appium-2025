@@ -295,9 +295,34 @@
           "elementValue": "//button[@id='yes']"
         },
         {
-          "elementName": "",
+          "elementName": "Magazayi kendim secmek istiyorum",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".credit-calc-title"
+        },
+        {
+          "elementName": "Magaza Ara Fast",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-complete"
+        },
+        {
+          "elementName": "ilk magaza",
+          "elementType": "cssSelector",
+          "elementValue": "[for='dealer_0']"
+        },
+        {
+          "elementName": "Uygula",
+          "elementType": "cssSelector",
+          "elementValue": ".js-apply-fast-delivery"
+        },
+        {
+          "elementName": "Degistir",
+          "elementType": "cssSelector",
+          "elementValue": "[title='De\u011Fi\u015Ftir']"
+        },
+        {
+          "elementName": "Carpi button",
+          "elementType": "cssSelector",
+          "elementValue": ".removeDelivery use"
         },
         {
           "elementName": "",

@@ -465,6 +465,19 @@ public class CommonLib extends BaseTest{
         allureReport(StepResultType.PASS, "'"+TaxCity + "' Element is found", true);
     }
 
+    public void ıChooseCityAndTownFromFastDeliveryList(String il, String ilce) {
+        Select select = new Select( myDriver.findElement(By.cssSelector(".js-form-delivery-store #cityCode")));
+
+        select.selectByVisibleText(il);
+        allureReport(StepResultType.PASS, "'"+il + "' Element is found", true);
+
+        Select select2 = new Select( myDriver.findElement(By.cssSelector(".js-form-delivery-store #townCode")));
+
+        select2.selectByVisibleText(ilce);
+        allureReport(StepResultType.PASS, "'"+ilce + "' Element is found", true);
+    }
+
+
     public void ıChooseCityFromListForClickAndCollect(String City) {
         Select select = new Select( myDriver.findElement(By.cssSelector(".js-click-collect-store #cityCode")));
 
