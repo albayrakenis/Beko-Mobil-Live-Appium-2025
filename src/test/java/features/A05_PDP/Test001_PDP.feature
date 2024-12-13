@@ -2,8 +2,8 @@ Feature: Satin Alma Islemleri
 
 
 
-  @smoke  @order @pdp55
-  Scenario Outline: Test09- Sepette Urun Sayisi Azaltma
+  @smoke  @order @pdp550
+  Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait until element to be clickable and click to "Cerezleri kabul et" element
@@ -24,6 +24,57 @@ Feature: Satin Alma Islemleri
     And I wait "Sirala button" element
     And I wait until element to be clickable and click to "Filtrele Button" element
     And I wait until element to be clickable and click to "Stok Durumu" element
+    And I sleep for 3 seconds
+    And I scroll until find "Var Button" element with action
+    And I wait until element to be clickable and click to "Var Button" element
+    And I wait until element to be clickable and click to "Uygula Button" element
+    And I scroll until find "Pdp ilk urun" element with action
+    And I wait until element to be clickable and click to "Pdp ilk urun" element
+    And I wait "Sepete At Button;Evime ne zaman ulasir;Favorilere ekle kalp" elements
+    And I scroll until find "urun teknik ozellikleri" element with action
+    And I wait "Genel bakis;Teknik ozellikleri;Hangi magazada var;Taksit secenekleri;Yorumlar" elements
+    And I wait until element to be clickable and click to "Hangi magazada var" element
+    And I wait "il;ilce;Magaza bul;En yakin" elements
+
+    Examples:
+      | header         | baslik                     | url |
+      | Ankastre       | Ankastre Firin             | urlCanli |
+      | Ankastre       | Ankastre Mikro Dalgalar    | urlCanli |
+      | Ankastre       | Ankastre Ocaklar           | urlCanli |
+      | Ankastre       | Ankastre Davlumbazlar      | urlCanli |
+      | Ankastre       | Ankastre Aspiratorler      | urlCanli |
+      | Ankastre       | Ankastre Bulasik Makinesi  | urlCanli |
+      | Ankastre       | Ankastre Buzdolabi         | urlCanli |
+      | Ankastre       | Tum Urunler                | urlCanli |
+
+
+
+
+
+
+  @smoke  @order @pdp55
+  Scenario Outline: Test001- PDP Kontrol
+    When I see "HomePage" page
+    When I go to "<url>" with configuration
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
+   # And I sleep for 3 seconds
+    Then I wait "uyelik button" element
+    When I see "HomePage" page
+    Then I wait until element to be clickable and click to "urunler button" element
+    When I see "HomePage" page
+    And I hover "<header>" header and click "<baslik>" category
+    When I see "PDP" page
+    And I scroll until find "PLP Kategori Adi" element with action
+    And I wait "PLP Kategori Adi" element
+    And I scroll until find "Uc nokta" element with action
+    And I wait until element to be clickable and click to "Uc nokta" element
+    And I sleep for 2 seconds
+    And I wait until element to be clickable and click to "Popup kapatma" element
+    And I scroll until find "Filtrele Button" element with action
+    And I wait "Sirala button" element
+    And I wait until element to be clickable and click to "Filtrele Button" element
+    And I wait until element to be clickable and click to "Stok Durumu" element
+    And I sleep for 3 seconds
     And I wait until element to be clickable and click to "Var Button" element
     And I wait until element to be clickable and click to "Uygula Button" element
     And I scroll until find "Pdp ilk urun" element with action
@@ -57,7 +108,7 @@ Feature: Satin Alma Islemleri
       | Ankastre       | Ankastre Buzdolabi         | urlCanli |
       | Ankastre       | Tum Urunler                | urlCanli |
 
-      | Televizyon     | 4K OLED TV                 | urlCanli |
+      #| Televizyon     | 4K OLED TV                 | urlCanli |
       | Televizyon     | Google TV                  | urlCanli |
       | Televizyon     | Android TV                 | urlCanli |
       | Televizyon     | 4K UHD TV                  | urlCanli |
@@ -112,7 +163,7 @@ Feature: Satin Alma Islemleri
 
 
   @smoke  @order @pdp2
-  Scenario Outline: Test09- Sepette Urun Sayisi Azaltma
+  Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
     And I sleep for 5 seconds

@@ -30,7 +30,7 @@
         {
           "elementName": "Var Button",
           "elementType": "xpath",
-          "elementValue": "//label[contains(.,'Var')]"
+          "elementValue": "//div[@class='input checkbox']//label[@for='fg_ValuesStatus_inStock_1']"
         },
         {
           "elementName": "Uygula Button",

@@ -36,15 +36,11 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "Magazayi kendim secmek istiyorum" element
     Then I sleep for 3 seconds
     Then I choose city "İSTANBUL" and town "ATAŞEHİR" from fast delivery list
-
     And I wait until element to be clickable and click to "Magaza Ara Fast" element
     And I wait until element to be clickable and click to "ilk magaza" element
     And I wait until element to be clickable and click to "Uygula" element
     And I wait "Degistir" element
     And I wait "Carpi button" element
-
-
-
     And I scroll until find "Kredi/Banka Karti" element with action
     Then I sleep for 1 seconds
     Then I wait until element to be clickable and click to "Kredi/Banka Karti" element
