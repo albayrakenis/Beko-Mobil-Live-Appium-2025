@@ -39,7 +39,15 @@ Feature: Satin Alma Islemleri
     Examples:
       | header         | baslik                     | url |
 
-      | KEA            | Semaver                    | urlCanli |
+      | isitma sogutma | Klima                      | urlCanli |
+      | isitma sogutma | Kombi                      | urlCanli |
+      | isitma sogutma | Termosifon                 | urlCanli |
+      | isitma sogutma | Elektrikli Isitici         | urlCanli |
+      | isitma sogutma | ic Hava Kalitesi           | urlCanli |
+      | isitma sogutma | Hava Sogutucu              | urlCanli |
+      | isitma sogutma | Vantilator                 | urlCanli |
+      | isitma sogutma | Nem Alma Cihazi            | urlCanli |
+      | isitma sogutma | Tum Urunler                | urlCanli |
 
 
 
