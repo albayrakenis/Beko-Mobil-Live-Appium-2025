@@ -14,7 +14,7 @@
         </classes>
     </test> <!-- Test -->
 
-    <test name="order2" enabled="false">
+    <test name="order2" enabled="false">   
         <!--parameter name="browserName" value="chrome"/>-->
         <parameter name="browserName" value="chrome"/>
         <classes>

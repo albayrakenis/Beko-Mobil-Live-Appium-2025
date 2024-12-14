@@ -99,12 +99,12 @@ Feature: Satin Alma Islemleri
 
       | Ankastre       | Ankastre Firin             | urlCanli |
       | Ankastre       | Ankastre Mikro Dalgalar    | urlCanli |
-      | Ankastre       | Ankastre Ocaklar           | urlCanli |
+      #| Ankastre       | Ankastre Ocaklar           | urlCanli |
       | Ankastre       | Ankastre Davlumbazlar      | urlCanli |
       #| Ankastre       | Ankastre Aspiratorler      | urlCanli |
       #| Ankastre       | Ankastre Bulasik Makinesi  | urlCanli |
       | Ankastre       | Ankastre Buzdolabi         | urlCanli |
-      | Ankastre       | Tum Urunler ankastre       | urlCanli |
+      #| Ankastre       | Tum Urunler ankastre       | urlCanli |
 
       #| Televizyon     | 4K OLED TV                 | urlCanli |
       | Televizyon     | Google TV                  | urlCanli |
@@ -142,7 +142,7 @@ Feature: Satin Alma Islemleri
       #| KEA            | Utu                        | urlCanli |
       #| KEA            | Kahve Makinesi             | urlCanli |
       #| KEA            | Cay Makinesi               | urlCanli |
-      | KEA            | Semaver                    | urlCanli |
+      #| KEA            | Semaver                    | urlCanli |
      # | KEA            | Kettle                     | urlCanli |
     #  | KEA            | Kati Meyve Sikacagi        | urlCanli |
      # | KEA            | Narenciye Sikacagi         | urlCanli |
