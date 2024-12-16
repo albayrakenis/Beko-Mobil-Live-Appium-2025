@@ -1,7 +1,7 @@
 Feature: Urun Gorselleri
 
 
-  @image @smoke
+  @image
   Scenario Outline: PLP de urun gorselleri kontrolu
 
     Given I go to "urlCanli" with configuration
