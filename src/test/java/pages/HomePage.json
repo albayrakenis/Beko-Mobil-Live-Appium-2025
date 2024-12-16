@@ -288,7 +288,7 @@
         {
           "elementName": "Artirilmis gerceklik",
           "elementType": "xpath",
-          "elementValue": "//div[@class='container-fluid']//div[@id='featured-technology']//div[2]//a[contains(.,'İncele')]"
+          "elementValue": "//div[@class='container-fluid']//div[@id='featured-technology']//div[2]//a[contains(.,'\u0130ncele')]"
         },
         {
           "elementName": "AR text",

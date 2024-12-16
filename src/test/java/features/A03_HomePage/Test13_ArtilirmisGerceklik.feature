@@ -1,7 +1,7 @@
 Feature: Ana sayfa kontrolleri
 
   @smoke @header @AR
-  Scenario Outline: Test12- Beraber Secelim
+  Scenario Outline: Test13- Artırılmis Gerceklik
 
 
     Then I go to "<url>" with configuration

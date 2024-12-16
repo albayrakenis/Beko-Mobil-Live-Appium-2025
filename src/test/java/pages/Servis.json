@@ -42,7 +42,7 @@
         {
           "elementName": "Urun Kilavuzu",
           "elementType": "xpath",
-          "elementValue": "//span[.='\u00DCr\u00FCn Kılavuzu']"
+          "elementValue": "//span[.='\u00DCr\u00FCn K\u0131lavuzu']"
         },
         {
           "elementName": "Yetkili Servis Sorgulama",
