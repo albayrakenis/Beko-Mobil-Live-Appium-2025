@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
 
-  @smoke  @order @pdp550
+   @pdp550
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -49,7 +49,7 @@ Feature: Satin Alma Islemleri
       | isitma sogutma | Tum Urunler        | urlCanli |
 
 
-  @smoke  @order @pdp55
+   @pdp55
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -154,7 +154,7 @@ Feature: Satin Alma Islemleri
      # | KEA            | Tum Urunler kea            | urlCanli |
 
 
-  @smoke  @order @pdp2
+  @pdp2
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
