@@ -2,7 +2,7 @@ Feature: Satin Alma Islemleri
 
 
   @smoke @ @order @hizliTeslimat
-  Scenario Outline: Test015- Hizli teslimat ile Satın Alma
+  Scenario Outline: Test15- Hizli teslimat ile Satın Alma
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
