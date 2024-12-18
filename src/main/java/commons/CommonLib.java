@@ -611,7 +611,7 @@ public class CommonLib extends BaseTest{
             int son = elementList.size() - 3;
             for (int i = 0; i < son; i++) {
                 clickElementWaitUntilClickable(By.xpath("//div[@class='usr-addresses']/div[1]//a[contains(.,'Sil')]"));
-                clickElementWaitUntilClickable(By.xpath("//button[@class='btn btn-outline-dark js-popup-trigger-func']"));
+                clickElementWaitUntilClickable(By.xpath("//button[@class='btn btn-outline-dark btn-small js-popup-trigger-func']"));
                 sleep(3);
             }
         }else {
