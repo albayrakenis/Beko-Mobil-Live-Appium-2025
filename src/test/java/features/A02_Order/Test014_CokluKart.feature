@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @smoke2  @order2 @ckk
+  @smoke  @order @ckk
   Scenario Outline: Test14- Coklu Kredi Karti ile Satın Alma
     When I see "HomePage" page
     When I go to "<url>" with configuration
