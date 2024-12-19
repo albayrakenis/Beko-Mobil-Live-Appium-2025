@@ -1,12 +1,12 @@
 @2611
 Feature: Kullanici islemleri
 
-  @user2 @smoke @adresSil @regresyon
+  @user @smoke @adresSil @regresyon
   Scenario Outline: Test00- Onceki Adresleri Silme
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I sleep for 3 seconds
+    #Then I sleep for 3 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -32,7 +32,7 @@ Feature: Kullanici islemleri
     When I go to "<url>" with configuration
     When I see "HomePage" page
     Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
+    #Then I sleep for 5 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -56,7 +56,7 @@ Feature: Kullanici islemleri
     When I go to "<url>" with configuration
     When I see "HomePage" page
     Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
+    #Then I sleep for 5 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -66,7 +66,7 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "giris yap" element
     When I see "HomePage" page
     And I wait "urunler button" element
-    And I sleep for 4 seconds
+    #And I sleep for 4 seconds
     And I wait "hesabim button" element
 
 
@@ -80,7 +80,7 @@ Feature: Kullanici islemleri
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
+    #Then I sleep for 5 seconds
     And I wait until element to be clickable and click to "Cerezleri kabul et" element if element exist:1
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
@@ -91,7 +91,7 @@ Feature: Kullanici islemleri
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I check "login hata mesaji" element text is equal "E-posta adresiniz ya da şifreniz yanlış"
-    Then I sleep for 5 seconds
+
 
     Examples:
       | username   | passwordWrong | url |
@@ -103,7 +103,7 @@ Feature: Kullanici islemleri
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
+    #Then I sleep for 5 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -113,20 +113,20 @@ Feature: Kullanici islemleri
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
     Then I check "login hata mesaji" element text is equal "E-posta adresiniz ya da şifreniz yanlış"
-    Then I sleep for 5 seconds
+
 
     Examples:
       | usernameWrong         | password  | url |
       | beko.s1test@gmail.com | Albayra41 | url |
 
 
-  @userAdres @smoke @regresyon
+  @userAdres @smoke @regresyon @user
   Scenario Outline:Test04-  Adres Ekleme
 
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I sleep for 5 seconds
+    #Then I sleep for 5 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -134,15 +134,15 @@ Feature: Kullanici islemleri
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 7 seconds
+    #Then I sleep for 7 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
-    Then I sleep for 2 seconds
+    #Then I sleep for 2 seconds
     When I see "HesabimPage" page
     Then I wait "urunlerim;siparislerim;bildirimlerim;taleplerim;favorilerim;stok habercim;kuponlarim;hediye ceklerim;bilgilerim;cikis yap" elements
-    Then I sleep for 2 seconds
+    #Then I sleep for 2 seconds
     And I scroll until find "yeni adres ekle button" element with action
-    Then I sleep for 2 seconds
+    #Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "yeni adres ekle button" element
     When I see "AdresPage" page
     Then I check "Adres Bilgileri Text" element text is equal "Adres Bilgileri"
@@ -154,9 +154,9 @@ Feature: Kullanici islemleri
     Then I choose city "KONYA" from list
     Then I choose town "SELÇUKLU" from list
     Then I choose neighborhood "KOSOVA" from list
-    Then I sleep for 2 seconds
+    #Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "Adres Kaydet" element
-    Then I sleep for 1 seconds
+    #Then I sleep for 1 seconds
 
 
     Examples:
@@ -164,7 +164,7 @@ Feature: Kullanici islemleri
       | kullanici1 | sifre    | url |
 
 
-  @userAdres2 @smoke @regresyon
+  @userAdres2 @smoke @regresyon @user
   Scenario Outline:Test05- Kurumsal Adres Ekleme
 
     When I see "HomePage" page
@@ -178,10 +178,10 @@ Feature: Kullanici islemleri
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 10 seconds
+    #Then I sleep for 10 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
-    Then I sleep for 10 seconds
+    #Then I sleep for 10 seconds
     When I see "HesabimPage" page
     Then I wait "urunlerim;siparislerim;bildirimlerim;taleplerim;favorilerim;stok habercim;kuponlarim;hediye ceklerim;bilgilerim;cikis yap" elements
     And I scroll until find "yeni adres ekle button" element with action
@@ -199,9 +199,9 @@ Feature: Kullanici islemleri
     Then I choose neighborhood "KOSOVA" from list
     Then I send key to "Adres Detaylari" element text:"Kosova Mahallesi Veysel karani caddesi no 162"
     Given I create a adress that is start "is adresim" and end with number 100 between 100000
-    Then I sleep for 1 seconds
+   # Then I sleep for 1 seconds
     Then I wait until element to be clickable and click to "Adres Kaydet" element
-    Then I sleep for 1 seconds
+    #Then I sleep for 1 seconds
 
 
     Examples:
@@ -209,13 +209,13 @@ Feature: Kullanici islemleri
       | kullanici1 | sifre    | url |
 
 
-  @userAdres25 @smoke @regresyon
+  @userAdres25 @smoke @regresyon @user
   Scenario Outline: Test06- Ad Soyad Güncelleme
 
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I sleep for 1 seconds
+    #Then I sleep for 1 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -226,7 +226,7 @@ Feature: Kullanici islemleri
     Then I sleep for 10 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
-    Then I sleep for 10 seconds
+    #Then I sleep for 10 seconds
     When I see "HesabimPage" page
     Then I wait "uyelik bilgileri;Adiniz;Soyadiniz;Cinsiyet;Dogum Tarihi;TC no;Telefon Numarasi;Email" elements
     Then I clear "Adiniz" textbox
@@ -235,7 +235,7 @@ Feature: Kullanici islemleri
     Then I send key to "Soyadiniz" element random "surname"
     Then I scroll down until find "kisiler bilgiler onay" element
     Then I wait until element to be clickable and click to "Kaydet Button" element
-    Then I sleep for 3 seconds
+    #Then I sleep for 3 seconds
 
 
 
