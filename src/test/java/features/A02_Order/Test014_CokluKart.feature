@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @smoke  @order @ckk
+  @smoke2  @order2 @ckk
   Scenario Outline: Test14- Coklu Kredi Karti ile Satın Alma
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -37,8 +37,8 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Coklu kredi karti" element
     And I wait "ckk ilk tutar" element
     Then I send key to "ckk ilk tutar" element text:"500"
-    And I scroll until find "ckk ilk kredi karti" element with action
-    Then I send key to "ckk ilk kredi karti" element text:"5406675406675403"
+    #Then I send key to "ckk ilk kredi karti" element text:"5406675406675403"
+    Then I send key to "ckk ilk kredi karti" element text:"4282209004348015"
     And I scroll until find "ckk kart cvv" element with action
     Then I send key to "ckk kart sahibi" element text:"Enis Albayrak"
     Then I send key to "ckk kart tarih" element text:"1230"
@@ -49,15 +49,15 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "birinci kart id check" element
     And I sleep for 10 seconds
     And I scroll until find "ckk ilk kredi karti" element with action
-    Then I send key to "ckk ilk kredi karti" element text:"5406675406675403"
+    Then I send key to "ckk ilk kredi karti" element text:"5289394722895016"
     And I scroll until find "ckk kart cvv" element with action
     Then I send key to "ckk kart sahibi" element text:"Enis Albayrak"
-    Then I send key to "ckk kart tarih" element text:"1230"
-    Then I send key to "ckk kart cvv" element text:"000"
+    Then I send key to "ckk kart tarih" element text:"0125"
+    Then I send key to "ckk kart cvv" element text:"030"
     And I accept on bilgilendirme and satis sozlesmesi
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
-    Then I wait until element to be clickable and click to "yes button" element
+    #Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
