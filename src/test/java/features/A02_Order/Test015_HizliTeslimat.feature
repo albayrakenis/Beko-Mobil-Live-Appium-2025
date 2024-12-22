@@ -35,7 +35,7 @@ Feature: Satin Alma Islemleri
     And I accept on bilgilendirme and satis sozlesmesi
     And I wait until element to be clickable and click to "Magazayi kendim secmek istiyorum" element
     Then I sleep for 3 seconds
-    Then I choose city "İSTANBUL" and town "ATAŞEHİR" from fast delivery list
+    Then I choose city "İSTANBUL" and town "BAĞCILAR" from fast delivery list
     And I wait until element to be clickable and click to "Magaza Ara Fast" element
     And I wait until element to be clickable and click to "ilk magaza" element
     And I wait until element to be clickable and click to "Uygula" element

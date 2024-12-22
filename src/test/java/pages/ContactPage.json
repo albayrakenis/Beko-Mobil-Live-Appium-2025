@@ -1,0 +1,78 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "ContactPage",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+        {
+          "elementName": "iletisim baslik",
+          "elementType": "xpath",
+          "elementValue": "//h1[@class='title']"
+        },
+        {
+          "elementName": "iletisim formu",
+          "elementType": "cssSelector",
+          "elementValue": "#contact-form"
+        },
+        {
+          "elementName": "Ad Soyad",
+          "elementType": "cssSelector",
+          "elementValue": "input[name='fullName']"
+        },
+        {
+          "elementName": "E-posta",
+          "elementType": "cssSelector",
+          "elementValue": "input[name='email']"
+        },
+        {
+          "elementName": "Telefon",
+          "elementType": "cssSelector",
+          "elementValue": "input[name='phone']"
+        },
+        {
+          "elementName": "Mesaj",
+          "elementType": "cssSelector",
+          "elementValue": "textarea[name='message']"
+        },
+        {
+          "elementName": "Gönder Butonu",
+          "elementType": "cssSelector",
+          "elementValue": "button[type='submit']"
+        },
+        {
+          "elementName": "Çağrı Merkezi Numarası",
+          "elementType": "xpath",
+          "elementValue": "//div[contains(@class,'contact-info')]//a[contains(@href,'tel:')]"
+        },
+        {
+          "elementName": "E-posta Adresi",
+          "elementType": "xpath",
+          "elementValue": "//div[contains(@class,'contact-info')]//a[contains(@href,'mailto:')]"
+        },
+        {
+          "elementName": "Adres Bilgisi",
+          "elementType": "xpath",
+          "elementValue": "//div[contains(@class,'address-info')]"
+        },
+        {
+          "elementName": "KVKK Onay",
+          "elementType": "cssSelector",
+          "elementValue": "input[type='checkbox'][name='kvkk']"
+        },
+        {
+          "elementName": "Başarılı Mesaj",
+          "elementType": "cssSelector",
+          "elementValue": ".success-message"
+        },
+        {
+          "elementName": "Hata Mesajı",
+          "elementType": "cssSelector",
+          "elementValue": ".error-message"
+        }
+      ]
+    }
+  ]
+}
