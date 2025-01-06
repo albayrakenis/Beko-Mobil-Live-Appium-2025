@@ -1,6 +1,8 @@
 @2611
 Feature: Kullanici islemleri
 
+
+
   @user @smoke @adresSil @regresyon
   Scenario Outline: Test00- Onceki Adresleri Silme
     When I see "HomePage" page

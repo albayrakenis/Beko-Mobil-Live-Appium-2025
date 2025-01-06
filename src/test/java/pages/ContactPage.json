@@ -15,62 +15,107 @@
         {
           "elementName": "iletisim formu",
           "elementType": "cssSelector",
-          "elementValue": "#contact-form"
+          "elementValue": ".ctc-form-inner > .ctc-title"
         },
         {
-          "elementName": "Ad Soyad",
+          "elementName": "Ad",
           "elementType": "cssSelector",
-          "elementValue": "input[name='fullName']"
+          "elementValue": "#app_name"
+        },
+        {
+          "elementName": "Soyad",
+          "elementType": "cssSelector",
+          "elementValue": "#app_surname"
         },
         {
           "elementName": "E-posta",
           "elementType": "cssSelector",
-          "elementValue": "input[name='email']"
+          "elementValue": "#app_email"
         },
         {
           "elementName": "Telefon",
           "elementType": "cssSelector",
-          "elementValue": "input[name='phone']"
+          "elementValue": "#app_mobile"
         },
         {
           "elementName": "Mesaj",
           "elementType": "cssSelector",
-          "elementValue": "textarea[name='message']"
+          "elementValue": "#app_description"
         },
         {
-          "elementName": "Gönder Butonu",
+          "elementName": "Kaydet Butonu",
           "elementType": "cssSelector",
-          "elementValue": "button[type='submit']"
+          "elementValue": "#new-demands-btn"
         },
         {
-          "elementName": "Çağrı Merkezi Numarası",
+          "elementName": "Sorulan Sorular",
+          "elementType": "cssSelector",
+          "elementValue": ".container-fluid .col-12 h1 > strong"
+        },
+        {
+          "elementName": "Cagri Merkezi Numarasi",
           "elementType": "xpath",
-          "elementValue": "//div[contains(@class,'contact-info')]//a[contains(@href,'tel:')]"
+          "elementValue": "//div[@class='p']"
         },
         {
           "elementName": "E-posta Adresi",
           "elementType": "xpath",
-          "elementValue": "//div[contains(@class,'contact-info')]//a[contains(@href,'mailto:')]"
+          "elementValue": "//a[.='musteri.hizmetleri@arcelik.com']"
         },
         {
           "elementName": "Adres Bilgisi",
-          "elementType": "xpath",
-          "elementValue": "//div[contains(@class,'address-info')]"
+          "elementType": "cssSelector",
+          "elementValue": ".ctc-inner > .ctc-info p"
         },
         {
           "elementName": "KVKK Onay",
           "elementType": "cssSelector",
-          "elementValue": "input[type='checkbox'][name='kvkk']"
+          "elementValue": "[for='hasKVKK']"
         },
         {
-          "elementName": "Başarılı Mesaj",
+          "elementName": "Basarili Mesaj",
           "elementType": "cssSelector",
-          "elementValue": ".success-message"
+          "elementValue": ".form-result-title"
         },
         {
-          "elementName": "Hata Mesajı",
+          "elementName": "Hata Mesaji Ad",
           "elementType": "cssSelector",
-          "elementValue": ".error-message"
+          "elementValue": "#app_name_msg"
+        },
+        {
+          "elementName": "Hata Mesaji Soyad",
+          "elementType": "cssSelector",
+          "elementValue": "#app_surname_msg"
+        },
+        {
+          "elementName": "Hata Mesaji Telefon",
+          "elementType": "cssSelector",
+          "elementValue": "#app_mobile_msg"
+        },
+        {
+          "elementName": "Hata Mesaji Mail",
+          "elementType": "cssSelector",
+          "elementValue": "#app_email_msg"
+        },
+        {
+          "elementName": "Hata Mesaji Gecersiz Mail",
+          "elementType": "cssSelector",
+          "elementValue": "#app_email_msg"
+        },
+        {
+          "elementName": "Hata Mesaji Sehir",
+          "elementType": "cssSelector",
+          "elementValue": "#cityCode_msg"
+        },
+        {
+          "elementName": "Hata Mesaji ilce",
+          "elementType": "cssSelector",
+          "elementValue": "#townCode_msg"
+        },
+        {
+          "elementName": "Hata mesaj kutusu",
+          "elementType": "cssSelector",
+          "elementValue": "#app_description_msg"
         }
       ]
     }

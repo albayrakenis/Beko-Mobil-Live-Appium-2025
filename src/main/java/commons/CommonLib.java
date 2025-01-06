@@ -9,9 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +18,6 @@ import java.util.Random;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.io.BufferedWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -203,6 +200,11 @@ public class CommonLib extends BaseTest{
 
         WebElement satisSozlemesi = myDriver.findElement(By.id("chk_cart_sum_confirm_2"));
         satisSozlemesi.click();
+    }
+    public void ıApprovedKVKK(String arg0) throws IOException, ParseException {
+       seePage("ContactPage");
+        WebElement kvkk = myDriver.findElement(By.xpath("//input[@id='hasKVKK']"));
+        kvkk.click();
     }
 
 
@@ -849,56 +851,112 @@ public class CommonLib extends BaseTest{
 
     //----------------------------------------------------------------
 
-    public void brokenLinksCheckCategoriesAndFileNames(String kategori, String dosyaAdi) {
-
+    /*public void brokenLinksCheckCategoriesAndFileNames(String kategori, String dosyaAdi) {
         try {
-            Thread.sleep(1000);
-            myDriver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
-            myDriver.findElement(By.xpath("//button[@data-target='#main-menu']")).click();
-            Thread.sleep(3000);
+            WebDriverWait wait = new WebDriverWait(myDriver, Duration.ofSeconds(10));
 
+            // Cookie banner'ı kabul et
+            wait.until(ExpectedConditions.elementToBeClickable(
+                    By.xpath("//button[@id='onetrust-accept-btn-handler']"))).click();
+
+            // Ana menüyü aç
+            wait.until(ExpectedConditions.elementToBeClickable(
+                    By.xpath("//button[@data-target='#main-menu']"))).click();
+
+            // Kategori seçimi
             Actions actions = new Actions(myDriver);
-            WebElement categoryElement = myDriver.findElement(By.xpath("(//a[@href='" + kategori + "'])[1]"));
+            WebElement categoryElement = wait.until(ExpectedConditions.elementToBeClickable(
+                    By.xpath("(//a[@href='" + kategori + "'])[1]")));
             actions.moveToElement(categoryElement).perform();
-            Thread.sleep(1000);
-            myDriver.findElement(By.xpath("//li[@class='lv1-li selected']//a[@title='Tüm Ürünler']")).click();
+
+            // Tüm ürünlere tıkla
+            wait.until(ExpectedConditions.elementToBeClickable(
+                    By.xpath("//li[@class='lv1-li selected']//a[@title='Tüm Ürünler']"))).click();
+
+            // Sayfa yüklenene kadar bekle
             waitForPageLoad();
 
-            for (int k = 0; k < 8; k++) {
-                WebElement footerElement = myDriver.findElement(By.xpath("//footer[@id='site-footer']"));
-                ((JavascriptExecutor) myDriver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footerElement);
-                Thread.sleep(3500);
-            }
+            // Dinamik scroll işlemi
+            scrollToLoadAllProducts();
 
-            List<WebElement> productLinks = myDriver.findElements(By.xpath("//div[@class='products productgridcomponent-page']//a"));
+            // Ürün linklerini topla
+            List<WebElement> productLinks = myDriver.findElements(
+                    By.xpath("//div[@class='products productgridcomponent-page']//a"));
+
             List<String> listOK = new ArrayList<>();
             List<String> listNotFound = new ArrayList<>();
 
-            for (WebElement linkElement : productLinks) {
-                String href = linkElement.getAttribute("href");
+            // Link kontrolü
+            checkLinks(productLinks, listOK, listNotFound);
 
-                if (isValidURL(href)) {
-                    int responseCode = getHttpResponseCode(href);
-                    if (responseCode == 200) {
-                        listOK.add(href);
-                    } else {
-                        listNotFound.add(href);
-                    }
-                } else {
-                    listNotFound.add(href);
-                }
+            // Sonuçları kaydet
+            String baseDir = System.getProperty("user.dir");
+            String resultDir = baseDir + "/test-results";
+            new File(resultDir).mkdirs();
+
+            writeToFile(resultDir + "/valid_links.txt", listOK);
+            writeToFile(resultDir + "/broken_links.txt", listNotFound);
+
+            log.info("Test başarıyla tamamlandı. Bulunan linkler: OK={}, NotFound={}",
+                    listOK.size(), listNotFound.size());
+
+        } catch (TimeoutException e) {
+            log.error("Element bekleme zaman aşımı: {}", e.getMessage());
+            throw e;
+        } catch (ElementClickInterceptedException e) {
+            log.error("Element tıklanamadı (intercepted): {}", e.getMessage());
+            throw e;
+        } catch (IOException e) {
+            log.error("Dosya işlemleri hatası: {}", e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            log.error("Beklenmeyen hata: {}", e.getMessage());
+            throw e;
+        }
+    }
+*/
+    private void scrollToLoadAllProducts() {
+        JavascriptExecutor js = (JavascriptExecutor) myDriver;
+        long lastHeight = (long) js.executeScript("return document.body.scrollHeight");
+
+        while (true) {
+            WebElement footer = myDriver.findElement(By.xpath("//footer[@id='site-footer']"));
+            js.executeScript("arguments[0].scrollIntoView({block: 'center'});", footer);
+
+            // Yeni içeriğin yüklenmesi için bekle
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                break;
             }
 
-            writeToFile("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\404Check.txt", listOK);
-            writeToFile("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\404Check.txt", listNotFound);
-
-
-            System.out.println("Test Passed!");
-        } catch (Exception e) {
-
-            System.err.println("Test Failed: " + e.getMessage());
+            long newHeight = (long) js.executeScript("return document.body.scrollHeight");
+            if (newHeight == lastHeight) {
+                break;
+            }
+            lastHeight = newHeight;
         }
+    }
 
+    private void checkLinks(List<WebElement> links, List<String> validLinks, List<String> brokenLinks) {
+        links.parallelStream().forEach(linkElement -> {
+            String href = linkElement.getAttribute("href");
+            if (isValidURL(href)) {
+                int responseCode = getHttpResponseCode(href);
+                synchronized (validLinks) {
+                    if (responseCode == 200) {
+                        validLinks.add(href);
+                    } else {
+                        brokenLinks.add(href + " (Status: " + responseCode + ")");
+                    }
+                }
+            } else {
+                synchronized (brokenLinks) {
+                    brokenLinks.add(href + " (Invalid URL)");
+                }
+            }
+        });
     }
     public void writeToFile(String fileName, List<String> data) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\MONSTER\\OneDrive\\Desktop\\gorsel sonuclari\\404Check.txt"))) {
@@ -977,7 +1035,69 @@ public class CommonLib extends BaseTest{
         }
     }
 
+    private WebDriver driver;
+    private List<String> allLinks;
+    private List<String> brokenLinks;
 
+    public void ıAmOnTheHomepage() {
+        myDriver.get("https://www.beko.com.tr");
+        // Gerekirse cookie banner'ı kabul et
+        WebDriverWait wait = new WebDriverWait(myDriver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("onetrust-accept-btn-handler"))).click();
+    }
+
+    public void ıCollectAllLinksFromTheWebsite() {
+        allLinks = new ArrayList<>();
+        List<WebElement> linkElements = myDriver.findElements(By.tagName("a"));
+        for (WebElement element : linkElements) {
+            String link = element.getAttribute("href");
+            if (link != null && !link.isEmpty() && link.startsWith("http")) {
+                allLinks.add(link);
+            }
+        }
+    }
+
+    public void ıCheckEachLinkForErrors(int arg0) {
+        brokenLinks = new ArrayList<>();
+        for (String link : allLinks) {
+            try {
+                URL url = new URL(link);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
+                connection.connect();
+                int responseCode = connection.getResponseCode();
+                if (responseCode == 404) {
+                    brokenLinks.add(link);
+                }
+            } catch (Exception e) {
+                brokenLinks.add(link + " - Exception: " + e.getMessage());
+            }
+        }
+    }
+
+    public void ıShouldSeeAReportOfLinksWithErrors(int arg0) {
+        System.out.println("Total links checked: " + allLinks.size());
+        System.out.println("Broken links found: " + brokenLinks.size());
+        for (String link : brokenLinks) {
+            System.out.println("Broken link: " + link);
+        }
+        // Opsiyonel: Sonuçları bir dosyaya yazabilirsiniz
+         writeToFile("broken_links_report.txt", brokenLinks);
+    }
+
+    private void writeToFile2(String fileName, List<String> content) {
+        String baseDir = System.getProperty("user.dir");
+        String filePath = baseDir + "/test-results/" + fileName;
+
+        try (PrintWriter writer = new PrintWriter(new FileWriter(filePath))) {
+            for (String line : content) {
+                writer.println(line);
+            }
+            System.out.println("Results written to: " + filePath);
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
+        }
+    }
 
 
 

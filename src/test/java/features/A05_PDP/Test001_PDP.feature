@@ -1,6 +1,7 @@
 Feature: Satin Alma Islemleri
 
 
+  Scenario: 
    @pdp550
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page

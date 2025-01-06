@@ -40,7 +40,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I sleep for 6 seconds
     When I see "YapiKrediPage" page
-    Then I send key to "Kullanici Kodu" element text:"KX57172524"
+    Then I send key to "Kullanici Kodu" element text:"<musteriNo>"
     Then I send key to "Mobil Sifre" element text:"123456"
     Then I wait until element to be clickable and click to "Giris Yap" element
     Then I send key to "Akilli sms" element text:"34020"
@@ -50,14 +50,19 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Krediye Basvur" element
     And I sleep for 8 seconds
     Then I wait until element to be clickable and click to "Onay" element
-    And I sleep for 15 seconds
+    And I sleep for 10 seconds
 
 #    Then I wait "Iban Kopyala;Havale Bilgileri" elements
-#    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
+    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
 
     Examples:
-      | username   | password | url |
-      | kullanici1 | sifre    | url |
+      | username   | password | url |musteriNo|
+      | kullanici1 | sifre    | url |KX57172524|
+      #| kullanici1 | sifre    | url |QP57039025|
+      #| kullanici1 | sifre    | url |ZF49998944|
+      #| kullanici1 | sifre    | url |ZE49986964|
+      #| kullanici1 | sifre    | url |PS49554024|
+
 

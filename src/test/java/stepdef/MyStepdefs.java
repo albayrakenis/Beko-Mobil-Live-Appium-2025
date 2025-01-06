@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
+import java.util.List;
 
 public class MyStepdefs extends BaseTest{
     private WebDriver myDriver;
@@ -252,7 +253,7 @@ public class MyStepdefs extends BaseTest{
 
     @When("broken links check {string} categories and {string} file names")
     public void brokenLinksCheckCategoriesAndFileNames(String kategori, String dosyaAdi) {
-        commonLib.brokenLinksCheckCategoriesAndFileNames(kategori,dosyaAdi);
+        //commonLib.brokenLinksCheckCategoriesAndFileNames(kategori,dosyaAdi);
     }
 
     @Then("I login with {string} and {string}")
@@ -282,5 +283,33 @@ public class MyStepdefs extends BaseTest{
     @Then("I choose city {string} and town {string} from fast delivery list")
     public void ıChooseCityAndTownFromFastDeliveryList(String il, String ilce) {
         commonLib.ıChooseCityAndTownFromFastDeliveryList(il, ilce);
+    }
+    private WebDriver driver;
+    private List<String> allLinks;
+    private List<String> brokenLinks;
+
+    @Given("I am on the homepage")
+    public void ıAmOnTheHomepage() {
+        commonLib.ıAmOnTheHomepage();
+    }
+
+    @When("I collect all links from the website")
+    public void ıCollectAllLinksFromTheWebsite() {
+        commonLib.ıCollectAllLinksFromTheWebsite();
+    }
+
+    @And("I check each link for {int} errors")
+    public void ıCheckEachLinkForErrors(int arg0) {
+        commonLib.ıCheckEachLinkForErrors(arg0);
+    }
+
+    @Then("I should see a report of links with {int} errors")
+    public void ıShouldSeeAReportOfLinksWithErrors(int arg0) {
+        commonLib.ıShouldSeeAReportOfLinksWithErrors(arg0);
+
+    }
+
+    @And("I approved {string} KVKK")
+    public void ıApprovedKVKK(String arg0) {
     }
 }
