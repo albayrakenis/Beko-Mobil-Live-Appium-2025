@@ -1,4 +1,4 @@
-@smoke
+@smoke @iletisim
 Feature: İletişim Sayfası Testleri
 
   Background:
@@ -39,7 +39,8 @@ Feature: İletişim Sayfası Testleri
     And I scroll until find "Sorulan Sorular" element with action
     When I click "Kaydet Butonu" element
     When I click "Kaydet Butonu" element
-    #Then I wait "Hata Mesajı" element
+    And  I sleep for 3 seconds
+    Then I wait "<Hata Mesaji>" element
     And I check "<Hata Mesaji>" element text is equal "<hata_mesaji>"
 
     Examples:

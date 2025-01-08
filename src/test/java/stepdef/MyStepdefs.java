@@ -312,4 +312,15 @@ public class MyStepdefs extends BaseTest{
     @And("I approved {string} KVKK")
     public void ıApprovedKVKK(String arg0) {
     }
+
+    @Then("I check element count is equal {string} with xpath {string}")
+    public void ıCheckElementCountIsEqualWithXpath(String arg0, String arg1) {
+        commonLib.ıCheckElementCountIsEqualWithXpath(arg0, arg1);
+    }
+
+
+    @Then("I check element count is greater than {string} with xpath {string}")
+    public void ıCheckElementCountIsGreaterThanWithXpath(String arg0, String arg1) {
+        commonLib.ıCheckElementCountIsGreaterThanWithXpath(arg0, arg1);
+    }
 }

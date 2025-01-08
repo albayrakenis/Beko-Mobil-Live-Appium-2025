@@ -79,8 +79,8 @@
         },
         {
           "elementName": "Hata Mesaji Ad",
-          "elementType": "cssSelector",
-          "elementValue": "#app_name_msg"
+          "elementType": "xpath",
+          "elementValue": "//div[@id='app_name_msg']"
         },
         {
           "elementName": "Hata Mesaji Soyad",

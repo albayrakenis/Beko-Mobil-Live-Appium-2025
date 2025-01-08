@@ -15,7 +15,17 @@
         {
           "elementName": "product footer",
           "elementType": "xpath",
-          "elementValue": "//div[@class='prd-footer']"
+          "elementValue": "//div[@class='product-count js-product-count']"
+        },
+        {
+          "elementName": "product footer buzdolabi",
+          "elementType": "cssSelector",
+          "elementValue": "p.product-result-text > #article-length"
+        },
+        {
+          "elementName": "Buzdolabi PLP",
+          "elementType": "cssSelector",
+          "elementValue": "[href='buzdolabi'] > .responsive"
         }
       ]
 

@@ -21,6 +21,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import static org.testng.AssertJUnit.*;
+
 
 public class CommonLib extends BaseTest{
 
@@ -1097,6 +1099,38 @@ public class CommonLib extends BaseTest{
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
         }
+    }
+
+    public void ıCheckElementCountIsEqualWithXpath(String arg0, String arg1) {
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //WebElement articleLengthElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='article-length']")));
+
+        WebElement articleLengthElement =myDriver.findElement(By.xpath("//span[@id='article-length']"));
+        // Elementin text'ini al
+        String articleLengthText = articleLengthElement.getText().trim();
+
+        // Text'i integer'a çevir
+        int articleLength = Integer.parseInt(articleLengthText);
+
+
+        // Kontrol et
+
+        assertEquals(0, articleLength);
+    }
+
+    public void ıCheckElementCountIsGreaterThanWithXpath(String arg0, String arg1) {
+        WebElement articleLengthElement =myDriver.findElement(By.cssSelector(arg1));
+        // Elementin text'ini al
+        String articleLengthText = articleLengthElement.getText().trim();
+
+        // Text'i integer'a çevir
+        int articleLength = Integer.parseInt(articleLengthText);
+
+
+        // Kontrol et
+
+        assertTrue(  articleLength>0);
+
     }
 
 
