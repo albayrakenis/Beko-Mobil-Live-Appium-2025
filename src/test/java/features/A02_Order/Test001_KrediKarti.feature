@@ -26,6 +26,8 @@ Feature: Satin Alma Islemleri
     And I scroll until find "incele button" element with action
     Then I wait until element to be clickable and click to "incele button" element
     When I see "PDP" page
+    Then I sleep for 2 seconds
+    And I scroll until find "Sepete At Button" element with action
     Then I wait until element to be clickable and click to "Sepete At Button" element
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page

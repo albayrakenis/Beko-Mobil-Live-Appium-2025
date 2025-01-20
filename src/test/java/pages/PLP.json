@@ -9,8 +9,8 @@
       "elements": [
         {
           "elementName": "incele button",
-          "elementType": "xpath",
-          "elementValue": "//a[contains(.,'\u0130ncele')]"
+          "elementType": "cssSelector",
+          "elementValue": "[title='\u0130ncele']"
         },
         {
           "elementName": "product footer",
