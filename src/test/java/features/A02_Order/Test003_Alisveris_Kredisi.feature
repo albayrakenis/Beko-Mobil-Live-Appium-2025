@@ -1,6 +1,6 @@
 Feature: Satin Alma Islemleri
 
-  @user2 @smoke @kredi @orderOnline @order
+  @user2 @smoke2 @kredi @orderOnline @order
   Scenario Outline: Test03- Online Alisveris Kredisi ile Satın Alma
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -26,11 +26,12 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "incele button" element
     When I see "PDP" page
     Then I wait until element to be clickable and click to "Sepete At Button" element
+    Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
     And I scroll until find "Sepeti Onayla Button" element with action
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
-    Then I sleep for 7 seconds
+    Then I sleep for 4 seconds
     And I accept on bilgilendirme and satis sozlesmesi
 
     And I scroll until find "Online Alisveris Kredisi" element with action
@@ -60,9 +61,9 @@ Feature: Satin Alma Islemleri
     Examples:
       | username   | password | url |musteriNo|
       | kullanici1 | sifre    | url |KX57172524|
-      #| kullanici1 | sifre    | url |QP57039025|
-      #| kullanici1 | sifre    | url |ZF49998944|
-      #| kullanici1 | sifre    | url |ZE49986964|
-      #| kullanici1 | sifre    | url |PS49554024|
+      | kullanici1 | sifre    | url |QP57039025|
+      | kullanici1 | sifre    | url |ZF49998944|
+      | kullanici1 | sifre    | url |ZE49986964|
+      | kullanici1 | sifre    | url |PS49554024|
 
 
