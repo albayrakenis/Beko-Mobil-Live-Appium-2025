@@ -318,7 +318,7 @@
         {
           "elementName": "AR ilk urun",
           "elementType": "xpath",
-          "elementValue": "(//a[contains(.,'\u0130ncele')])[1]"
+          "elementValue": "(//a[contains(.,'\u0130ncele')])[2]"
         },
         {
           "elementName": "PDP AR yazisi",
