@@ -11,7 +11,7 @@
         {
           "elementName": "Beraber cozelim text",
           "elementType": "xpath",
-          "elementValue": "//span[@class='hide-on-mobile ']/div[@class='landingPageTextTitle_Beko']"
+          "elementValue": "//div[@class='slds-var-m-top_large slds-var-m-bottom_small']//div[@class='landingPageTextTitleNew']"
         },
         {
           "elementName": "Menuyu acma",
@@ -21,7 +21,7 @@
         {
           "elementName": "Garanti Uzatma",
           "elementType": "xpath",
-          "elementValue": "//span[.='Garanti Uzatma']"
+          "elementValue": "//button[@class='slds-button slds-button_brand menuWithOpenDesign_Beko_Desktop']"
         },
         {
           "elementName": "Yeni Talep Olusturma",
@@ -32,22 +32,22 @@
         {
           "elementName": "Garanti Sorgula",
           "elementType": "xpath",
-          "elementValue": "//span[.='Garanti Sorgula']"
+          "elementValue": "//button[.='Garanti Sorgulama']"
         },
         {
           "elementName": "Acik Taleplerim",
           "elementType": "xpath",
-          "elementValue": "//span[.='A\u00E7\u0131k Taleplerim']"
+          "elementValue": "//button[.='A\u00E7\u0131k Taleplerim']"
         },
         {
           "elementName": "Urun Kilavuzu",
-          "elementType": "xpath",
-          "elementValue": "//span[.='\u00DCr\u00FCn K\u0131lavuzu']"
+          "elementType": "cssSelector",
+          "elementValue": "[data-aura-rendered-by='2089:2;a']"
         },
         {
           "elementName": "Yetkili Servis Sorgulama",
           "elementType": "xpath",
-          "elementValue": "//a[@role='menuitem']//span[.='Yetkili Servis Sorgulama']"
+          "elementValue": "//button[.='Yetkili Servisler']"
         },
         {
           "elementName": "",
