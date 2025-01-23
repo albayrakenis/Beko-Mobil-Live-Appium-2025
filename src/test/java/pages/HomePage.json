@@ -276,6 +276,21 @@
           "elementValue": "a:nth-of-type(2)"
         },
         {
+          "elementName": "bildirimler",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-notification"
+        },
+        {
+          "elementName": "bildirimler kapat",
+          "elementType": "cssSelector",
+          "elementValue": ".js-ntf-close-btn use"
+        },
+        {
+          "elementName": "tumunu gor",
+          "elementType": "xpath",
+          "elementValue": "//a[@class='btn btn-outline-dark']"
+        },
+        {
           "elementName": "Servis randevusu",
           "elementType": "cssSelector",
           "elementValue": "a:nth-of-type(3)"
