@@ -59,7 +59,7 @@ Feature: Satin Alma Islemleri
     Then I send key to "Kart Numarasi Box" element text:"5289394722895016"
     And I scroll until find "CVV Box" element with action
     Then I send key to "Kart Sahibi Box" element text:"Enis Albayrak"
-    Then I send key to "Kart Tarihi Box" element text:"0125"
+    Then I send key to "Kart Tarihi Box" element text:"0130"
     Then I send key to "CVV Box" element text:"030"
     And I accept on bilgilendirme and satis sozlesmesi
     When I see "CartPage" page
