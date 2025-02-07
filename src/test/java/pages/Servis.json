@@ -41,8 +41,8 @@
         },
         {
           "elementName": "Urun Kilavuzu",
-          "elementType": "cssSelector",
-          "elementValue": "[data-aura-rendered-by='2089:2;a']"
+          "elementType": "xpath",
+          "elementValue": "//button[.='Kullanma K\u0131lavuzlar\u0131']"
         },
         {
           "elementName": "Yetkili Servis Sorgulama",
