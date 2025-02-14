@@ -17,7 +17,7 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"8912281200"
+    Then I send key to "search box text" element text:"<urun>"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
     When I see "PLP" page
@@ -37,6 +37,11 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-      | username   | password | url |
-      | kullanici1 | sifre    | url |
+      | username   | password | url | urun       |
+      | kullanici1 | sifre    | url | 8912281200 |
+      | kullanici1 | sifre    | url | 7966021600 |
+      | kullanici1 | sifre    | url | 7966021600 |
+      | kullanici1 | sifre    | url | 8808871200 |
+      | kullanici1 | sifre    | url | 8832671200 |
+      | kullanici1 | sifre    | url | 8916151200 |
 

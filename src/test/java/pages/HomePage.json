@@ -382,6 +382,11 @@
           "elementValue": "[href='/bulasik-makinesi'] > span"
         },
         {
+          "elementName": "Kurutma Makinesi button",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/kurutma-makinesi'] > span"
+        },
+        {
           "elementName": "Camasir Makinesi",
           "elementType": "cssSelector",
           "elementValue": "[href='/camasir-makinesi'] > span"

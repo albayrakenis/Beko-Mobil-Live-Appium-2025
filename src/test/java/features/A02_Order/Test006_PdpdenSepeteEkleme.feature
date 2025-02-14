@@ -11,7 +11,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "urunler button" element
     Then I sleep for 2 seconds
     When I see "HomePage" page
-    And I wait until element to be clickable and click to "Buzdolabi Button" element
+    And I wait until element to be clickable and click to "<kategori>" element
     When I see "PDP" page
     Then I scroll until find "Filtrele Button" element with action
     And I wait until element to be clickable and click to "Filtrele Button" element
@@ -38,6 +38,9 @@ Feature: Satin Alma Islemleri
 
 
     Examples:
-      | url |
-      | url |
+      | url |kategori|
+      | url |Camasir Makinesi Button|
+      | url |Buzdolabi Button|
+      | url |Bulasik Makinesi|
+      | url |Kurutma Makinesi button|
 

@@ -65,3 +65,6 @@ Feature: Satin Alma Islemleri
       | url | urunKodu   |
       | url | 8912281200 |
       | url | 7966021600 |
+      | url | 8808871200 |
+      | url | 8832671200 |
+      | url | 8916151200 |

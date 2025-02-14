@@ -2,7 +2,6 @@
 Feature: Kullanici islemleri
 
 
-
   @user @smoke @adresSil @regresyon
   Scenario Outline: Test00- Onceki Adresleri Silme
     When I see "HomePage" page
@@ -96,8 +95,10 @@ Feature: Kullanici islemleri
 
 
     Examples:
-      | username   | passwordWrong | url |
+      | username             | passwordWrong | url |
       | kullanici1@gmail.com | Albayra41     | url |
+      | abcd@gmail.com       | Albayra41     | url |
+      | 1234@gmail.com       | Albayra41     | url |
 
 
   @user @smoke @yanlisSifre @regresyon
@@ -120,6 +121,8 @@ Feature: Kullanici islemleri
     Examples:
       | usernameWrong         | password  | url |
       | beko.s1test@gmail.com | Albayra41 | url |
+      | beko.s1test@gmail.com | 1234      | url |
+      | beko.s1test@gmail.com | abcd      | url |
 
 
   @userAdres @smoke @regresyon @user
@@ -150,20 +153,23 @@ Feature: Kullanici islemleri
     Then I check "Adres Bilgileri Text" element text is equal "Adres Bilgileri"
     Then I wait "Bireysel;Kurumsal;Ad Soyad;Telefon;il;ilce;Mahalle;Adres Detaylari;Adres Adi" elements
     Then I send key to "Ad Soyad" element text:"Enis Albayrak"
-    Then I send key to "Telefon" element text:"5071552594"
+    Then I send key to "Telefon" element text:"5751552594"
     Then I send key to "Adres Detaylari" element text:"Kosova Mahallesi Veysel karani caddesi no 162"
     Given I create a adress that is start "Ev adresim" and end with number 100 between 100000
     Then I choose city "KONYA" from list
     Then I choose town "SELÇUKLU" from list
-    Then I choose neighborhood "KOSOVA" from list
+    Then I choose neighborhood "<mahalle>" from list
     #Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "Adres Kaydet" element
     #Then I sleep for 1 seconds
 
 
     Examples:
-      | username   | password | url |
-      | kullanici1 | sifre    | url |
+      | username   | password | url | mahalle      |
+      | kullanici1 | sifre    | url | KOSOVA       |
+      | kullanici1 | sifre    | url | DOKUZ        |
+      | kullanici1 | sifre    | url | BOSNA HERSEK |
+      | kullanici1 | sifre    | url | GAZALI       |
 
 
   @userAdres2 @smoke @regresyon @user
