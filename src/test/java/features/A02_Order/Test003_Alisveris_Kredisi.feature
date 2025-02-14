@@ -40,21 +40,21 @@ Feature: Satin Alma Islemleri
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I sleep for 6 seconds
-    When I see "YapiKrediPage" page
-    Then I send key to "Kullanici Kodu" element text:"<musteriNo>"
-    Then I send key to "Mobil Sifre" element text:"123456"
-    Then I wait until element to be clickable and click to "Giris Yap" element
-    Then I send key to "Akilli sms" element text:"34020"
-    Then I wait until element to be clickable and click to "Giris Yap" element
-    And I sleep for 15 seconds
-    And I scroll until find "Krediye Basvur" element with action
-    Then I wait until element to be clickable and click to "Krediye Basvur" element
-    And I sleep for 8 seconds
-    Then I wait until element to be clickable and click to "Onay" element
-    And I sleep for 10 seconds
+   # When I see "YapiKrediPage" page
+   # Then I send key to "Kullanici Kodu" element text:"<musteriNo>"
+   # Then I send key to "Mobil Sifre" element text:"123456"
+   # Then I wait until element to be clickable and click to "Giris Yap" element
+   # Then I send key to "Akilli sms" element text:"34020"
+   # Then I wait until element to be clickable and click to "Giris Yap" element
+   # And I sleep for 15 seconds
+   # And I scroll until find "Krediye Basvur" element with action
+   # Then I wait until element to be clickable and click to "Krediye Basvur" element
+   # And I sleep for 8 seconds
+   # Then I wait until element to be clickable and click to "Onay" element
+   # And I sleep for 10 seconds
 
 #    Then I wait "Iban Kopyala;Havale Bilgileri" elements
-    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
+  #  Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
 

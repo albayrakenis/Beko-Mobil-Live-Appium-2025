@@ -56,7 +56,7 @@ Feature: Satin Alma Islemleri
 #    Then I wait until element to be clickable and click to "farkli kredi kart" element
     Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Kart Numarasi Box" element with action
-    Then I send key to "Kart Numarasi Box" element text:"5289394722895016"
+    Then I send key to "Kart Numarasi Box" element text:"4796810000000002"
     And I scroll until find "CVV Box" element with action
     Then I send key to "Kart Sahibi Box" element text:"Enis Albayrak"
     Then I send key to "Kart Tarihi Box" element text:"0130"
@@ -66,6 +66,8 @@ Feature: Satin Alma Islemleri
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     And I sleep for 4 seconds
+    And I send key to "otp code" element text:"201409"
+    Then I wait until element to be clickable and click to "submit button" element
     #Then I wait until element to be clickable and click to "yes button" element
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 

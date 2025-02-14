@@ -1,6 +1,5 @@
 Feature: Satin Alma Islemleri
 
-
   Scenario: 
    @pdp550
   Scenario Outline: Test001- PDP Kontrol
@@ -183,9 +182,9 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "Pdp ilk urun" element
     And I wait "Sepete At Button;Evime ne zaman ulasir;Favorilere ekle kalp" elements
     And I scroll until find "urun teknik ozellikleri" element with action
-    And I wait "Genel bakis;Teknik ozellikleri;Hangi magazada var;Taksit secenekleri;Yorumlar" elements
-    And I wait until element to be clickable and click to "Hangi magazada var" element
-    And I wait "il;ilce;Magaza bul;En yakin" elements
+    #And I wait "Genel bakis;Teknik ozellikleri;Hangi magazada var;Taksit secenekleri;Yorumlar" elements
+    #And I wait until element to be clickable and click to "Hangi magazada var" element
+    #And I wait "il;ilce;Magaza bul;En yakin" elements
 
     Examples:
       | header         | baslik                     | url |

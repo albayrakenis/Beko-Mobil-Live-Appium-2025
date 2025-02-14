@@ -64,6 +64,16 @@
           "elementValue": "//button[@id='postPayment']"
         },
         {
+          "elementName": "submit button",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='submitBtn']"
+        },
+        {
+          "elementName": "otp code",
+          "elementType": "xpath",
+          "elementValue": "//input[@id='smsCode']"
+        },
+        {
           "elementName": "yes button",
           "elementType": "xpath",
           "elementValue": "//button[@id='yes']"
