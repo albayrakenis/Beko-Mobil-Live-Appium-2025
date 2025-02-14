@@ -25,7 +25,7 @@ Feature: Satin Alma Islemleri
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap favori" element
-    And I sleep for 5 seconds
+    And I sleep for 9 seconds
     When I see "PDP" page
     Then I wait until element to be clickable and click to "Hesabim button" element
     When I see "HesabimPage" page
