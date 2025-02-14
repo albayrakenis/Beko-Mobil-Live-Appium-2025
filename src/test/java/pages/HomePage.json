@@ -41,6 +41,16 @@
           "elementValue": "//div[@class='hum']/a[.='Hesab\u0131m']"
         },
         {
+          "elementName": "bildirimler",
+          "elementType": "cssSelector",
+          "elementValue": ".icon-notification"
+        },
+        {
+          "elementName": "tumunu gor",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-outline-dark"
+        },
+        {
           "elementName": "search box",
           "elementType": "cssSelector",
           "elementValue": ".js-ov-trg[href='#'] > .f-input"
