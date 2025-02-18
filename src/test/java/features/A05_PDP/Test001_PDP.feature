@@ -1,7 +1,8 @@
 Feature: Satin Alma Islemleri
 
-  Scenario: 
-   @pdp550
+  Scenario:
+
+  @pdp550
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -49,7 +50,7 @@ Feature: Satin Alma Islemleri
       | isitma sogutma | Tum Urunler        | urlCanli |
 
 
-   @pdp55
+  @pdp55
   Scenario Outline: Test001- PDP Kontrol
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -166,8 +167,6 @@ Feature: Satin Alma Islemleri
     Then I sleep for 5 seconds
     When I see "HomePage" page
     And I hover "<header>" header and click "<baslik>" category
-    #And I hover "Elektronik" header and click "Bilgisayar baslik" category with string
-
     When I see "PDP" page
     And I scroll until find "Uc nokta" element with action
     And I wait until element to be clickable and click to "Uc nokta" element
@@ -178,6 +177,7 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "Stok Durumu" element
     And I wait until element to be clickable and click to "Var Button" element
     And I wait until element to be clickable and click to "Uygula Button" element
+    And I sleep for 4 seconds
     And I scroll until find "Pdp ilk urun" element with action
     And I wait until element to be clickable and click to "Pdp ilk urun" element
     And I wait "Sepete At Button;Evime ne zaman ulasir;Favorilere ekle kalp" elements
@@ -198,7 +198,7 @@ Feature: Satin Alma Islemleri
       | Beyaz Esya     | Mikrodalga                 | url |
       | Beyaz Esya     | Set Ustu                   | url |
       | Beyaz Esya     | Su Sebili                  | url |
-      | Beyaz Esya     | Tum Urunler                | url |
+      | Beyaz Esya     | Tum Urunler beyaz esya     | url |
 
       | Ankastre       | Ankastre Firin             | url |
       | Ankastre       | Ankastre Mikro Dalgalar    | url |
@@ -207,7 +207,7 @@ Feature: Satin Alma Islemleri
       | Ankastre       | Ankastre Aspiratorler      | url |
       | Ankastre       | Ankastre Bulasik Makinesi  | url |
       | Ankastre       | Ankastre Buzdolabi         | url |
-      | Ankastre       | Tum Urunler                | url |
+      | Ankastre       | Tum Urunler ankastre       | url |
 
       | Televizyon     | 4K OLED TV                 | url |
       | Televizyon     | Google TV                  | url |
@@ -218,7 +218,7 @@ Feature: Satin Alma Islemleri
       | Televizyon     | Full HD TV                 | url |
       | Televizyon     | LED & LCD TV               | url |
       | Televizyon     | QLED                       | url |
-      | Televizyon     | Tum Urunler                | url |
+      | Televizyon     | Tum Urunler televizyon     | url |
 
       | Elektronik     | Cep Telefonu               | url |
       | Elektronik     | Cep Telefonu Aksesuarlar   | url |
@@ -227,7 +227,7 @@ Feature: Satin Alma Islemleri
       | Elektronik     | Goruntu Sistemleri         | url |
       | Elektronik     | Odeme Sistemleri           | url |
       | Elektronik     | Hobi - Oyun                | url |
-      | Elektronik     | Tum Urunler                | url |
+      | Elektronik     | Tum Urunler elektronik     | url |
 
 
       | isitma sogutma | Klima                      | url |
@@ -238,7 +238,7 @@ Feature: Satin Alma Islemleri
       | isitma sogutma | Hava Sogutucu              | url |
       | isitma sogutma | Vantilator                 | url |
       | isitma sogutma | Nem Alma Cihazi            | url |
-      | isitma sogutma | Tum Urunler                | url |
+      | isitma sogutma | Tum Urunler isitma sogutma | url |
 
 
 
@@ -255,7 +255,7 @@ Feature: Satin Alma Islemleri
       | KEA            | Kisisel Bakim              | url |
       | KEA            | Uv Temizleme Cihazi        | url |
       | KEA            | Outdoor Ekipman            | url |
-      | KEA            | Tum Urunler                | url |
+      | KEA            | Tum Urunler kea            | url |
 
 
 
