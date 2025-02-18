@@ -35,7 +35,7 @@
         {
           "elementName": "Uye olmadan devam et button",
           "elementType": "xpath",
-          "elementValue": "//button[@class='btn btn-light']"
+          "elementValue": "//button[@class='btn btn-light js-guest-btn']"
         },
         {
           "elementName": "Uye olmadan devam et button mail",
