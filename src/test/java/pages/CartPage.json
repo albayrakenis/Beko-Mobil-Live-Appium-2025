@@ -10,7 +10,7 @@
         {
           "elementName": "Sepeti Onayla Button",
           "elementType": "xpath",
-          "elementValue": "//a[contains(.,'Sepeti Onayla')]"
+          "elementValue": "//button[@class='btn btn-primary js-redirect-cart']"
         },
         {
           "elementName": "Kredi/Banka Karti",
