@@ -271,170 +271,25 @@ Feature: Kullanici islemleri
       Then I sleep for 10 seconds
       When I see "HomePage" page
       Then I wait until element to be clickable and click to "hesabim button" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
+      Then I sleep for 2 seconds
       Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "bildirimler" element
-      Then I sleep for 3 seconds
-      Then I wait until element to be clickable and click to "tumunu gor" element
+
+
+
 
 
 
