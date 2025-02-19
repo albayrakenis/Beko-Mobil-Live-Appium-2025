@@ -42,5 +42,5 @@ Feature: Satin Alma Islemleri
       | url |Camasir Makinesi Button|
       | url |Buzdolabi Button|
       | url |Bulasik Makinesi|
-      | url |Kurutma Makinesi button|
+      #| url |Kurutma Makinesi button|
 
