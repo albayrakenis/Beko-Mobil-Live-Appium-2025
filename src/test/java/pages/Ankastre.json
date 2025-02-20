@@ -10,8 +10,8 @@
 
         {
           "elementName": "Ankastre Text",
-          "elementType": "xpath",
-          "elementValue": "//h1[.='Ankastre']"
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left"
         },
         {
           "elementName": "Ankastre Bulasik Makineleri",

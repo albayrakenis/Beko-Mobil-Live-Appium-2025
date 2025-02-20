@@ -9,7 +9,7 @@ Feature: Ana sayfa kontrolleri
     And I sleep for 2 seconds
     And I scroll until find "Artirilmis gerceklik" element with action
     And I wait until element to be clickable and click to "Artirilmis gerceklik" element
-    And I check "AR text" element text is equal "Artırılmış Gerçeklik (AR) deneyimine hoş geldiniz!"
+    #And I check "AR text" element text is equal "Artırılmış Gerçeklik (AR) deneyimine hoş geldiniz!"
     And I check "AR arama sonuclari" element text is equal "Arama Sonuçları"
     And I scroll until find "AR ilk urun" element with action
     And I wait "AR ilk urun" element

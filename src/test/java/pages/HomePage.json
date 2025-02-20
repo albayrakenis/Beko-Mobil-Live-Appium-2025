@@ -317,13 +317,13 @@
         },
         {
           "elementName": "AR text",
-          "elementType": "xpath",
-          "elementValue": "//h1[@class='bnr-title']"
+          "elementType": "cssSelector",
+          "elementValue": ".container-fluid #featured-technology div:nth-of-type(2) .bnr-title"
         },
         {
           "elementName": "AR arama sonuclari",
           "elementType": "xpath",
-          "elementValue": "//h1[@class='title']"
+          "elementValue": "//h1[@class='title js-arialive']"
         },
         {
           "elementName": "AR ilk urun",

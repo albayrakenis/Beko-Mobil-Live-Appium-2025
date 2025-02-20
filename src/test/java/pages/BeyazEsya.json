@@ -46,7 +46,7 @@
         {
           "elementName": "Beyaz Esya Text",
           "elementType": "cssSelector",
-          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+          "elementValue": ".pnl-left > h1"
         },
         {
           "elementName": "Sol Panel Header Text",

@@ -21,7 +21,7 @@
         {
           "elementName": "Isitma Sogutma Text",
           "elementType": "cssSelector",
-          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+          "elementValue": ".pnl-left"
         },
         {
           "elementName": "Hava Sogutucu",

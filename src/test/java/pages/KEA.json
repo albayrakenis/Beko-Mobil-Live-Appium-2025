@@ -11,7 +11,7 @@
         {
           "elementName": "KEA Text",
           "elementType": "cssSelector",
-          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+          "elementValue": ".pnl-left"
         },
         {
           "elementName": "Icecek Hazirlama",
