@@ -37,7 +37,7 @@ Feature: Satin Alma Islemleri
     Then I check "Adres Bilgileri Text" element text is equal "Adres Bilgileri"
     Then I wait "Bireysel;Kurumsal;Ad Soyad;Telefon;il;ilce;Mahalle;Adres Detaylari;Adres Adi" elements
     Then I send key to "Ad Soyad" element text:"Enis Albayrak"
-    Then I send key to "Telefon" element text:"5071552594"
+    Then I send key to "Telefon" element text:"5751552594"
     Then I send key to "Adres Detaylari" element text:"Kosova Mahallesi Veysel karani caddesi no 162"
     Given I create a adress that is start "Ev adresim" and end with number 100 between 100000
     Then I choose city "KONYA" from list

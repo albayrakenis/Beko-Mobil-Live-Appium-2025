@@ -201,7 +201,7 @@ Feature: Kullanici islemleri
     Then I send key to "Firma Adi" element text:"Albayrak AŞ"
     Then I send key to "Vergi Numarasi" element text:"3579247337"
     Then I choose taxCity "ANKARA-EVREN" from list
-    Then I send key to "Telefon" element text:"5071552594"
+    Then I send key to "Telefon" element text:"5751552594"
     Then I choose city "KONYA" from list
     Then I choose town "SELÇUKLU" from list
     Then I choose neighborhood "KOSOVA" from list
