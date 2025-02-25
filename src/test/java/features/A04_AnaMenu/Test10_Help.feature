@@ -13,9 +13,12 @@ Feature: Ana menü kontrolleri
     When I see "Destek" page
     #And I wait "Beyaz esya;Ankastre;Tv ve Unitesi;Elektronik;Isitma Sogutma;Kucuk ev aletleri;Online Alisveris" elements
     And I wait "Destek text" element
-    And I wait "Destek box" element
-    And I scroll until find "Destek kaydi ac" element with action
-    And I send key to "Destek box" element text:"ab"
+    And I wait "Destek kaydi ac button" element
+    And I scroll until find "Destek kaydi ac button" element with action
+    And I wait "Bize yazin" element
+    And I wait "whatsapp" element
+    And I wait "Canli destek" element
+    And I wait "Bana en yakin servis" element
 
 
 

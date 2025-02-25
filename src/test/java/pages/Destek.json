@@ -55,29 +55,29 @@
           "elementValue": "//input[@class='support_search']"
         },
         {
-          "elementName": "Destek kaydi ac",
-          "elementType": "xpath",
-          "elementValue": "//input[@class='support_search']"
+          "elementName": "Destek kaydi ac button",
+          "elementType": "cssSelector",
+          "elementValue": ".btn-light"
         },
         {
-          "elementName": "",
+          "elementName": "Bize yazin",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".spt-bnf-list > div:nth-of-type(1) > .t"
         }
 {
-          "elementName": "",
+          "elementName": "whatsapp",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".spt-bnf-list > div:nth-of-type(2) > .t"
         },
         {
-          "elementName": "",
+          "elementName": "Canli destek",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".spt-bnf-list > div:nth-of-type(3) > .t"
         },
         {
-          "elementName": "",
+          "elementName": "Bana en yakin servis",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": ".spt-bnf-list2 .t"
         },
         {
           "elementName": "",
