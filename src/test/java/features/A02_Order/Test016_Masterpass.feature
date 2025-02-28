@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
 
-   @smoke  @order @masterpass
+     @order @masterpass
   Scenario Outline: Test016- Masterpass
     When I see "HomePage" page
     When I go to "<url>" with configuration

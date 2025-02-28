@@ -1,6 +1,6 @@
 Feature: Check for 404 errors on website links
 
-  @404check @smoke
+  @404check
   Scenario: Verify all links on the website for 404 errors
     Given I am on the homepage
     When I collect all links from the website
