@@ -28,6 +28,11 @@
           "elementValue": ".js-card-installment-input"
         },
         {
+          "elementName": "Masterpass button",
+          "elementType": "cssSelector",
+          "elementValue": "[for='pcs_sel_1'] .rl-text"
+        },
+        {
           "elementName": "Kart Sahibi Box",
           "elementType": "cssSelector",
           "elementValue": "#credit-card-form [name='cardOwner']"
