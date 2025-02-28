@@ -972,7 +972,7 @@ public class CommonLib extends BaseTest{
     }
 
     public void ıLoginWithAnd(String username, String sifre) {
-       username =ConfigurationReader.getProperty("kullanici1");
+       username =ConfigurationReader.getProperty(username);
        sifre =ConfigurationReader.getProperty("sifre");
         try{
         waitElement("username");

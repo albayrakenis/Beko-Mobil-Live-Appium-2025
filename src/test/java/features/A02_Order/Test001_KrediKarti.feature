@@ -1,12 +1,12 @@
 Feature: Satin Alma Islemleri
 
 
-  @user2 @smoke @kkOrder @order @kredikarti2
+  @user2 @smoke @kkOrder @order @kredikarti25
   Scenario Outline: Test01- Kredi Karti ile Satın Alma
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I sleep for 22 seconds
+    Then I sleep for 6 seconds
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -57,8 +57,8 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | username   | password | url | urun       |
-      | kullanici1 | sifre    | url | 8914111200 |
-      | kullanici1 | sifre    | url | 8818041200 |
-      | kullanici1 | sifre    | url | 8808871200 |
-      | kullanici1 | sifre    | url | 7254140210 |
+      | kullanici2 | sifre    | url | 8914111200 |
+      | kullanici2 | sifre    | url | 8818041200 |
+      | kullanici2 | sifre    | url | 8808871200 |
+      | kullanici2 | sifre    | url | 7254140210 |
 
