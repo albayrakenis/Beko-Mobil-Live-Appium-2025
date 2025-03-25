@@ -18,7 +18,7 @@ Feature: Kullanici islemleri
     Then I sleep for 7 seconds
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "hesabim button" element
-    Then I sleep for 2 seconds
+    Then I sleep for 10 seconds
     When I see "HesabimPage" page
     And  I delete saved adress
 
