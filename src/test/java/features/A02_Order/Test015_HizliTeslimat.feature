@@ -16,6 +16,8 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 9 seconds
     When I see "HomePage" page
+
+
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"8911641200"
@@ -29,8 +31,29 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Sepete At Button" element
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
-    And I scroll until find "Sepeti Onayla Button" element with action
-    Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
+    And I scroll until find "Sepeti Bosalt" element with action
+    Then I wait until element to be clickable and click to "Sepeti Bosalt" element
+    Then I check "Sepetinizde Henuz Urun Yok Text" element text is equal "Sepetinizde henüz ürün yok."
+
+    When I see "HomePage" page
+
+
+    Then I wait "search box" element
+    Then I wait until element to be clickable and click to "search box" element
+    Then I send key to "search box text" element text:"8911641200"
+    Then I wait until element to be clickable and click to "search icon" element
+    Then I sleep for 3 seconds
+    When I see "PLP" page
+    Then I sleep for 1 seconds
+    And I scroll until find "incele button" element with action
+    Then I wait until element to be clickable and click to "incele button" element
+    When I see "PDP" page
+    Then I wait until element to be clickable and click to "Sepete At Button" element
+    Then I wait until element to be clickable and click to "Sepete Git Button" element
+    When I see "CartPage" page
+    Then I sleep for 3 seconds
+    And I scroll until find "Sepeti Onayla Button2" element with action
+    Then I wait until element to be clickable and click to "Sepeti Onayla Button2" element
     Then I sleep for 4 seconds
     And I accept on bilgilendirme and satis sozlesmesi
     And I wait until element to be clickable and click to "Magazayi kendim secmek istiyorum" element
