@@ -60,5 +60,5 @@ Feature: Satin Alma Islemleri
       | kullanici2 | sifre    | url | 8914111200 |
       | kullanici2 | sifre    | url | 8818041200 |
       | kullanici2 | sifre    | url | 8808871200 |
-      | kullanici2 | sifre    | url | 7254140210 |
+      | kullanici2 | sifre    | url | 7630710277 |
 
