@@ -6,6 +6,7 @@ Feature: Ana sayfa kontrolleri
     When I see "HomePage" page
     Then I go to "<url>" with configuration
     When I see "HomePage" page
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "uyelik button" element
     Then I wait until element to be clickable and click to "urunler button" element
     And I scroll until find "Ankastre" element with action

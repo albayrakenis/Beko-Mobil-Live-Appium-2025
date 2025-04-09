@@ -5,6 +5,7 @@ Feature: Ana sayfa kontrolleri
 
     Then I go to "<url>" with configuration
     When I see "HomePage" page
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     And I sleep for 2 seconds
     And I scroll until find "Beraber Secelim" element with action
     And I check "Beraber Secelim Text" element text is equal "Beraber Seçelim"

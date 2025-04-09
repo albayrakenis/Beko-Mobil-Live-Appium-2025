@@ -7,6 +7,7 @@ Feature: Ana sayfa kontrolleri
     Then I go to "<url>" with configuration
     When I see "HomePage" page
     And I sleep for 2 seconds
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     And I scroll until find "Artirilmis gerceklik" element with action
     And I wait until element to be clickable and click to "Artirilmis gerceklik" element
     #And I check "AR text" element text is equal "Artırılmış Gerçeklik (AR) deneyimine hoş geldiniz!"

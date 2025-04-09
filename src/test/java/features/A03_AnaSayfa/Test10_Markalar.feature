@@ -4,6 +4,7 @@ Feature: Ana sayfa kontrolleri
   Scenario Outline: Test10- Markalar kategorisinde olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
     Then I go to "<url>" with configuration
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "uyelik button" element
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "urunler button" element

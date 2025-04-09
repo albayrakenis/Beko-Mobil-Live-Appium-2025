@@ -5,6 +5,7 @@ Feature: Ana sayfa kontrolleri
 
     When I see "HomePage" page
     Then I go to "<url>" with configuration
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     And I scroll until find "Tum tarifler button" element with action
     And I sleep for 2 seconds
     Then I wait "Tum tarifler button;Tarifler text;Devamini gor text;anasayfa ornek tarif" elements
