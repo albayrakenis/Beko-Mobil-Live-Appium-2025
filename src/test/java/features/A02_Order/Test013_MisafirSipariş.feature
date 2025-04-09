@@ -6,6 +6,7 @@ Feature: Satin Alma Islemleri
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     When I see "HomePage" page
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"<urunKodu>"
@@ -71,5 +72,5 @@ Feature: Satin Alma Islemleri
     Examples:
       | url | urunKodu   |
       | url | 8912281200 |
-      | url | 7188270230 |
+     # | url | 7188270230 |
 

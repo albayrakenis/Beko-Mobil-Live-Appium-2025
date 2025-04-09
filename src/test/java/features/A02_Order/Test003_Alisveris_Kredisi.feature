@@ -6,6 +6,7 @@ Feature: Satin Alma Islemleri
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -15,9 +16,14 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 7 seconds
     When I see "HomePage" page
+    And I wait until element to be clickable and click to "sepet icon" element
+    Then I sleep for 2 seconds
+    And I scroll until find "sepeti bosalt" element with action
+    And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:4
+    Then I sleep for 3 seconds
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"8912281200"
+    Then I send key to "search box text" element text:"8819041200"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
     When I see "PLP" page
@@ -40,11 +46,11 @@ Feature: Satin Alma Islemleri
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     Then I sleep for 6 seconds
-   # When I see "YapiKrediPage" page
-   # Then I send key to "Kullanici Kodu" element text:"<musteriNo>"
-   # Then I send key to "Mobil Sifre" element text:"123456"
-   # Then I wait until element to be clickable and click to "Giris Yap" element
-   # Then I send key to "Akilli sms" element text:"34020"
+    When I see "YapiKrediPage" page
+    Then I send key to "Kullanici Kodu" element text:"<musteriNo>"
+    Then I send key to "Mobil Sifre" element text:"123456"
+    Then I wait until element to be clickable and click to "Giris Yap" element
+    #Then I send key to "Akilli sms" element text:"34020"
    # Then I wait until element to be clickable and click to "Giris Yap" element
    # And I sleep for 15 seconds
    # And I scroll until find "Krediye Basvur" element with action

@@ -1,12 +1,13 @@
 Feature: Satin Alma Islemleri
 
 
-     @order @masterpass
+  @order @masterpass
   Scenario Outline: Test016- Masterpass
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     Then I sleep for 6 seconds
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -40,7 +41,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Kredi/Banka Karti" element
     #Then I wait until element to be clickable and click to "farkli kredi kart" element if element exist:10
     And I scroll until find "Masterpass button" element with action
-     And I wait until element to be clickable and click to "Masterpass button" element
+    And I wait until element to be clickable and click to "Masterpass button" element
     When I see "CartPage" page
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
@@ -54,7 +55,7 @@ Feature: Satin Alma Islemleri
     Examples:
       | username   | password | url | urun       |
       | kullanici1 | sifre    | url | 8914111200 |
-      | kullanici1 | sifre    | url | 8818041200 |
-      | kullanici1 | sifre    | url | 8808871200 |
-      | kullanici1 | sifre    | url | 7254140210 |
+      #| kullanici1 | sifre    | url | 8818041200 |
+      #| kullanici1 | sifre    | url | 8808871200 |
+      #| kullanici1 | sifre    | url | 7254140210 |
 

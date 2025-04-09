@@ -5,6 +5,7 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element

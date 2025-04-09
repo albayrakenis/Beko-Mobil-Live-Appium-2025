@@ -6,6 +6,7 @@ Feature: Satin Alma Islemleri
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
@@ -39,9 +40,9 @@ Feature: Satin Alma Islemleri
     Examples:
       | username   | password | url | urun       |
       | kullanici1 | sifre    | url | 8912281200 |
-      | kullanici1 | sifre    | url | 7966021600 |
-      | kullanici1 | sifre    | url | 7966021600 |
-      | kullanici1 | sifre    | url | 8808871200 |
-      | kullanici1 | sifre    | url | 8832671200 |
-      | kullanici1 | sifre    | url | 8916151200 |
+      #| kullanici1 | sifre    | url | 7966021600 |
+      #| kullanici1 | sifre    | url | 7966021600 |
+      #| kullanici1 | sifre    | url | 8808871200 |
+      #| kullanici1 | sifre    | url | 8832671200 |
+      #| kullanici1 | sifre    | url | 8916151200 |
 

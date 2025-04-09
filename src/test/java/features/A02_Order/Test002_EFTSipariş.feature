@@ -4,6 +4,7 @@ Feature: Satin Alma Islemleri
   Scenario Outline: Test02- EFT ile Satın Alma
     When I see "HomePage" page
     When I go to "<url>" with configuration
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "uyelik button" element
     When I see "HomePage" page
     Then I wait "search box" element
@@ -63,8 +64,8 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | url | urunKodu   |
-      | url | 8912281200 |
-      | url | 7966021600 |
+      | url | 8914951200 |
+      | url | 7751620231 |
       | url | 8808871200 |
-      | url | 8832671200 |
-      | url | 8916151200 |
+      | url | 8808751200 |
+      | url | 8914721200 |

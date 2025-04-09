@@ -6,6 +6,7 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     When I go to "<url>" with configuration
     And I sleep for 5 seconds
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "uyelik button" element
     Then I sleep for 8 seconds
     When I see "HomePage" page

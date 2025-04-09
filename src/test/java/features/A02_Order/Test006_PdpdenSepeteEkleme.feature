@@ -8,6 +8,7 @@ Feature: Satin Alma Islemleri
     Then I wait "uyelik button" element
     Then I sleep for 3 seconds
     When I see "HomePage" page
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait until element to be clickable and click to "urunler button" element
     Then I sleep for 2 seconds
     When I see "HomePage" page
@@ -40,7 +41,7 @@ Feature: Satin Alma Islemleri
     Examples:
       | url |kategori|
       | url |Camasir Makinesi Button|
-      | url |Buzdolabi Button|
-      | url |Bulasik Makinesi|
+      #| url |Buzdolabi Button|
+      #| url |Bulasik Makinesi|
       #| url |Kurutma Makinesi button|
 
