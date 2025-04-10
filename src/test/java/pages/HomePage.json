@@ -173,7 +173,7 @@
         {
           "elementName": "Anasayfa kurutma makinesi",
           "elementType": "xpath",
-          "elementValue": "//a[@href='/kurutma-makinesi/kmb-900-i-kurutma-makinesi']"
+          "elementValue": "(//div[@class='bnr-button'])[4]//a[@data-selector='gtm-product-click']"
         },
         {
           "elementName": "Banner next button",

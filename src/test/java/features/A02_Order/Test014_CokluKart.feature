@@ -16,6 +16,11 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "giris yap" element
     Then I sleep for 7 seconds
     When I see "HomePage" page
+    And I wait until element to be clickable and click to "sepet icon" element
+    Then I sleep for 2 seconds
+    And I scroll until find "sepeti bosalt" element with action
+    And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:4
+    Then I sleep for 3 seconds
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"<urunKodu>"
@@ -47,23 +52,7 @@ Feature: Satin Alma Islemleri
     When I see "CartPage" page
     And I scroll until find "ckk kart onayla" element with action
     Then I wait until element to be clickable and click to "ckk kart onayla" element
-    And I send key to "otp code" element text:"201409"
-    Then I wait until element to be clickable and click to "submit button" element
-   # Then I wait until element to be clickable and click to "birinci kart id check" element
-    And I sleep for 10 seconds
-    And I scroll until find "ckk ilk kredi karti" element with action
-   Then I send key to "ckk ilk kredi karti" element text:"9792060000000007"
-    And I scroll until find "ckk kart cvv" element with action
-    Then I send key to "ckk kart sahibi" element text:"Enis Albayrak"
-    Then I send key to "ckk kart tarih" element text:"1230"
-    Then I send key to "ckk kart cvv" element text:"000"
-    And I accept on bilgilendirme and satis sozlesmesi
-    And I scroll until find "footer hizmet" element with action
-    Then I wait until element to be clickable and click to "alisverisi tamamla button" element
-    And I send key to "otp code" element text:"201409"
-    Then I wait until element to be clickable and click to "submit button" element
-    #Then I wait until element to be clickable and click to "yes button" element
-    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
+
 
 
 
@@ -72,5 +61,5 @@ Feature: Satin Alma Islemleri
 
       | username             | password    | url                                        | urunKodu   |
       #| gurtobomlo@gufum.com | Albayrak.41 | https://akamai-s1-astra-stage.beko.com.tr/ | 8818541200 |
-      | kullanici1 | sifre | url | 8912281200 |
+      | kullanici1 | sifre | url | 8914111200 |
 

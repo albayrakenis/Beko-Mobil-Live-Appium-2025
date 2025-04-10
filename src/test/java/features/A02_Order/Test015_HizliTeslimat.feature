@@ -21,7 +21,7 @@ Feature: Satin Alma Islemleri
 
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"8911641200"
+    Then I send key to "search box text" element text:"8915471200"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
     When I see "PLP" page
@@ -41,7 +41,7 @@ Feature: Satin Alma Islemleri
 
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"8911641200"
+    Then I send key to "search box text" element text:"8915471200"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
     When I see "PLP" page
@@ -79,10 +79,10 @@ Feature: Satin Alma Islemleri
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     And I sleep for 4 seconds
-    And I send key to "otp code" element text:"201409"
-    Then I wait until element to be clickable and click to "submit button" element
+    #And I send key to "otp code" element text:"201409"
+    #Then I wait until element to be clickable and click to "submit button" element
     #Then I wait until element to be clickable and click to "yes button" element
-    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
+    #Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
     Examples:

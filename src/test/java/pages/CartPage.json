@@ -231,7 +231,7 @@
         {
           "elementName": "2 yillik ek garanti sec button",
           "elementType": "cssSelector",
-          "elementValue": "[data-code='GRT331']"
+          "elementValue": "[data-code='GRT303']"
         },
         {
           "elementName": "Sepete eklenmis 4 yillik ek garanti text",
@@ -256,7 +256,7 @@
         {
           "elementName": "2 yillik ek garanti sil button",
           "elementType": "cssSelector",
-          "elementValue": "[data-entry-product-code='GRT331']"
+          "elementValue": "[data-entry-product-code='GRT303']"
         },
         {
           "elementName": "Teslimat adresi seciniz",

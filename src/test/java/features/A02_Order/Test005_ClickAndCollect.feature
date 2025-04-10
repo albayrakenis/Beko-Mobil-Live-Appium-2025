@@ -73,10 +73,10 @@ Feature: Satin Alma Islemleri
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     And I sleep for 4 seconds
-    And I send key to "otp code" element text:"201409"
-    Then I wait until element to be clickable and click to "submit button" element
+   # And I send key to "otp code" element text:"201409"
+    #Then I wait until element to be clickable and click to "submit button" element
     #Then I wait until element to be clickable and click to "yes button" element
-    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
+    #Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
 

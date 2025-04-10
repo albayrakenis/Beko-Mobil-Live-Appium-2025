@@ -20,6 +20,7 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "Stok Durumu" element
     And I wait until element to be clickable and click to "Var Button" element
     And I wait until element to be clickable and click to "Uygula Button" element
+    Then I sleep for 4 seconds
     And I scroll until find "Pdp ilk urun" element with action
     And I wait until element to be clickable and click to "Pdp ilk urun" element
     And I wait until element to be clickable and click to "Sepete At Button" element
