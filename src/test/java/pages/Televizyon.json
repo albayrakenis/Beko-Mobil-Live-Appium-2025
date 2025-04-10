@@ -20,34 +20,34 @@
           "elementValue": "[href='4k-oled-tv'] > span"
         },
         {
-          "elementName": "Android TV",
-          "elementType": "cssSelector",
-          "elementValue": "[href='android-tv'] > span"
-        },
-        {
-          "elementName": "4K UHD",
-          "elementType": "cssSelector",
-          "elementValue": "[href='4k-uhd-tv'] > span"
-        },
-        {
-          "elementName": "Buyuk Ekran",
-          "elementType": "cssSelector",
-          "elementValue": "[href='buyuk-ekran-tv'] > span"
-        },
-        {
           "elementName": "Smart TV",
           "elementType": "cssSelector",
           "elementValue": "[href='smart-tv'] > span"
         },
         {
-          "elementName": "Full HD",
+          "elementName": "Oled TV",
           "elementType": "cssSelector",
-          "elementValue": "[href='full-hd-tv'] > span"
+          "elementValue": "[href='oled-tv'] > span"
         },
         {
-          "elementName": "LED LCD",
+          "elementName": "QLED",
           "elementType": "cssSelector",
-          "elementValue": "[href='led-lcd-tv'] > span"
+          "elementValue": "[href='qled'] > span"
+        },
+        {
+          "elementName": "Google TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='google-tv'] > span"
+        },
+        {
+          "elementName": "Dev Ekran TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='dev-ekran-tv'] > span"
+        },
+        {
+          "elementName": "Full HD TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='full-hd-hd-tv'] > span"
         },
         {
           "elementName": "Ekran Boyutuna Gore TVler",
@@ -63,6 +63,46 @@
           "elementName": "Sol Panel Header Text",
           "elementType": "cssSelector",
           "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "4K TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='4k-tv'] > span"
+        },
+        {
+          "elementName": "Led TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='led-tv'] > span"
+        },
+        {
+          "elementName": "Mutfak Televizyonu",
+          "elementType": "cssSelector",
+          "elementValue": "[href='mutfak-televizyonu'] > span"
+        },
+        {
+          "elementName": "Grundig TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='grundig-tv'] > span"
+        },
+        {
+          "elementName": "Philips TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='philips-tv'] > span"
+        },
+        {
+          "elementName": "TCL TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='tcl-tv'] > span"
+        },
+        {
+          "elementName": "Hotel TV",
+          "elementType": "cssSelector",
+          "elementValue": "[href='hotel-tv'] > span"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
         },
         {
           "elementName": "",

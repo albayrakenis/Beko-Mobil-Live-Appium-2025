@@ -11,7 +11,7 @@ Feature: Ana sayfa kontrolleri
     When I see "HomePage" page
     And I scroll until find "Ankastre" element with action
     Then I wait "Beyaz esya;Ankastre;Televizyon;Elektronik;isitma sogutma;" elements
-    Then I wait "KEA;Hijyen Aksesuar;Su aritma;Markalar;" elements
+    Then I wait "KEA;Hijyen Aksesuar;Su aritma;" elements
     And I wait until element to be clickable and click to "Beyaz esya" element
     When I see "BeyazEsya" page
     Then I wait "Beyaz Esya Text;Bulasik Makinesi;Buzdolabi;Derin Dondurucu;Firin;" elements

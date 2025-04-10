@@ -11,8 +11,8 @@ Feature: Ana sayfa kontrolleri
     When I see "HomePage" page
     And I wait until element to be clickable and click to "Televizyon" element
     When I see "Televizyon" page
-    Then I wait "Televizyon Text;4K Oled;Android TV;4K UHD;Buyuk Ekran;Smart TV;Full HD;" elements
-    Then I wait "LED LCD;Ekran Boyutuna Gore TVler;Televizyon Aksesuarlari;" elements
+    Then I wait "Televizyon Text;Smart TV;Oled TV;QLED;Google TV;Dev Ekran TV;" elements
+    Then I wait "Full HD TV;4K TV;Led TV;Mutfak Televizyonu;Grundig TV;Philips TV;TCL TV;Hotel TV;Ekran Boyutuna Gore TVler;" elements
     And I wait "Sol Panel Header Text" element
 
 

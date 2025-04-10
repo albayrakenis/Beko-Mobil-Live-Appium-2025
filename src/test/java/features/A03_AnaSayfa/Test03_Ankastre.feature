@@ -11,7 +11,7 @@ Feature: Ana sayfa kontrolleri
     When I see "HomePage" page
     And I wait until element to be clickable and click to "Ankastre" element
     When I see "Ankastre" page
-    Then I wait "Ankastre Text;Ankastre Bulasik Makineleri;Ankastre Davlumbaz;Ankastre Firin;Ankastre Kurutmali Camasir Makinesi;Ankastre Set" elements
+    Then I wait "Ankastre Text;Ankastre Bulasik Makineleri;Ankastre Davlumbaz;Ankastre Firin;Ankastre Set" elements
     And I wait "Sol Panel Header Text" element
     Then I sleep for 1 seconds
 

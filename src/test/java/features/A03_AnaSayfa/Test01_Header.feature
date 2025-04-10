@@ -11,7 +11,7 @@ Feature: Ana sayfa kontrolleri
     Then I wait until element to be clickable and click to "urunler button" element
     And I scroll until find "Ankastre" element with action
     Then I wait "Beyaz esya;Ankastre;Televizyon;Elektronik;isitma sogutma;" elements
-    Then I wait "KEA;Hijyen Aksesuar;Su aritma;Markalar;" elements
+    Then I wait "KEA;Hijyen Aksesuar;Su aritma;" elements
 
 
 
