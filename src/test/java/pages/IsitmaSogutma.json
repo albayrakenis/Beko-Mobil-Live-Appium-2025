@@ -54,9 +54,9 @@
           "elementValue": "[href='vantilator']"
         },
         {
-          "elementName": "",
+          "elementName": "Nem Alma Cihazi",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "a[href='nem-alma-cihazi']"
         },
         {
           "elementName": "",

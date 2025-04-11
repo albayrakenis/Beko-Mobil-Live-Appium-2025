@@ -20,7 +20,7 @@ Feature: Ana sayfa kontrolleri
       | url |
 
 
-  @canli @headerC @basliklarC @regresyon
+  @smoke @headerC @basliklarC @regresyon
   Scenario Outline: Test101- Canli Headerda olmasi gereken basliklarin kontrolu
 
     When I see "HomePage" page
@@ -30,7 +30,8 @@ Feature: Ana sayfa kontrolleri
     Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait until element to be clickable and click to "urunler button" element
     Then I wait "Beyaz esya;Ankastre;Televizyon;Elektronik;isitma sogutma ve enerji" elements
-    Then I wait "KEA;Hijyen Aksesuar;Su aritma;Enerji Cozumleri;Markalar;" elements
+    Then I wait "KEA;Hijyen Aksesuar;Su aritma;Enerji Cozumleri;Temizlik ve bakim;" elements
+    Then I wait "Evcil hayvan urunleri;Umutkent koleksiyonu" elements
 
 
 

@@ -1,6 +1,6 @@
 Feature: Ana sayfa kontrolleri
 
-  @smoke @tarifler @homepage
+  @smoke2 @tarifler @homepage2
   Scenario Outline: Test11- Tarifler sayfasinin kontrolu
 
     When I see "HomePage" page

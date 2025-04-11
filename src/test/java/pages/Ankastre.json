@@ -14,6 +14,16 @@
           "elementValue": ".pnl-left"
         },
         {
+          "elementName": "Ankastre Aspiratorler",
+          "elementType": "cssSelector",
+          "elementValue": "a[href='ankastre-aspiratorler']"
+        },
+        {
+          "elementName": "Ankastre buzdolabi",
+          "elementType": "cssSelector",
+          "elementValue": "a[href='ankastre-buzdolabi']"
+        },
+        {
           "elementName": "Ankastre Bulasik Makineleri",
           "elementType": "cssSelector",
           "elementValue": "[href='ankastre-bulasik-makineleri']"
@@ -33,6 +43,11 @@
           "elementValue": "[href='ankastre-kurutmali-camasir-makinesi']"
         },
         {
+          "elementName": "Ankastre Ocak",
+          "elementType": "cssSelector",
+          "elementValue": "a[href='ankastre-ocak']"
+        },
+        {
           "elementName": "Ankastre Set",
           "elementType": "cssSelector",
           "elementValue": "[href='ankastre-set']"
@@ -42,9 +57,9 @@
           "elementValue": ".pnl-left > h1"
         },
         {
-          "elementName": "",
+          "elementName": "Ankastre Mikrodalgalar",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "a[href='ankastre-mikrodalgalar']"
         },
         {
           "elementName": "",

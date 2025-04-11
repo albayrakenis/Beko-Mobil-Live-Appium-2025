@@ -15,7 +15,7 @@ Feature: Ana sayfa kontrolleri
     And I wait until element to be clickable and click to "Beyaz esya" element
     When I see "BeyazEsya" page
     Then I wait "Beyaz Esya Text;Bulasik Makinesi;Buzdolabi;Derin Dondurucu;Firin;" elements
-    Then I wait "Kurutma Makinesi;Kurutmali Camasir Makinesi;Su Sebili;Camasir Makinesi" elements
+    Then I wait "Kurutma Makinesi;Kurutmali Camasir Makinesi;Set Ustu Ocak;Su Sebili;Su Sebili;Camasir Makinesi" elements
     And I wait "Sol Panel Header Text" element
     Then I sleep for 1 seconds
 

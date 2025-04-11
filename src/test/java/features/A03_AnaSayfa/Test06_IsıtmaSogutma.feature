@@ -12,7 +12,7 @@ Feature: Ana sayfa kontrolleri
     And I wait until element to be clickable and click to "isitma sogutma" element
     When I see "IsitmaSogutma" page
     Then I wait "Isitma Sogutma Text;Elektrikli Isitici;Hava Sogutucu;Ic Hava Kalitesi;Klima;Kombi" elements
-    Then I wait "Termosifon;Vantilator" elements
+    Then I wait "Nem Alma Cihazi;Termosifon;Vantilator" elements
     And I wait "Sol Panel Header Text" element
     Then I sleep for 1 seconds
 

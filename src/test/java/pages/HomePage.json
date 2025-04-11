@@ -126,6 +126,16 @@
           "elementValue": "[title='Temizlik Ve Bakım Ürünleri'][href='/temizlik-ve-bakim-urunleri'] > span"
         },
         {
+          "elementName": "Evcil hayvan urunleri",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/evcil-hayvan-urunleri'] > span"
+        },
+        {
+          "elementName": "Umutkent koleksiyonu",
+          "elementType": "cssSelector",
+          "elementValue": "[href='/umutkent-koleksiyonu'] > span"
+        },
+        {
           "elementName": "Markalar",
           "elementType": "cssSelector",
           "elementValue": "[href='/markalar'] > span"

@@ -59,9 +59,9 @@
           "elementValue": "[href='camasir-makinesi']"
         },
         {
-          "elementName": "",
+          "elementName": "Set Ustu Ocak",
           "elementType": "cssSelector",
-          "elementValue": ""
+          "elementValue": "a[href='set-ustu-ocak']"
         },
         {
           "elementName": "",
