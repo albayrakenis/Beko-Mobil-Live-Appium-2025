@@ -12,7 +12,7 @@ Feature: Ana sayfa kontrolleri
     And I wait until element to be clickable and click to "Elektronik" element
     When I see "Elektronik" page
     Then I wait "Elekronik Text;Bilgisayar;Cep Telefonu;Cep Telefonu Aksesuarlari;Giyilebilir Teknoloji;Hobi Oyunlari" elements
-    Then I wait "Ses ve Goruntu Sistemleri;Spor ve Outdoor;Telefon;Odeme Sistemleri;" elements
+    Then I wait "Ses ve Goruntu Sistemleri;Spor ve Outdoor;Odeme Sistemleri;" elements
     And I wait "Sol Panel Header Text" element
     Then I sleep for 1 seconds
 

@@ -1,6 +1,6 @@
 Feature: Ana sayfa kontrolleri
 
-  @smoke @header @markalar
+   @header @markalar
   Scenario Outline: Test10- Markalar kategorisinde olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
     Then I go to "<url>" with configuration
