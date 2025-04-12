@@ -1,4 +1,4 @@
-@smoke
+@smoke @user
 Feature: Kullanici testleri canli
 
   Background:

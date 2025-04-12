@@ -30,6 +30,7 @@ Feature: Satin Alma Islemleri
     And I wait "Sepet Title" element
     And I wait "sepetteki urun sayisi text" element
     And I wait "arti button" element
+    Then I sleep for 4 seconds
     And I wait until element to be clickable and click to "arti button" element
     And I wait "Sepete Eklenen Urun Text" element
     And I wait "Sepeti Bosalt" element

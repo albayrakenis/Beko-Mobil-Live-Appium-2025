@@ -13,9 +13,9 @@ Feature: Ana menü kontrolleri
     And I wait until element to be clickable and click to "Teknolojiler" element
     When I see "Teknolojiler" page
     Then I sleep for 5 seconds
-    And I wait "Tum teknolojiler;Akilli Telefon Teknolojileri;Giyilebilir Teknolojiler;Goruntu Teknolojileri" elements
-    And I wait "Kisisel Bakim Teknolojileri;Mutfak Teknolojileri;Sogutma Teknolojileri;Supurge Teknolojileri" elements
-    And I wait "Yikama Teknolojileri;Odeme Sistemleri Teknolojileri" elements
+    And I wait "Tum teknolojiler;Ankastre Teknolojileri;Beyaz esya Teknolojileri" elements
+    And I wait "Elektronik Teknolojileri;Enerji Cozum Teknolojileri;Isitma Teknolojileri;KEA Teknolojileri;" elements
+    And I wait "Su Aritma Teknolojileri;Televizyon Teknolojileri" elements
     And I sleep for 2 seconds
 
 

@@ -55,7 +55,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "EFT/Havale" element
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
-    Then I sleep for 2 seconds
+    Then I sleep for 5 seconds
     Then I wait "Iban Kopyala;Havale Bilgileri" elements
     Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 

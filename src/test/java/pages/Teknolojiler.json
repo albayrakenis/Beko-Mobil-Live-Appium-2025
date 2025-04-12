@@ -14,53 +14,53 @@
           "elementValue": ".js-categories-sorting-not"
         },
         {
-          "elementName": "Akilli Telefon Teknolojileri",
+          "elementName": "Ankastre Teknolojileri",
           "elementType": "xpath",
-          "elementValue": "//a[@data-category='akilliTelefonTeknolojileri']"
+          "elementValue": "//a[@aria-controls='ankastre']"
         },
         {
-          "elementName": "Giyilebilir Teknolojiler",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='giyilebilirTeknoloji']"
+          "elementName": "Beyaz esya Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='beyazesya']"
         },
         {
-          "elementName": "Goruntu Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='goruntuTeknolojileri']"
+          "elementName": "Elektronik Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='elektronik']"
         },
         {
-          "elementName": "Kisisel Bakim Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='kisiselBakimTeknolojileri']"
+          "elementName": "Enerji Cozum Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='enerjicozumleri']"
         },
         {
-          "elementName": "Mutfak Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='mutfakTeknolojileri']"
+          "elementName": "Isitma Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='isitma-sogutma']"
         },
         {
-          "elementName": "Sogutma Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='sogutmaTeknolojileri']"
+          "elementName": "KEA Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='kucukevaletleri']"
         },
         {
-          "elementName": "Supurge Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='supurgeTeknolojileri']"
+          "elementName": "Su Aritma Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='suaritma']"
         },
         {
-          "elementName": "Yikama Teknolojileri",
-          "elementType": "cssSelector",
-          "elementValue": "[aria-controls='yikamaTeknolojileri']"
+          "elementName": "Televizyon Teknolojileri",
+          "elementType": "xpath",
+          "elementValue": "//a[@aria-controls='televizyon']"
         },
         {
           "elementName": "Odeme Sistemleri Teknolojileri",
-          "elementType": "cssSelector",
+          "elementType": "xpath",
           "elementValue": "[aria-controls='odemeSistemleriTeknolojileri']"
         },
         {
           "elementName": "Utu Teknolojileri",
-          "elementType": "cssSelector",
+          "elementType": "xpath",
           "elementValue": "[aria-controls='utuTeknolojileri']"
         },
         {
