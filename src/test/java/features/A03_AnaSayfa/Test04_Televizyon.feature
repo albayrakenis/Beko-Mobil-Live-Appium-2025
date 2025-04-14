@@ -1,6 +1,6 @@
 Feature: Ana sayfa kontrolleri
 
-   @header @televizyon
+   @header @televizyon @smoke
   Scenario Outline: Test04- Televizyon kategorisinde olmasi gereken basliklarin kontrolu
     When I see "HomePage" page
     Then I go to "<url>" with configuration
