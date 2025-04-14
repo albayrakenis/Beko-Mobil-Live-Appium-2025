@@ -123,7 +123,7 @@
         {
           "elementName": "Temizlik ve bakim",
           "elementType": "cssSelector",
-          "elementValue": "[title='Temizlik Ve Bakım Ürünleri'][href='/temizlik-ve-bakim-urunleri'] > span"
+          "elementValue": "[href='/temizlik-ve-bakim-urunleri'] > span"
         },
         {
           "elementName": "Evcil hayvan urunleri",
