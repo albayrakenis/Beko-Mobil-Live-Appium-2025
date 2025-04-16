@@ -83,8 +83,8 @@ Feature: Adres Yönetimi
     Then I add multiple addresses:
       | title          | name       | phone      | city     | district | address              |
       | Ev            | Test User  | 5551234567 | Istanbul | Kadikoy  | Test Sokak No:1 D:2  |
-      | İş            | Test User  | 5559876543 | Istanbul | Sisli    | Work Sokak No:5 D:10 |
-      | Yazlık        | Test User  | 5557894561 | Izmir    | Cesme    | Yaz Sokak No:3       |
+      | is            | Test User  | 5559876543 | Istanbul | Sisli    | Work Sokak No:5 D:10 |
+      | Yazlik        | Test User  | 5557894561 | Izmir    | Cesme    | Yaz Sokak No:3       |
     Then I check all addresses are listed correctly
     Then I check address count equals to "3"
 

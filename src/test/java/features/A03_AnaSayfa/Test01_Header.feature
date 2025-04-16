@@ -1,23 +1,5 @@
 Feature: Ana sayfa kontrolleri
 
-  @smoke @header @basliklar25
-  Scenario Outline: Test01- Headerda olmasi gereken basliklarin kontrolu
-
-    When I see "HomePage" page
-    Then I go to "<url>" with configuration
-    When I see "HomePage" page
-    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
-    Then I wait "uyelik button" element
-    Then I wait until element to be clickable and click to "urunler button" element
-    And I scroll until find "Ankastre" element with action
-    Then I wait "Beyaz esya;Ankastre;Televizyon;Elektronik;isitma sogutma;" elements
-    Then I wait "KEA;Hijyen Aksesuar;Su aritma;" elements
-
-
-
-    Examples:
-      | url |
-      | url |
 
 
   @smoke @headerC @basliklarC @regresyon

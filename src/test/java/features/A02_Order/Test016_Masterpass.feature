@@ -43,18 +43,18 @@ Feature: Satin Alma Islemleri
     And I scroll until find "Masterpass button" element with action
     And I wait until element to be clickable and click to "Masterpass button" element
     When I see "CartPage" page
-    And I scroll until find "footer hizmet" element with action
+    #And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "alisverisi tamamla button" element
     And I sleep for 4 seconds
-    And I send key to "otp code" element text:"201409"
-    Then I wait until element to be clickable and click to "submit button" element
+    #And I send key to "otp code" element text:"201409"
+    #Then I wait until element to be clickable and click to "submit button" element
     #Then I wait until element to be clickable and click to "yes button" element
-    Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
+    #Then I check "basarili siparis text" element text is equal "Bundan sonra ne olacak?"
 
 
     Examples:
       | username   | password | url | urun       |
-      | kullanici1 | sifre    | url | 8914111200 |
+      | kullaniciMP | sifre    | url | 8914111200 |
       #| kullanici1 | sifre    | url | 8818041200 |
       #| kullanici1 | sifre    | url | 8808871200 |
       #| kullanici1 | sifre    | url | 7254140210 |

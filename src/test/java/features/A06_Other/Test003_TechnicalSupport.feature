@@ -37,11 +37,20 @@ Feature: Teknik Destek ve Servis Randevusu İşlemleri
 
   @open_requests
   Scenario: Açık Talepleri Görüntüleme
-    # Önce giriş yapılmalı
+    When I see "HomePage" page
+    Then I wait until element to be clickable and click to "Cerezleri kabul et" element
+    Then I wait until element to be clickable and click to "uyelik button" element
+    When I see "LoginPage" page
+    Then I wait "username" element
+    Then I wait "password" element
+    Then I login with "<username>" and "<password>"
+    And I scroll until find "giris yap" element with action
+    Then I wait until element to be clickable and click to "giris yap" element
+    Then I sleep for 9 seconds
     When I wait until element to be clickable and click to "Hesabim button" element
     Then I see "LoginPage" page
     Then I wait "username;password;giris yap" elements
-    When I send key to "username" element text:"test_user@example.com"
+    When I send key to "username" element text:"bekos1.test@gmail.com"
     When I send key to "password" element text:"Test123!"
     Then I wait until element to be clickable and click to "giris yap" element
     # Teknik destek sayfasına git

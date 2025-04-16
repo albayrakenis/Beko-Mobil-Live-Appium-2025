@@ -32,7 +32,6 @@ Feature: Kullanici testleri canli
       | kullaniciCanli | sifre    | urlCanli |
 
 
-
   @userC @loginSuccessC @canli @regresyon
   Scenario Outline: Test101- Canli Basarili Giris
 
@@ -62,7 +61,7 @@ Feature: Kullanici testleri canli
 
 
     Examples:
-      | username              | password | url                      |
+      | username              | password | url      |
       | bekos1.test@gmail.com | abcd123  | urlCanli |
 
 
@@ -79,9 +78,8 @@ Feature: Kullanici testleri canli
 
 
     Examples:
-      | username             | password | url                      |
-      | abcd@gmail.com | Albayrak.41  | urlCanli |
-
+      | username       | password    | url      |
+      | abcd@gmail.com | Albayrak.41 | urlCanli |
 
 
   @userAdresC  @regresyon @canli
@@ -121,8 +119,6 @@ Feature: Kullanici testleri canli
       | kullaniciCanli | sifre    | urlCanli |
 
 
-
-
   @userAdres2C  @regresyon @canli
   Scenario Outline:Test105- Canli Kurumsal Adres Ekleme
 
@@ -159,7 +155,6 @@ Feature: Kullanici testleri canli
     Examples:
       | username       | password | url      |
       | kullaniciCanli | sifre    | urlCanli |
-
 
 
   @updateC @smokeC @regresyon @canli

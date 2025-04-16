@@ -39,7 +39,6 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
     Then I sleep for 4 seconds
     And I accept on bilgilendirme and satis sozlesmesi
-
     And I scroll until find "Online Alisveris Kredisi" element with action
     And I scroll until find "footer hizmet" element with action
     Then I wait until element to be clickable and click to "Online Alisveris Kredisi" element

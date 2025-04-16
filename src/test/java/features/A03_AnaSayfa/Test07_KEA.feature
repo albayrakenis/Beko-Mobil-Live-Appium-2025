@@ -20,5 +20,5 @@ Feature: Ana sayfa kontrolleri
     Examples:
       | url                                        |
       | url |
-#      | https://grundigtr-astra.c1m0wu3z2z-arcelikas1-s1-public.model-t.cc.commerce.ondemand.com/ |
+#
 
