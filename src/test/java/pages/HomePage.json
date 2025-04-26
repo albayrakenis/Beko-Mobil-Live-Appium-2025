@@ -186,6 +186,16 @@
           "elementValue": "(//div[@class='bnr-button'])[4]//a[@data-selector='gtm-product-click']"
         },
         {
+          "elementName": "Anasayfa dikey supurge",
+          "elementType": "xpath",
+          "elementValue": "(//a[@href='/sarjli-dikey-supurge/powerclean-pro-3-0-vrt-97325-vy-elektrikli-supurge'])[2]"
+        },
+        {
+          "elementName": "Anasayfa KMX kurutma makinesi",
+          "elementType": "xpath",
+          "elementValue": "(//a[@href='/8-kg-kurutma-makineleri/kmx-80-kurutma-makinesi'])[2]"
+        },
+        {
           "elementName": "Banner next button",
           "elementType": "cssSelector",
           "elementValue": "#main-slider > .swiper-button-next"
