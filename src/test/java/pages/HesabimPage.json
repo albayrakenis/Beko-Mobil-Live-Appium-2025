@@ -138,9 +138,15 @@
         },
 
         {
-          "elementName": "",
-          "elementType": "cssSelector",
-          "elementValue": ""
+          "elementName": "Kahve makinesini favorilerden sil",
+          "elementType": "xpath",
+          "elementValue": "//div[contains(@data-gtm-impression, '8914761200')]//button[@aria-label='Listemden Cikar']"
+        },
+
+        {
+          "elementName": "ipad favorilerden sil",
+          "elementType": "xpath",
+          "elementValue": "//div[contains(@data-gtm-impression, '9242291600')]//button[@aria-label='Listemden Cikar']"
         },
 
         {
