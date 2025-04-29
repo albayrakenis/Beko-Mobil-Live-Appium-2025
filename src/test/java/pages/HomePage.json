@@ -128,7 +128,7 @@
         {
           "elementName": "Evcil hayvan urunleri",
           "elementType": "cssSelector",
-          "elementValue": "[href='/evcil-hayvan-urunleri'] > span"
+          "elementValue": "[href='/evcil-hayvan-urunleri-koleksiyonu'] > span"
         },
         {
           "elementName": "Umutkent koleksiyonu",
@@ -193,7 +193,7 @@
         {
           "elementName": "Anasayfa KMX kurutma makinesi",
           "elementType": "xpath",
-          "elementValue": "(//a[@href='/8-kg-kurutma-makineleri/kmx-80-kurutma-makinesi'])[2]"
+          "elementValue": "//a[@title='KMX 808 Kg Kurutma Makinesi']"
         },
         {
           "elementName": "Banner next button",

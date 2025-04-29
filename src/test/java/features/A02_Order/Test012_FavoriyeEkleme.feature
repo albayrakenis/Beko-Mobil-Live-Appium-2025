@@ -46,5 +46,5 @@ Feature: Satin Alma Islemleri
       | username   | password | url | urun                              | urun kodu  | urun adi                                 |
       | kullanici1 | sifre    | url | Kahve makinesini favorilerden sil | 8914761200 | CEG 7304 X CaffeExperto® Tam Otomatik    |
       | kullanici1 | sifre    | url | ipad favorilerden sil             | 9242291600 | iPad 10.Nesil WiFi 256GB Gümüş MCMD4TU/A |
-      | kullanici1 | sifre    | url | Telefon favorilerden sil          | 9242291600 | iPhone 14 256GB (Product)RED             |
+      | kullanici1 | sifre    | url | Telefon favorilerden sil          | 9231241600 | iPhone 14 256GB (Product)RED             |
 
