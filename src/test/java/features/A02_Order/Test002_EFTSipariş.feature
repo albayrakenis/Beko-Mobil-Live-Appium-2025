@@ -65,7 +65,7 @@ Feature: Satin Alma Islemleri
     Examples:
       | url | urunKodu   |
       | url | 8914951200 |
-      #| url | 7751620231 |
+      | url | 7751620231 |
       #| url | 8808871200 |
       #| url | 8808751200 |
       #| url | 8914721200 |
@@ -138,3 +138,4 @@ Feature: Satin Alma Islemleri
     Examples:
       | url | urunKodu   |
       | url | 8911711600 |
+      | url | 8916151200 |

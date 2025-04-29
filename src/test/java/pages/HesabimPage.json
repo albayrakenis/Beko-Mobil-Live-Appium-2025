@@ -150,6 +150,12 @@
         },
 
         {
+          "elementName": "Telefon favorilerden sil",
+          "elementType": "xpath",
+          "elementValue": "//div[contains(@data-gtm-impression, '9231241600')]//button[@aria-label='Listemden Cikar']"
+        },
+
+        {
           "elementName": "",
           "elementType": "cssSelector",
           "elementValue": ""
