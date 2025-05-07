@@ -15,7 +15,7 @@ Feature: Satin Alma Islemleri
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 9 seconds
+    Then I sleep for 7 seconds
     When I see "HomePage" page
     And I wait until element to be clickable and click to "sepet icon" element
     Then I sleep for 2 seconds
@@ -32,15 +32,15 @@ Feature: Satin Alma Islemleri
     And I scroll until find "incele button" element with action
     Then I wait until element to be clickable and click to "incele button" element
     When I see "PDP" page
-    Then I sleep for 2 seconds
+    Then I sleep for 1 seconds
     And I scroll until find "Sepete At Button" element with action
     Then I wait until element to be clickable and click to "Sepete At Button" element
-    Then I sleep for 4 seconds
+    Then I sleep for 1 seconds
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
     And I scroll until find "Sepeti Onayla Button" element with action
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
-    Then I sleep for 3 seconds
+    Then I sleep for 2 seconds
     And I accept on bilgilendirme and satis sozlesmesi
     And I scroll until find "Kredi/Banka Karti" element with action
     Then I sleep for 1 seconds
