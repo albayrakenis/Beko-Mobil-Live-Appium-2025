@@ -255,8 +255,8 @@
         },
         {
           "elementName": "2 yillik ek garanti sil button",
-          "elementType": "cssSelector",
-          "elementValue": "[data-entry-product-code='GRT303']"
+          "elementType": "xpath",
+          "elementValue": "//button[@data-entry-product-code='GRT303']"
         },
         {
           "elementName": "Teslimat adresi seciniz",
