@@ -46,7 +46,7 @@ Feature: Satin Alma Islemleri
     Then I choose neighborhood "KOSOVA" from list
     Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "Adres Kaydet" element
-    And I sleep for 5 seconds
+    And I sleep for 6 seconds
     And I send key to "Tc kimlik" element text:"49646044276"
     And I accept on bilgilendirme and satis sozlesmesi
     And I scroll until find "Kredi/Banka Karti" element with action

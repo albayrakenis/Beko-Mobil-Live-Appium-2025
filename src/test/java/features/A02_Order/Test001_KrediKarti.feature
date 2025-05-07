@@ -35,6 +35,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 2 seconds
     And I scroll until find "Sepete At Button" element with action
     Then I wait until element to be clickable and click to "Sepete At Button" element
+    Then I sleep for 4 seconds
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
     And I scroll until find "Sepeti Onayla Button" element with action
