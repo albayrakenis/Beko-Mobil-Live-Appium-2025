@@ -144,18 +144,20 @@ public class CommonLib extends BaseTest{
 
         WebElement webElement = null;
         String style = "";
+
         try {
-            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));;
+            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));
             style = webElement.getAttribute("style");
             highLighElement(webElement);
+            webElement.click(); // <-- artık try bloğu içinde
             allureReport(StepResultType.PASS, "Clicked to element.", true);
         } catch (Exception e) {
-            allureReport(StepResultType.FAIL, "Could not click to element.", true);
+            allureReport(StepResultType.FAIL, "Could not click to element. Reason: " + e.getMessage(), true);
+        } finally {
+            if (webElement != null) {
+                setDefaultStyle(style, webElement);
+            }
         }
-        setDefaultStyle(style, webElement);
-
-        webElement.click();
-
     }
 
     public void hover(String element) {
