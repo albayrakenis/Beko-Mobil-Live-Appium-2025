@@ -15,7 +15,7 @@
         {
           "elementName": "Sepete Git Button",
           "elementType": "xpath",
-          "elementValue": "//a[contains(.,'Sepete Git')]"
+          "elementValue": "(//a[@title='Sepete Git'])[1]"
         },
         {
           "elementName": "Filtrele Button",

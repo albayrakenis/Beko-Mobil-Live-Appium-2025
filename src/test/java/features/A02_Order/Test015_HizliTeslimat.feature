@@ -35,13 +35,11 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "Sepeti Bosalt" element
     Then I check "Sepetinizde Henuz Urun Yok Text" element text is equal "Sepetinizde henüz ürün yok."
     When I see "HomePage" page
-
-
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"8915471200"
-    Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
+    Then I wait until element to be clickable and click to "search icon" element
     When I see "PLP" page
     Then I sleep for 1 seconds
     And I scroll until find "incele button" element with action
