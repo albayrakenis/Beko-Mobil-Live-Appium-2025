@@ -20,7 +20,7 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "sepet icon" element
     Then I sleep for 2 seconds
     And I scroll until find "sepeti bosalt" element with action
-    And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:4
+    And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:2
     Then I sleep for 1 seconds
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
@@ -35,7 +35,6 @@ Feature: Satin Alma Islemleri
     Then I sleep for 1 seconds
     And I scroll until find "Sepete At Button" element with action
     Then I wait until element to be clickable and click to "Sepete At Button" element
-    Then I sleep for 1 seconds
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
     And I scroll until find "Sepeti Onayla Button" element with action
@@ -65,7 +64,7 @@ Feature: Satin Alma Islemleri
     Examples:
       | username   | password | url | urun       |
       | kullanici2 | sifre    | url | 8914111200 |
-#      | kullanici2 | sifre    | url | 8818041200 |
-#      | kullanici2 | sifre    | url | 8808871200 |
+      | kullanici2 | sifre    | url | 8818041200 |
+      | kullanici2 | sifre    | url | 8808871200 |
 #      | kullanici2 | sifre    | url | 7630710277 |
 
