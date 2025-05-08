@@ -57,7 +57,7 @@ public class Driver {
                     throw new RuntimeException("Invalid Browser Type : " + browserType);
             }
             driverPool.get().manage().window().maximize();
-            driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driverPool.get().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         }
 
