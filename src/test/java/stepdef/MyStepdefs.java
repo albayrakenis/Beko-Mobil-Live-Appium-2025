@@ -328,4 +328,9 @@ public class MyStepdefs extends BaseTest{
     public void ıSwitchToWindow() {
         commonLib.switchToNewTabAndVerifyTitle();
     }
+
+    @And("I wait until element to be clickable and click to {string} element with JS")
+    public void ıWaitUntilElementToBeClickableAndClickToElementWithJS(String arg0) {
+        commonLib.ıWaitUntilElementToBeClickableAndClickToElementWithJS(arg0);
+    }
 }

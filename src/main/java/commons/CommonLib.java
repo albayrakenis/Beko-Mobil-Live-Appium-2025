@@ -1152,6 +1152,30 @@ public class CommonLib extends BaseTest{
     }
 
 
+    public void ıWaitUntilElementToBeClickableAndClickToElementWithJS(String element) {
+
+        WebElement webElement = null;
+        String style = "";
+        try {
+            webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(getElementLocator(element)));;
+            style = webElement.getAttribute("style");
+            highLighElement(webElement);
+            allureReport(StepResultType.PASS, "Clicked to element.", true);
+        } catch (Exception e) {
+            allureReport(StepResultType.FAIL, "Could not click to element.", true);
+        }
+        setDefaultStyle(style, webElement);
+
+        ((JavascriptExecutor) myDriver).executeScript("arguments[0].click();", webElement);
+
+        //webElement.click();
+
+    }
+
+
+
+
+
 
 }
 

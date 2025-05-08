@@ -18,6 +18,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 7 seconds
     When I see "HomePage" page
     And I wait until element to be clickable and click to "sepet icon" element
+   # And I wait until element to be clickable and click to "sepet icon" element with JS
     Then I sleep for 2 seconds
     And I scroll until find "sepeti bosalt" element with action
     And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:2
