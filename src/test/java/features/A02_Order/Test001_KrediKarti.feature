@@ -19,21 +19,17 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     And I wait until element to be clickable and click to "sepet icon" element
    # And I wait until element to be clickable and click to "sepet icon" element with JS
-    Then I sleep for 2 seconds
     And I scroll until find "sepeti bosalt" element with action
     And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:2
-    Then I sleep for 1 seconds
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"<urun>"
     Then I wait until element to be clickable and click to "search icon" element
-    Then I sleep for 1 seconds
     When I see "PLP" page
-    Then I sleep for 1 seconds
     And I scroll until find "incele button" element with action
     Then I wait until element to be clickable and click to "incele button" element
     When I see "PDP" page
-    Then I sleep for 1 seconds
+
     And I scroll until find "Sepete At Button" element with action
     Then I wait until element to be clickable and click to "Sepete At Button" element
     Then I wait until element to be clickable and click to "Sepete Git Button" element
