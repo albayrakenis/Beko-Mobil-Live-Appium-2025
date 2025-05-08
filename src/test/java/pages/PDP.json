@@ -18,6 +18,11 @@
           "elementValue": "(//a[@title='Sepete Git'])[1]"
         },
         {
+          "elementName": "Sepete Git Popup Kapat",
+          "elementType": "xpath",
+          "elementValue": "(//button[@aria-label='kapat'])[3]"
+        },
+        {
           "elementName": "Filtrele Button",
           "elementType": "cssSelector",
           "elementValue": "[data-text='Filtrele']"

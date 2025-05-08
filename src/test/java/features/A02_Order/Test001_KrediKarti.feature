@@ -32,7 +32,9 @@ Feature: Satin Alma Islemleri
 
     And I scroll until find "Sepete At Button" element with action
     Then I wait until element to be clickable and click to "Sepete At Button" element
-    Then I wait until element to be clickable and click to "Sepete Git Button" element
+    Then I wait until element to be clickable and click to "Sepete Git Popup Kapat" element
+    When I see "HomePage" page
+    And I wait until element to be clickable and click to "sepet icon" element
     When I see "CartPage" page
     And I scroll until find "Sepeti Onayla Button" element with action
     Then I wait until element to be clickable and click to "Sepeti Onayla Button" element
