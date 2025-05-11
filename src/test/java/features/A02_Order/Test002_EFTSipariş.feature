@@ -8,6 +8,8 @@ Feature: Satin Alma Islemleri
     Then I wait "uyelik button" element
     When I see "HomePage" page
     Then I wait "search box" element
+    Then I wait until element to be clickable and click to "uyelik button" element
+    Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"<urunKodu>"
     Then I wait until element to be clickable and click to "search icon" element
