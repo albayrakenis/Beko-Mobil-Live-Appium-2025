@@ -57,8 +57,13 @@
         },
         {
           "elementName": "search box text",
-          "elementType": "cssSelector",
-          "elementValue": "#searchText"
+          "elementType": "xpath",
+          "elementValue": "//input[@name='text']"
+        },
+        {
+          "elementName": "arama kutusu text",
+          "elementType": "xpath",
+          "elementValue": "//input[@name='text']"
         },
         {
           "elementName": "search icon",
