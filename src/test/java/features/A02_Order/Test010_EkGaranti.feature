@@ -8,8 +8,6 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "search box" element
-    Then I wait until element to be clickable and click to "uyelik button" element
-    Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "search box" element
     Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "search box text" element

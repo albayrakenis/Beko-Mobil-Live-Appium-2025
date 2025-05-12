@@ -22,8 +22,6 @@ Feature: Satin Alma Islemleri
     And I scroll until find "sepeti bosalt" element with action
     And I wait until element to be clickable and click to "sepeti bosalt" element if element exist:2
     Then I wait "search box" element
-    Then I wait until element to be clickable and click to "urunler button" element
-    Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"<urun>"
     Then I wait until element to be clickable and click to "search icon" element

@@ -18,7 +18,6 @@ Feature: Satin Alma Islemleri
     Then I sleep for 9 seconds
     When I see "HomePage" page
     Then I wait "search box" element
-    Then I wait until element to be clickable and click to "urunler button" element
     Then I sleep for 2 seconds
     Then I wait until element to be clickable and click to "search box" element
     Then I send key to "search box text" element text:"8915471200"

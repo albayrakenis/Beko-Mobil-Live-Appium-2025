@@ -11,9 +11,12 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
 public class MyStepdefs extends BaseTest{
@@ -122,7 +125,12 @@ public class MyStepdefs extends BaseTest{
 
     @Then("I accept alert")
     public void ıAcceptAlert() {
+
+        WebDriverWait wait = new WebDriverWait(commonLib.myDriver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.alertIsPresent());
         commonLib.myDriver.switchTo().alert().accept();
+
+//        commonLib.myDriver.switchTo().alert().accept();
     }
 
     @Then("I send key to {string} element text:{string} with jsexecutor")
