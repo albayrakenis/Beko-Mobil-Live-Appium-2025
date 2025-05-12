@@ -57,8 +57,8 @@
         },
         {
           "elementName": "search box text",
-          "elementType": "xpath",
-          "elementValue": "//input[@id='searchText']"
+          "elementType": "cssSelector",
+          "elementValue": "#searchText"
         },
         {
           "elementName": "search icon",
