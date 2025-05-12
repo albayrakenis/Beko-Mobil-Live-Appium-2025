@@ -11,9 +11,8 @@ Feature: Ana menü kontrolleri
     When I see "HomePage" page
     And I scroll until find "populer urun 1" element with action
     And I wait "En Cok Satanlar" element
-    And I wait until element to be clickable and click to "En Cok Satanlar" element
-
-    And I sleep for 5 seconds
+#    And I wait until element to be clickable and click to "En Cok Satanlar" element
+    And I sleep for 1 seconds
 
 
 

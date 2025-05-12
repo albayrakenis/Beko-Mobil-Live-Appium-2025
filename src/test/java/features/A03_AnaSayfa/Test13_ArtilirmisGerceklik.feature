@@ -10,7 +10,10 @@ Feature: Ana sayfa kontrolleri
     Then I wait until element to be clickable and click to "Cerezleri kabul et" element
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
+    Then I sleep for 3 seconds
+    Then I wait until element to be clickable and click to "search box text" element
     Then I send key to "search box text" element text:"<urun kodu>"
+    Then I sleep for 3 seconds
     Then I wait until element to be clickable and click to "search icon" element
     When I see "PLP" page
     Then I sleep for 1 seconds
