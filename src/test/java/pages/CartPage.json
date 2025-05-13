@@ -103,9 +103,9 @@
           "elementValue": "//p[.='Havale Bilgileri']"
         },
         {
-          "elementName": "Iban Kopyala",
+          "elementName": "iban Kopyala",
           "elementType": "cssSelector",
-          "elementValue": ".btn-iban-no > span"
+          "elementValue": "button[class='btn-iban-no menu-btn-copy'] span"
         },
         {
           "elementName": "Online Alisveris Kredisi",
