@@ -10,7 +10,7 @@
         {
           "elementName": "incele button",
           "elementType": "xpath",
-          "elementValue": "//a[@title='\u0130ncele']"
+          "elementValue": "//div[@class='prd-detail']/a"
         },
         {
           "elementName": "product footer",
