@@ -14,6 +14,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
+import commons.MobileDriver;
+
 
 import java.io.IOException;
 import java.time.Duration;
@@ -37,6 +39,12 @@ public class MyStepdefs extends BaseTest{
     @When("I see {string} page")
     public void seePage(String page) throws IOException, ParseException {
         commonLib.seePage(page);
+    }
+
+    @Given("kullanici mobil tarayici ile {string} sayfasini acar")
+    public void kullaniciMobilTarayiciIleSayfayiAcar(String url) throws Exception {
+        MobileDriver.initialize();
+        MobileDriver.driver.get(url);
     }
 
     @When("I go to url:{string}")
